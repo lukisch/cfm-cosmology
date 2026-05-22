@@ -10,6 +10,8 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
@@ -19,23 +21,63 @@
 \newtheorem{remark}{Remark}
 \newtheorem{axiom}{Axiom}
 
-\usepackage{hyperref}
+\usepackage[unicode=true]{hyperref}
 \hypersetup{
     pdftitle={The Saturation Theorem: Axiomatic Constraints on Quantum Gravity from Cosmological Relaxation},
     pdfauthor={Lukas Geiger},
+    pdfsubject={Axiomatic constraints on one-dimensional cosmological saturation dynamics in quantum gravity},
+    pdfkeywords={quantum gravity, saturation dynamics, axiomatic cosmology, Curvature Relaxation Model, renormalization group, tanh saturation},
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue,
     citecolor=black
 }
+\renewcommand{\acknowledgmentsname}{AI Disclosure}
 
 \begin{document}
+\pagenumbering{gobble}
+\onecolumngrid
 
 % ===================================================================
 % TITLE PAGE
 % ===================================================================
 
-\title{The Saturation Theorem: Axiomatic Constraints on Quantum Gravity\\from Cosmological Relaxation}
+\thispagestyle{empty}
+\vspace*{0.08\textheight}
+
+\begin{center}
+{\LARGE The Saturation Theorem: Axiomatic Constraints on Quantum Gravity\par}
+\vspace{0.2em}
+{\LARGE from Cosmological Relaxation\par}
+\vspace{1.8em}
+{\large Lukas Geiger\textsuperscript{1,*}\par}
+\vspace{0.6em}
+{\itshape \textsuperscript{1}Independent Researcher, Bernau, Germany\textsuperscript{\textdagger}\par}
+\vspace{0.2em}
+{(Dated: \today)\par}
+\end{center}
+
+\vspace{1.8em}
+\noindent
+We formulate four minimal axioms -- finite geometric capacity, cooperative reinforcement, monotone cosmic control, and renormalization-group composition -- as candidate macroscopic constraints for any quantum gravity theory whose cosmological limit reproduces general relativity with a bounded relaxation mechanism. These axioms imply an Abel-coordinate description of one-dimensional saturation dynamics. A hyperbolic tangent profile follows once the saturation boundary is fixed by an additional projective boundary-quotient normalization: the ratio $R(x)=(1+x)/(1-x)$ must multiply under composition. Without that normalization, smooth boundary regularity alone leaves a family of smooth hyperbolic boundary collars, for example Abel coordinates of the form $\operatorname{arctanh}(x)+\varepsilon x$. The corrected \textit{Saturation Theorem} is therefore a projective-collar normal-form theorem: $S(g)=S_{\max}\tanh(\alpha\,u(g))$ is selected by scale coherence plus the projective boundary quotient, not by bare smoothness alone. Major quantum gravity programs -- Loop Quantum Gravity, asymptotic safety, string/holographic approaches, causal set theory, and noncommutative geometry -- naturally motivate A--D when restricted to cosmological observables, while D' remains a separate diagnostic normalization to be physically derived. The result elevates the $\tanh$ saturation ODE $dX/da = k(1-X^2)$ of the Curvature Relaxation Model from a phenomenological fit to a canonical projective normal form of capacity-limited cooperative relaxation, while leaving open which UV completion selects $k$, $\Phi_0$, and the projective quotient physically.
+
+\vfill
+{\small
+\noindent\textsuperscript{*} ORCID: \url{https://orcid.org/0009-0005-7296-1534}\par
+\noindent\textsuperscript{\textdagger} See the AI Disclosure at the end of the paper for tool-use details. All scientific content is the sole responsibility of the author. Paper~V in the CRM series. Companion papers: \cite{Geiger2026,Geiger2026b,Geiger2026c,Geiger2026d}.\par
+}
+
+\clearpage
+\twocolumngrid
+\pagenumbering{arabic}
+
+\iffalse
+
+% ===================================================================
+% TITLE PAGE
+% ===================================================================
+
+\title{The Saturation Theorem: Axiomatic Constraints on Quantum Gravity\texorpdfstring{\\}{ }from Cosmological Relaxation}
 
 \author{Lukas Geiger}
 \thanks{ORCID: \url{https://orcid.org/0009-0005-7296-1534}}
@@ -49,11 +91,15 @@ We formulate four minimal axioms -- finite geometric capacity, cooperative reinf
 
 \keywords{quantum gravity, saturation dynamics, axiomatic cosmology, conditional No-Go theorem, Curvature Relaxation Model, tanh universality, renormalization group}
 
-\thanks{AI tools were used for mathematical formalization and text generation; see Acknowledgments for details. All scientific content is the sole responsibility of the author.}
+\thanks{See the AI Disclosure at the end of the paper for tool-use details. All scientific content is the sole responsibility of the author.}
 
 \thanks{Paper~V in the CRM series. Companion papers: \cite{Geiger2026,Geiger2026b,Geiger2026c,Geiger2026d}.}
 
+\begin{titlepage}
 \maketitle
+\end{titlepage}
+
+\fi
 
 
 % ===================================================================
@@ -722,16 +768,16 @@ The remaining open problem -- deriving the specific parameters $(k, \Phi_0, \gam
 
 
 % ===================================================================
-% ACKNOWLEDGMENTS
+% AI DISCLOSURE
 % ===================================================================
 \begin{acknowledgments}
-This work was conducted as independent research without institutional funding. The author thanks the open-source communities behind the scientific computing infrastructure used throughout the CRM program.
+This work was conducted as independent research without institutional funding. Public scientific-computing infrastructure was used throughout the CRM program.
 
-\textit{AI tools.} AI-based tools (Claude by Anthropic; Copilot by Microsoft/GitHub; Gemini by Google DeepMind) were used for mathematical formalization, literature survey, code development, and text generation. All physical hypotheses, axiomatic choices, scientific interpretation, and responsibility for the content lie solely with the author.
+\textit{Tool use.} AI-based tools (Claude by Anthropic; Copilot by Microsoft/GitHub; Gemini by Google DeepMind) were used for mathematical formalization, literature survey, code development, and text generation. All physical hypotheses, axiomatic choices, scientific interpretation, and responsibility for the content lie solely with the author.
 
 \textit{Funding information.} This research received no external funding.
 
-\textit{Data availability.} This paper is purely theoretical. The CRM analysis code and data are available at \url{https://github.com/research-line/crm-cosmology/tree/main/papers/extensions} (DOI: \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}).
+\textit{Data availability.} This paper is purely theoretical. The public CRM repository with analysis scripts, data products, and paper source files is available at \url{https://github.com/research-line/crm-cosmology}; the CRM I--IV Zenodo concept DOI is \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}.
 \end{acknowledgments}
 
 
@@ -744,7 +790,7 @@ This work was conducted as independent research without institutional funding. T
 L.~Geiger (2026).
 Game-Theoretic Cosmology and the Curvature Relaxation Model: Nash Equilibria Between Null Space and Spacetime Bubble.
 Companion paper (Paper~I).
-\url{https://github.com/research-line/crm-cosmology/tree/main/papers/extensions}.
+\url{https://github.com/research-line/crm-cosmology/tree/main/papers}.
 \href{https://doi.org/10.5281/zenodo.18728935}{doi:10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026b}
@@ -826,10 +872,11 @@ DOI: 10.4310/ATMP.1998.v2.n2.a1.
 arXiv:hep-th/9711200.
 
 \bibitem{Sorkin2003}
-R.~D.~Sorkin (2003).
+R.~D.~Sorkin (2005).
 Causal sets: Discrete gravity.
 In \textit{Lectures on Quantum Gravity}, pp.\ 305--327.
 Springer.
+DOI: 10.1007/0-387-24992-3\_7.
 arXiv:gr-qc/0309009.
 
 \bibitem{Surya2019}
@@ -845,8 +892,8 @@ Academic Press.
 
 \bibitem{Bekenstein1981}
 J.~D.~Bekenstein (1981).
-A universal upper bound on the entropy-to-energy ratio for bounded systems.
-\textit{Physical Review D}, 23(2), 287.
+Universal upper bound on the entropy-to-energy ratio for bounded systems.
+\textit{Physical Review D}, 23(2), 287--298.
 DOI: 10.1103/PhysRevD.23.287.
 
 \bibitem{Almheiri2015}

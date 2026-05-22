@@ -13,6 +13,8 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
@@ -21,31 +23,78 @@
 \newtheorem{lemma}{Lemma}
 \newtheorem{remark}{Bemerkung}
 \newtheorem{axiom}{Axiom}
+\makeatletter
+\def\Dated@name{Stand:\ }
+\makeatother
+\newcommand{\germanmonthname}{%
+  \ifcase\month\or Januar\or Februar\or März\or April\or Mai\or Juni\or Juli\or August\or September\or Oktober\or November\or Dezember\fi%
+}
+\newcommand{\germantoday}{\number\day.~\germanmonthname~\number\year}
 
 \usepackage{hyperref}
 \hypersetup{
     unicode=true,
     pdftitle={Das Sättigungstheorem: Axiomatische Zwangsbedingungen für Quantengravitation aus kosmologischer Relaxation},
     pdfauthor={Lukas Geiger},
+    pdfsubject={Axiomatische Bedingungen für eindimensionale kosmologische Sättigungsdynamik in der Quantengravitation},
+    pdfkeywords={Quantengravitation, Sättigungsdynamik, axiomatische Kosmologie, Curvature Relaxation Model, Renormierungsgruppe, tanh-Sättigung},
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue,
     citecolor=black
 }
+\renewcommand{\acknowledgmentsname}{KI-Offenlegung}
 
 \begin{document}
+\pagenumbering{gobble}
+\onecolumngrid
 
 % ===================================================================
 % TITELSEITE
 % ===================================================================
 
-\title{Das Sättigungstheorem: Axiomatische Zwangsbedingungen\\für Quantengravitation aus kosmologischer Relaxation}
+\thispagestyle{empty}
+\vspace*{0.08\textheight}
+
+\begin{center}
+{\LARGE Das Sättigungstheorem: Axiomatische Zwangsbedingungen\par}
+\vspace{0.2em}
+{\LARGE für Quantengravitation aus kosmologischer Relaxation\par}
+\vspace{1.8em}
+{\large Lukas Geiger\textsuperscript{1,*}\par}
+\vspace{0.6em}
+{\itshape \textsuperscript{1}Unabhängiger Forscher, Bernau, Deutschland\textsuperscript{\textdagger}\par}
+\vspace{0.2em}
+{(Stand: \germantoday)\par}
+\end{center}
+
+\vspace{1.8em}
+\noindent
+Wir formulieren vier minimale Axiome -- endliche geometrische Kapazität, kooperative Verstärkung mit antisymmetrischer Erweiterung, monotone kosmische Kontrolle und Renormierungsgruppen-Komposition -- als makroskopische Kandidatenbedingungen für jede Quantentheorie der Gravitation, deren kosmologischer Limes die allgemeine Relativitätstheorie mit einem beschränkten Relaxationsmechanismus reproduziert. Diese Axiome liefern eine Abel-Koordinatenbeschreibung eindimensionaler Sättigungsdynamik. Ein Tangens-hyperbolicus-Profil folgt, sobald der Sättigungsrand zusätzlich durch eine projektive Randquotienten-Normalisierung festgelegt wird: der Quotient $R(x)=(1+x)/(1-x)$ muss sich unter Komposition multiplizieren. Ohne diese Normalisierung lässt glatte Randregularität allein eine Familie glatter hyperbolischer Randkrägen zu, etwa Abel-Koordinaten der Form $\operatorname{arctanh}(x)+\varepsilon x$. Das korrigierte \textit{Sättigungstheorem} ist daher ein projektives Randkragen-Normalformtheorem: $S(g)=S_{\max}\tanh(\alpha\,u(g))$ wird durch Skalenkohärenz plus projektiven Randquotienten ausgewählt, nicht durch bloße Glattheit allein. Große Quantengravitationsprogramme -- Schleifen-Quantengravitation, Asymptotic Safety, String-/holographische Ansätze, Kausalmengentheorie und nichtkommutative Geometrie -- motivieren A--D auf natürliche Weise, wenn sie auf kosmologische Observablen eingeschränkt werden; D' bleibt dagegen eine separate diagnostische Normalisierung, die physikalisch erst herzuleiten ist. Das Resultat erhebt die $\tanh$-Sättigungs-ODE $dX/da = k(1-X^2)$ des Curvature Relaxation Model von einem phänomenologischen Fit zu einer kanonischen projektiven Normalform kapazitätsbegrenzter kooperativer Relaxation, wobei offen bleibt, welche UV-Vervollständigung $k$, $\Phi_0$ und den projektiven Quotienten physikalisch festlegt.
+
+\vfill
+{\small
+\noindent\textsuperscript{*} ORCID: \url{https://orcid.org/0009-0005-7296-1534}\par
+\noindent\textsuperscript{\textdagger} Details zum Werkzeugeinsatz stehen in der KI-Offenlegung am Ende des Papers. Alle wissenschaftlichen Inhalte verantwortet ausschließlich der Autor. Paper~V der CRM-Serie. Begleitarbeiten: \cite{Geiger2026,Geiger2026b,Geiger2026c,Geiger2026d}.\par
+}
+
+\clearpage
+\twocolumngrid
+\pagenumbering{arabic}
+
+\iffalse
+
+% ===================================================================
+% TITELSEITE
+% ===================================================================
+
+\title{Das Sättigungstheorem: Axiomatische Zwangsbedingungen\texorpdfstring{\\}{ }für Quantengravitation aus kosmologischer Relaxation}
 
 \author{Lukas Geiger}
 \thanks{ORCID: \url{https://orcid.org/0009-0005-7296-1534}}
 \affiliation{Unabhängiger Forscher, Bernau, Deutschland}
 
-\date{\today}
+\date{\germantoday}
 
 \begin{abstract}
 Wir formulieren vier minimale Axiome -- endliche geometrische Kapazität, kooperative Verstärkung mit antisymmetrischer Erweiterung, monotone kosmische Kontrolle und Renormierungsgruppen-Komposition -- als makroskopische Kandidatenbedingungen für jede Quantentheorie der Gravitation, deren kosmologischer Limes die allgemeine Relativitätstheorie mit einem beschränkten Relaxationsmechanismus reproduziert. Diese Axiome liefern eine Abel-Koordinatenbeschreibung eindimensionaler Sättigungsdynamik. Ein Tangens-hyperbolicus-Profil folgt, sobald der Sättigungsrand zusätzlich durch eine projektive Randquotienten-Normalisierung festgelegt wird: der Quotient $R(x)=(1+x)/(1-x)$ muss sich unter Komposition multiplizieren. Ohne diese Normalisierung lässt glatte Randregularität allein eine Familie glatter hyperbolischer Randkrägen zu, etwa Abel-Koordinaten der Form $\operatorname{arctanh}(x)+\varepsilon x$. Das korrigierte \textit{Sättigungstheorem} ist daher ein projektives Randkragen-Normalformtheorem: $S(g)=S_{\max}\tanh(\alpha\,u(g))$ wird durch Skalenkohärenz plus projektiven Randquotienten ausgewählt, nicht durch bloße Glattheit allein. Große Quantengravitationsprogramme -- Schleifen-Quantengravitation, Asymptotic Safety, String-/holographische Ansätze, Kausalmengentheorie und nichtkommutative Geometrie -- motivieren A--D auf natürliche Weise, wenn sie auf kosmologische Observablen eingeschränkt werden; D' bleibt dagegen eine separate diagnostische Normalisierung, die physikalisch erst herzuleiten ist. Das Resultat erhebt die $\tanh$-Sättigungs-ODE $dX/da = k(1-X^2)$ des Curvature Relaxation Model von einem phänomenologischen Fit zu einer kanonischen projektiven Normalform kapazitätsbegrenzter kooperativer Relaxation, wobei offen bleibt, welche UV-Vervollständigung $k$, $\Phi_0$ und den projektiven Quotienten physikalisch festlegt.
@@ -53,11 +102,15 @@ Wir formulieren vier minimale Axiome -- endliche geometrische Kapazität, kooper
 
 \keywords{Quantengravitation, Sättigungsdynamik, axiomatische Kosmologie, konditionales No-Go-Theorem, Curvature Relaxation Model, tanh-Universalität, Renormierungsgruppe}
 
-\thanks{KI-Werkzeuge (Claude, Anthropic; Copilot, Microsoft/GitHub; Gemini, Google DeepMind) wurden für mathematische Formalisierung, Literaturrecherche, Code-Entwicklung und Texterstellung verwendet. Alle physikalischen Hypothesen, axiomatischen Entscheidungen, wissenschaftliche Interpretation und Verantwortung für die Inhalte liegen vollständig beim Autor.}
+\thanks{Details zum Werkzeugeinsatz stehen in der KI-Offenlegung am Ende des Papers. Alle wissenschaftlichen Inhalte verantwortet ausschließlich der Autor.}
 
 \thanks{Paper~V der CRM-Serie. Begleitarbeiten: \cite{Geiger2026,Geiger2026b,Geiger2026c,Geiger2026d}.}
 
+\begin{titlepage}
 \maketitle
+\end{titlepage}
+
+\fi
 
 % ===================================================================
 % 1. EINLEITUNG
@@ -728,16 +781,16 @@ Das verbleibende offene Problem -- die spezifischen Parameter $(k, \Phi_0, \gamm
 
 
 % ===================================================================
-% DANKSAGUNGEN
+% KI-OFFENLEGUNG
 % ===================================================================
 \begin{acknowledgments}
-Diese Arbeit wurde als unabhängige Forschung ohne institutionelle Finanzierung durchgeführt. Der Autor dankt den Open-Source-Gemeinschaften hinter der wissenschaftlichen Recheninfrastruktur, die im gesamten CRM-Programm verwendet wurde.
+Diese Arbeit wurde als unabhängige Forschung ohne institutionelle Finanzierung durchgeführt. Öffentliche wissenschaftliche Recheninfrastruktur wurde im gesamten CRM-Programm genutzt.
 
-\textit{KI-Werkzeuge.} KI-basierte Werkzeuge (Claude von Anthropic; Copilot von Microsoft/GitHub; Gemini von Google DeepMind) wurden für mathematische Formalisierung, Literaturübersicht, Codeentwicklung und Textgenerierung verwendet. Alle physikalischen Hypothesen, axiomatischen Wahlen, wissenschaftliche Interpretation und Verantwortung für den Inhalt liegen ausschließlich beim Autor.
+\textit{Werkzeugeinsatz.} KI-basierte Werkzeuge (Claude von Anthropic; Copilot von Microsoft/GitHub; Gemini von Google DeepMind) wurden für mathematische Formalisierung, Literaturübersicht, Codeentwicklung und Textgenerierung verwendet. Alle physikalischen Hypothesen, axiomatischen Wahlen, wissenschaftliche Interpretation und Verantwortung für den Inhalt liegen ausschließlich beim Autor.
 
 \textit{Finanzierungsinformationen.} Diese Forschung erhielt keine externe Finanzierung.
 
-\textit{Datenverfügbarkeit.} Dieses Paper ist rein theoretisch. Der CRM-Analysecode und die Daten sind verfügbar unter \url{https://github.com/research-line/crm-cosmology/tree/main/papers/extensions} (DOI: \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}).
+\textit{Datenverfügbarkeit.} Dieses Paper ist rein theoretisch. Das öffentliche CRM-Repository mit Analyseskripten, Datenprodukten und Paper-Quelldateien ist verfügbar unter \url{https://github.com/research-line/crm-cosmology}; der Zenodo-Concept-DOI für CRM I--IV ist \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}.
 \end{acknowledgments}
 
 
@@ -752,7 +805,7 @@ Diese Arbeit wurde als unabhängige Forschung ohne institutionelle Finanzierung 
 L.~Geiger (2026).
 Game-Theoretic Cosmology and the Curvature Relaxation Model: Nash Equilibria Between Null Space and Spacetime Bubble.
 Companion paper (Paper~I).
-\url{https://github.com/research-line/crm-cosmology/tree/main/papers/extensions}.
+\url{https://github.com/research-line/crm-cosmology/tree/main/papers}.
 \href{https://doi.org/10.5281/zenodo.18728935}{doi:10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026b}
@@ -834,10 +887,11 @@ DOI: 10.4310/ATMP.1998.v2.n2.a1.
 arXiv:hep-th/9711200.
 
 \bibitem{Sorkin2003}
-R.~D.~Sorkin (2003).
+R.~D.~Sorkin (2005).
 Causal sets: Discrete gravity.
 In \textit{Lectures on Quantum Gravity}, pp.\ 305--327.
 Springer.
+DOI: 10.1007/0-387-24992-3\_7.
 arXiv:gr-qc/0309009.
 
 \bibitem{Surya2019}
@@ -853,8 +907,8 @@ Academic Press.
 
 \bibitem{Bekenstein1981}
 J.~D.~Bekenstein (1981).
-A universal upper bound on the entropy-to-energy ratio for bounded systems.
-\textit{Physical Review D}, 23(2), 287.
+Universal upper bound on the entropy-to-energy ratio for bounded systems.
+\textit{Physical Review D}, 23(2), 287--298.
 DOI: 10.1103/PhysRevD.23.287.
 
 \bibitem{Almheiri2015}
