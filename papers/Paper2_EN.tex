@@ -175,7 +175,7 @@ with $a_{\mathrm{eq}} = \Omega_r/\Omega_b \approx 1.8 \times 10^{-3}$ (using $\O
 
 \textbf{Physical interpretation:} The trace coupling has a deep geometric meaning. Physically, the geometric DM term represents the curvature ``memory'' of the initial energy concentration. During the radiation era, the universe is conformally flat (radiation is scale-free), and there is no curvature memory to sustain. The geometric DM term activates only when conformal symmetry is broken by the emergence of massive (non-relativistic) matter -- precisely at the epoch when CDM would begin to form structures in the standard picture.
 
-\textbf{Lagrangian origin from $f(R) = R + 2\gamma R^2$:} Paper~III \cite{Geiger2026c} demonstrates that the trace-coupling suppression $\mathcal{S}(a)$ is \textit{not} an ad~hoc postulate but follows rigorously from the $R^2$ sector of the CRM Lagrangian. The trace of the field equations for $f(R) = R + 2\gamma R^2$ gives:
+\textbf{Lagrangian origin from $f(R) = R + 2\gamma R^2$:} Paper~III \cite{Geiger2026c} demonstrates that the trace-coupling suppression $\mathcal{S}(a)$ is \textit{not} an ad~hoc postulate but follows rigorously from the $R^2$ sector of the CRM Lagrangian. This places the construction in the same viable $f(R)$-gravity landscape as Hu--Sawicki screening models \cite{HuSawicki2007}, while retaining the CRM-specific saturation motivation. The trace of the field equations for $f(R) = R + 2\gamma R^2$ gives:
 \begin{equation}
 R + 12\gamma\,\Box R = -8\pi G\,T
 \label{eq:trace_fR}
@@ -444,7 +444,7 @@ The SN-only analysis demonstrates the viability of the baryon-only framework at 
 \begin{enumerate}
 \item \textbf{Pantheon+ SN:} 1,590 Type~Ia supernovae ($z > 0.01$), analytically marginalized over $M$.
 \item \textbf{Planck CMB (compressed):} Acoustic scale $\ell_A = 301.471 \pm 0.14$ and shift parameter $\mathcal{R} = 1.7502 \pm 0.0046$ at $z_* = 1089.80$.
-\item \textbf{BAO:} 9 distance measurements from 6dFGS ($z = 0.15$), BOSS DR12 ($z = 0.38, 0.51, 0.61$), and Lyman-$\alpha$ ($z = 2.334$).
+\item \textbf{BAO:} 9 distance measurements from 6dFGS ($z = 0.15$), BOSS DR12 \cite{Alam2017} ($z = 0.38, 0.51, 0.61$), and Lyman-$\alpha$ ($z = 2.334$).
 \end{enumerate}
 
 \subsubsection{The CMB Catastrophe of Constant $\beta$}
@@ -918,7 +918,7 @@ This paper is the second in a three-part program:
 
 \textbf{Immediate next steps:}
 \begin{enumerate}
-\item Native CRM gravity model in hi\_class with time-dependent $\alpha_M(a)$ from the curvature relaxation physics. The current analysis using \texttt{constant\_alphas} achieves $\ell_1 = 220$ and $\mathcal{P}_3/\mathcal{P}_1 = 0.4295$ (both exact Planck), but the constant parametrization encounters numerical instabilities at high $\omega_c$. A time-dependent implementation (\texttt{eft\_alphas\_power\_law} or custom model) would resolve this and close the remaining $\theta_s$ offset (1.035 vs.\ 1.041, 0.63\%).
+\item Native CRM gravity model in hi\_class with time-dependent $\alpha_M(a)$ from the curvature relaxation physics, or an EFTCAMB implementation \cite{Hu2014}. The current analysis using \texttt{constant\_alphas} achieves $\ell_1 = 220$ and $\mathcal{P}_3/\mathcal{P}_1 = 0.4295$ (both exact Planck), but the constant parametrization encounters numerical instabilities at high $\omega_c$. A time-dependent implementation (\texttt{eft\_alphas\_power\_law} or custom model) would resolve this and close the remaining $\theta_s$ offset (1.035 vs.\ 1.041, 0.63\%).
 \item Precision BAO analysis with DESI DR2 data and the CRM distance ladder
 \item Matter power spectrum $P(k)$ with full perturbation equations: the preliminary analysis confirms the correct shape, but $\sigma_8 = 0.90$ in the ``effective CDM'' approximation is too high -- the full treatment is expected to reduce this.
 \item BBN consistency check (\textbf{completed}): $\mu(z > 10^4) \to 1$, $\Delta N_{\mathrm{eff}} \approx 0.000$ \cite{Pitrou2018}

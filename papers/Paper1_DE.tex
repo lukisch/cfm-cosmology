@@ -40,7 +40,7 @@
 
 
 \begin{abstract}
-Wir entwickeln einen spieltheoretischen Rahmen f\"ur die Kosmologie, in dem die Raumzeitentwicklung als Nash-Gleichgewicht zwischen einem metastabilen Quantenvakuum (Nullraum) und einer Raumzeitblase modelliert wird. Das zentrale Ergebnis ist das \textit{Curvature Relaxation Model} (CRM), das die beschleunigte Expansion nicht durch Dunkle Energie erkl\"art, sondern durch ein nachlassendes Kr\"ummungs-R\"uckgabepotential $\Omega_\Phi(a) = \Phi_0 \cdot \tanh(k(a - a_{\mathrm{trans}}))$ -- ein geometrisches ``Ged\"achtnis'' der Urknall-Energiekonzentration. Getestet gegen 1.590 Pantheon+ Typ-Ia-Supernovae \cite{Scolnic2022} mit diagonalen und vollen Kovarianzfehlern liefert das CRM $\Delta\chi^2 = -12{,}2$ ($-11{,}2$) und $\Delta\mathrm{AIC} = -8{,}2$ ($-7{,}2$) gegen\"uber $\Lambda$CDM; Kreuzvalidierung best\"atigt die bessere Generalisierung. Die MCMC-Analyse ergibt $\Omega_m = 0{,}368 \pm 0{,}024$; vier alternative S\"attigungsfunktionen liefern vergleichbare Ergebnisse und belegen die Robustheit. Das Modell sagt $w(z) < -1$ mit $|\Delta w| \approx 0{,}4$ und einen sp\"ateren Beschleunigungs\"ubergang ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $0{,}84$) voraus, beides testbar mit Euclid und Roman. Die sp\"atere Beschleunigung impliziert eine verl\"angerte materiedominierte Wachstumsphase, die die JWST ``Universe Breakers'' bei $z > 7$ \cite{Labbe2023} und die El-Gordo-Anomalie \cite{Asencio2023} nat\"urlich erkl\"art. Phantom-Stabilit\"at ist durch S\"attigung garantiert ($\Omega_\Phi \to \Phi_0$, de-Sitter-Endzustand, kein Big Rip). Die spieltheoretischen Axiome besitzen eine exakte thermodynamische \"Aquivalenz in der Jacobson-Tradition \cite{Jacobson1995}. Der Analysecode ist \"offentlich verf\"ugbar.\footnote{\url{https://github.com/research-line/crm-cosmology}}
+Wir entwickeln einen spieltheoretischen Rahmen für die Kosmologie, in dem die Raumzeitentwicklung als Nash-Gleichgewicht zwischen einem metastabilen Quantenvakuum (Nullraum) und einer Raumzeitblase modelliert wird. Das zentrale Ergebnis ist das \textit{Curvature Relaxation Model} (CRM), das die beschleunigte Expansion nicht durch Dunkle Energie erklärt, sondern durch ein nachlassendes Krümmungs-Rückgabepotential $\Omega_\Phi(a) = \Phi_0 \cdot \tanh(k(a - a_{\mathrm{trans}}))$ -- ein geometrisches ``Gedächtnis'' der Urknall-Energiekonzentration. Getestet gegen 1.590 Pantheon+ Typ-Ia-Supernovae \cite{Scolnic2022} mit diagonalen und vollen Kovarianzfehlern liefert das CRM $\Delta\chi^2 = -12{,}2$ ($-11{,}2$) und $\Delta\mathrm{AIC} = -8{,}2$ ($-7{,}2$) gegenüber $\Lambda$CDM; Kreuzvalidierung bestätigt die bessere Generalisierung. Die MCMC-Analyse ergibt $\Omega_m = 0{,}368 \pm 0{,}024$; vier alternative Sättigungsfunktionen liefern vergleichbare Ergebnisse und belegen die Robustheit. Der phänomenologische Pantheon+-Fit erzeugt eine phantomartige Effektivdiagnostik, $w_{\mathrm{eff}}(z)<-1$, aber aktuelle DESI-DR2-Kombinationen bevorzugen $w_0>-1$, $w_a<0$ \cite{DESI2025}; persistente Phantomhaftigkeit wird daher als aufzulösende Spannung behandelt, nicht als fundamentale CRM-Vorhersage. Die robustere Spätsignatur ist ein späterer Beschleunigungsübergang ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $0{,}84$), testbar mit Euclid, Roman und DESI. Die spätere Beschleunigung impliziert eine verlängerte materiedominierte Wachstumsphase, die die JWST ``Universe Breakers'' bei $z > 7$ \cite{Labbe2023} und die El-Gordo-Anomalie \cite{Asencio2023} natürlich erklärt. Phantom-Pathologien fehlen im gefitteten Ansatz, weil $\Omega_\Phi$ sättigt ($\Omega_\Phi \to \Phi_0$, de-Sitter-Endzustand, kein Big Rip). Die spieltheoretischen Axiome besitzen eine exakte thermodynamische Äquivalenz in der Jacobson-Tradition \cite{Jacobson1995}. Der Analysecode ist öffentlich verfügbar.\footnote{\url{https://github.com/research-line/crm-cosmology}}
 
 \end{abstract}
 
@@ -67,11 +67,11 @@ Die Entdeckung der beschleunigten Expansion des Universums durch die Beobachtung
 \item \textbf{Die $H_0$-Spannung:} Die lokale Messung des Hubble-Parameters ($H_0 \approx 73$\,km/s/Mpc) weicht signifikant von der aus CMB-Daten abgeleiteten ($H_0 \approx 67{,}4$\,km/s/Mpc) ab \cite{Planck2020, Riess2022}.
 \end{enumerate}
 
-J\"ungste Resultate des \textit{Dark Energy Spectroscopic Instrument} (DESI) verst\"arken die Zweifel an einer strikt konstanten Dunklen Energie: Die Analyse baryonischer akustischer Oszillationen in Kombination mit CMB- und Supernova-Daten zeigt eine Pr\"aferenz von 2,5--3,9$\sigma$ f\"ur ein Modell mit zeitabh\"angigem Zustandsgleichungsparameter $w(z)$ gegen\"uber $\Lambda$CDM \cite{DESI2024}.
+Jüngste Resultate des \textit{Dark Energy Spectroscopic Instrument} (DESI) verstärken die Zweifel an einer strikt konstanten Dunklen Energie: Die DR1-Analyse baryonischer akustischer Oszillationen in Kombination mit CMB- und Supernova-Daten zeigt eine Präferenz von 2,5--3,9$\sigma$ für ein Modell mit zeitabhängigem Zustandsgleichungsparameter $w(z)$ gegenüber $\Lambda$CDM \cite{DESI2024}. Das nachfolgende DESI-DR2-Resultat \cite{DESI2025} verstärkt diesen Befund: Im $w_0w_a$CDM-Modell bevorzugt es den Quadranten $w_0>-1$, $w_a<0$, mit supernovaabhängigen Präferenzen von 2,8--4,2$\sigma$ gegenüber $\Lambda$CDM. Beispielsweise liefert DESI+CMB+Union3 $w_0=-0{,}667\pm0{,}088$ und $w_a=-1{,}09^{+0{,}31}_{-0{,}27}$. Das steht in möglicher Spannung zur phantomartigen Effektivdiagnostik des phänomenologischen CRM-Fits ($w_\mathrm{eff}< -1$); die Einschränkungen werden in Abschnitt~\ref{sec:diskussion} diskutiert.
 
 Parallel dazu zeigen theoretische Arbeiten, dass die Beschleunigung auch ohne Dunkle Energie erkl\"arbar sein k\"onnte: Pfeifer et al.\ \cite{Pfeifer2025} demonstrieren im Rahmen der Finsler-Gravitation, dass eine verallgemeinerte Raumzeitgeometrie nat\"urlicherweise eine exponentielle Expansion im Vakuum erzeugt. Trivedi und Venkatasubramanian \cite{Trivedi2025} zeigen in ihrer \textit{Cosmological Teleodynamics}, dass das Universum wie ein ``riesiges Potentialspiel'' operiert und sich einem kontinuierlichen Nash-Gleichgewicht ann\"ahert, wobei die kosmische Beschleunigung als emergenter Effekt dynamischen Ged\"achtnisses in einem selbstgravitierenden Medium erscheint.
 
-Die vorliegende Arbeit verkn\"upft diese Entwicklungen mit einem eigenst\"andigen Ansatz: Ausgehend von einer spieltheoretischen Modellierung der Wechselwirkung zwischen Quantenvakuum und Raumzeit wird das \textit{Curvature Relaxation Model} (CRM; dt.\ Kr"ummungs-R"uckgabemodell) entwickelt, das die beschleunigte Expansion als ``nachlassende Bremse'' statt als ``neuen Antrieb'' interpretiert.
+Die vorliegende Arbeit verknüpft diese Entwicklungen mit einem eigenständigen Ansatz: Ausgehend von einer spieltheoretischen Modellierung der Wechselwirkung zwischen Quantenvakuum und Raumzeit wird das \textit{Curvature Relaxation Model} (CRM; dt.\ Krümmungs-Rückgabemodell) entwickelt, das die beschleunigte Expansion als ``nachlassende Bremse'' statt als ``neuen Antrieb'' interpretiert.
 
 % ===================================================================
 % 2. SPIELTHEORETISCHER RAHMEN
@@ -87,7 +87,7 @@ Die vorliegende Arbeit verkn\"upft diese Entwicklungen mit einem eigenst\"andige
 Der hier vorgeschlagene Rahmen geht von folgenden Annahmen aus:
 
 \begin{enumerate}
-\item Es existiert ein metastabiler Quantenvakuumzustand (im Folgenden: \textit{Nullraum}), der durch Quantenfluktuationen charakterisiert ist. \textit{Ontologische Einordnung:} Der Nullraum ist eine \emph{pr\"a-geometrische Abstraktion} -- eine Randbedingung f\"ur das Variationsproblem -- kein konkretes physikalisches Objekt mit eigenst\"andiger raumzeitlicher Existenz. Mehrere UV-Completion-Programme (Schleifen-Quantengravitation, Causal-Set-Theorie, Quanten-Fehlerkorrektur; siehe Paper~III \cite{Geiger2026c}, Anhang) sind mit dieser Abstraktion vereinbar.
+\item Es existiert ein metastabiler Quantenvakuumzustand (im Folgenden: \textit{Nullraum}), der durch Quantenfluktuationen charakterisiert ist; beobachtbare Vakuumeffekte wie die Casimir-Kraft dienen dabei als minimale physikalische Analogie \cite{Casimir1948}. \textit{Ontologische Einordnung:} Der Nullraum ist eine \emph{pr\"a-geometrische Abstraktion} -- eine Randbedingung f\"ur das Variationsproblem -- kein konkretes physikalisches Objekt mit eigenst\"andiger raumzeitlicher Existenz. Mehrere UV-Completion-Programme (Schleifen-Quantengravitation, Causal-Set-Theorie, Quanten-Fehlerkorrektur; siehe Paper~III \cite{Geiger2026c}, Anhang) sind mit dieser Abstraktion vereinbar.
 \item Eine au\ss{}ergew\"ohnlich gro\ss{}e Fluktuation entnimmt dem Nullraum einmalig eine Energiemenge~$E_0$, die einen Konzentrationsgradienten erzeugt.
 \item Zur Einkapselung und kontrollierten Neutralisation dieses Gradienten entsteht Raumzeit als dynamische Struktur -- die \textit{Raumzeitblase} (Tochtersystem).
 \item Zwischen Nullraum (Muttersystem) und Raumzeitblase besteht ein spieltheoretisches Gleichgewicht.
@@ -124,6 +124,8 @@ Ein Strategiepaar $(s_M^*, s_T^*)$ von Nullraum und Raumzeitblase bildet ein Nas
 Keine Seite kann durch einseitige Abweichung von ihrer Strategie das Gesamtpotential verbessern, ohne die Stabilit\"at des Systems zu gef\"ahrden.
 \end{definition}
 
+Dies ist das von Nash eingef\"uhrte Kriterium einseitiger Nicht-Verbesserbarkeit \cite{Nash1950}, das hier nur als interpretative Vorlage eines Zwei-Spieler-Potentialspiels verwendet wird.
+
 Der zentrale \textbf{Zielkonflikt} besteht darin, dass eine zu schnelle Reduktion von~$G$ (sofortige R\"uckkehr) $S_{\mathrm{Mutter}}$ gef\"ahrdet, w\"ahrend eine zu langsame Reduktion die Entropie und die Kosten innerhalb der Blase erh\"oht. Das Nash-Gleichgewicht erzwingt daher eine kontrollierte, zeitlich gestreckte Neutralisation.
 
 \subsection{Emergente Gesetze aus dem Gleichgewicht}
@@ -153,7 +155,7 @@ Der spieltheoretische Rahmen der vorangegangenen Abschnitte besitzt eine pr\"azi
 \item \textbf{Gradientenabbaurate} $\leftrightarrow$ \textbf{Prinzip maximaler Entropieproduktion (MEPP):} Unter allen mit den Randbedingungen vertr\"aglichen Pfaden entwickelt sich das System entlang desjenigen, der die Entropieproduktion maximiert \cite{Dewar2003}.
 \end{itemize}
 
-Diese \"Aquivalenz gr\"undet auf einem fundamentalen Resultat: Jacobson \cite{Jacobson1995} zeigte, dass die Einsteinschen Feldgleichungen aus der Proportionalit\"at von Entropie und Horizontfl\"ache zusammen mit der Clausius-Relation $\delta Q = T\,dS$ abgeleitet werden k\"onnen, was die Allgemeine Relativit\"atstheorie selbst als thermodynamische Zustandsgleichung etabliert. Neuere Arbeiten haben dieses Paradigma auf nicht-Riemannsche Geometrien mit Torsion und Nicht-Metrizit\"at erweitert~\cite{JacobsonNonRiemannian2026}, was darauf hindeutet, dass der thermodynamische Zugang zur Gravitation allgemeiner ist als der metrische Rahmen und die zus\"atzlichen geometrischen Freiheitsgrade (wie den CRM-Scalaron) als entropie-maximierende Kan\"ale nat\"urlich ber\"ucksichtigen kann. Wenn die Standard-Gravitation aus der Thermodynamik folgt, ist es nat\"urlich zu erwarten, dass \textit{modifizierte} Gravitation -- hier der Kr\"ummungs-R\"uckgabemechanismus -- aus modifizierten thermodynamischen Randbedingungen folgt, n\"amlich der Zwangsbedingung, dass das Muttervakuum (Nullraum) strukturell stabil bleibt, w\"ahrend die Entropieproduktion im Tochtersystem maximiert wird.
+Diese \"Aquivalenz gr\"undet auf der Thermodynamik schwarzer L\"ocher \cite{Hawking1974} und auf einem fundamentalen Resultat: Jacobson \cite{Jacobson1995} zeigte, dass die Einsteinschen Feldgleichungen aus der Proportionalit\"at von Entropie und Horizontfl\"ache zusammen mit der Clausius-Relation $\delta Q = T\,dS$ abgeleitet werden k\"onnen, was die Allgemeine Relativit\"atstheorie selbst als thermodynamische Zustandsgleichung etabliert. Neuere Arbeiten haben dieses Paradigma auf nicht-Riemannsche Geometrien mit Torsion und Nicht-Metrizit\"at erweitert~\cite{JacobsonNonRiemannian2026}, was darauf hindeutet, dass der thermodynamische Zugang zur Gravitation allgemeiner ist als der metrische Rahmen und die zus\"atzlichen geometrischen Freiheitsgrade (wie den CRM-Scalaron) als entropie-maximierende Kan\"ale nat\"urlich ber\"ucksichtigen kann. Wenn die Standard-Gravitation aus der Thermodynamik folgt, ist es nat\"urlich zu erwarten, dass \textit{modifizierte} Gravitation -- hier der Kr\"ummungs-R\"uckgabemechanismus -- aus modifizierten thermodynamischen Randbedingungen folgt, n\"amlich der Zwangsbedingung, dass das Muttervakuum (Nullraum) strukturell stabil bleibt, w\"ahrend die Entropieproduktion im Tochtersystem maximiert wird.
 
 Der S\"attigungsmechanismus aus Abschnitt~\ref{subsec:tanh_herleitung} ist damit direkt als Ann\"aherung an das thermodynamische Gleichgewicht interpretierbar: Die $\tanh$-Dynamik beschreibt die Entropieproduktionsrate eines Systems mit endlicher Kapazit\"at, das sich unter der gemeinsamen Zwangsbedingung des Zweiten Hauptsatzes und der Muttersystem-Stabilit\"at entwickelt.
 
@@ -265,7 +267,7 @@ $z$ & $w$ ($\Lambda$CDM) & $w$ (CRM) & $1\sigma$-Bereich & $\Delta w$ \\
 \end{tabular}
 \end{table}
 
-Die CRM-Parameter aus dem Pantheon+-Fit ergeben durchgehend $w < -1$ (Phantom-Bereich). Die MCMC-basierten $1\sigma$-Konfidenzintervalle zeigen, dass $w = -1$ f\"ur alle Rotverschiebungen ausgeschlossen ist. Dies unterscheidet sich qualitativ von $\Lambda$CDM ($w \equiv -1$) und ist eine eindeutige, falsifizierbare Vorhersage. Der Effekt ist \"uber den gesamten beobachtbaren Rotverschiebungsbereich pr\"asent ($|\Delta w| \approx 0{,}4$) und damit deutlich innerhalb der erwarteten Messgenauigkeit von Euclid ($\sigma_w \approx 0{,}02$).
+Innerhalb des phänomenologischen Pantheon+-Tanh-Fits liegt die Effektivdiagnostik in Tabelle~\ref{tab:weff} konsistent unter $w=-1$. Dies sollte nicht als fundamentale Phantomfeld-Vorhersage gelesen werden: Es ist eine Diagnose des gefitteten Ansatzes und muss gegen die DESI-DR2-Präferenz für $w_0>-1$, $w_a<0$ sowie gegen die Lagrange-Formulierung von Paper~III geprüft werden. Der relevante Falsifikationstest ist daher, ob der Krümmungs-Relaxationssektor die späte Expansionsgeschichte und den späteren Beschleunigungsübergang ohne eine persistente physische Phantomkomponente reproduzieren kann.
 
 % ===================================================================
 % 4. NUMERISCHE TESTS
@@ -369,7 +371,7 @@ $\Lambda$CDM: $\langle\chi^2/n\rangle$ & \multicolumn{2}{c}{$0{,}4519$} \\
 \subsection{MCMC-Posterioranalyse}
 \label{subsec:mcmc}
 
-Die Parameterunsicherheiten werden mittels \textit{emcee} \cite{ForemanMackey2013} bestimmt (32~Walkers, 3000~Schritte, 500~Burn-in, Akzeptanzrate: 63\,\%). Die Ergebnisse f\"ur das CRM~(flach) sind in Tabelle~\ref{tab:results} als $1\sigma$-Unsicherheiten angegeben. Die Posteriorverteilung von $\Omega_m$ ist nahezu gau\ss{}f\"ormig mit $\Omega_m = 0{,}368^{+0{,}025}_{-0{,}023}$. Die \"Ubergangssch\"arfe $k$ zeigt eine breite, asymmetrische Posterior ($k = 1{,}44^{+1{,}22}_{-0{,}84}$), was bedeutet, dass die Daten einen \"Ubergang bevorzugen, aber die Sch\"arfe weniger stark einschr\"anken. Die abgeleiteten Gr\"o\ss{}en $\Phi_0 = 0{,}988^{+0{,}615}_{-0{,}221}$ und $z_{\mathrm{trans}} = 0{,}35$ (MCMC-Posterior-Median; die Punktsch\"atzung in Tabelle~\ref{tab:results} gibt $0{,}33$) stimmen innerhalb der breiten Posteriori von $a_{\mathrm{trans}}$ \"uberein. Die aus dem MCMC berechneten $w(z)$-Konfidenzb\"ander (Tabelle~\ref{tab:weff}) zeigen, dass $w = -1$ f\"ur alle Rotverschiebungen au\ss{}erhalb des $1\sigma$-Bereichs liegt.
+Die Parameterunsicherheiten werden mittels \textit{emcee} \cite{ForemanMackey2013} bestimmt (32~Walkers, 3000~Schritte, 500~Burn-in, Akzeptanzrate: 63\,\%). \textit{Konvergenz-Hinweis:} Formale Konvergenzdiagnostiken (Gelman--Rubin-$\hat{R}$-Statistik \cite{GelmanRubin1992}; effektive Stichprobengr\"o\ss{}e $N_\mathrm{eff}$) wurden in der urspr\"unglichen Analyse nicht berichtet. Die Akzeptanzrate von 63\,\% liegt im \"ublichen \textit{emcee}-Zielbereich (20--70\,\%), und die visuelle Inspektion der Walker-Trajektorien zeigte keine offensichtliche Nicht-Konvergenz; f\"ur eine publikationsreife Fassung ist aber eine quantitative Konvergenzzertifizierung (z.\,B.\ $\hat{R}<1{,}01$, $N_\mathrm{eff}/\mathrm{chain}>50$) empfohlen. Die Ergebnisse f\"ur das CRM~(flach) sind in Tabelle~\ref{tab:results} als $1\sigma$-Unsicherheiten angegeben. Die Posteriorverteilung von $\Omega_m$ ist nahezu gau\ss{}f\"ormig mit $\Omega_m = 0{,}368^{+0{,}025}_{-0{,}023}$. Die \"Ubergangssch\"arfe $k$ zeigt eine breite, asymmetrische Posterior ($k = 1{,}44^{+1{,}22}_{-0{,}84}$), was bedeutet, dass die Daten einen \"Ubergang bevorzugen, aber die Sch\"arfe weniger stark einschr\"anken. Die abgeleiteten Gr\"o\ss{}en $\Phi_0 = 0{,}988^{+0{,}615}_{-0{,}221}$ und $z_{\mathrm{trans}} = 0{,}35$ (MCMC-Posterior-Median; die Punktsch\"atzung in Tabelle~\ref{tab:results} gibt $0{,}33$) stimmen innerhalb der breiten Posteriori von $a_{\mathrm{trans}}$ \"uberein. Die aus dem MCMC berechneten $w(z)$-Konfidenzb\"ander (Tabelle~\ref{tab:weff}) zeigen, dass $w = -1$ f\"ur alle Rotverschiebungen au\ss{}erhalb des $1\sigma$-Bereichs liegt.
 
 \textbf{Interpretation von $\Omega_m = 0{,}368$:} Der CRM-Wert liegt \"uber dem Planck-CMB-Wert ($\Omega_m^{\mathrm{Planck}} = 0{,}315 \pm 0{,}007$), was typisch f\"ur reine Supernova-Fits ist. Im CRM-Kontext hat diese Abweichung eine physikalische Deutung: Das Modell interpretiert einen Teil der in $\Lambda$CDM als ``Dunkle Energie'' klassifizierten Dichte als dynamischen Kr\"ummungseffekt. Da $\Omega_\Phi(a)$ bei fr\"uhen Zeiten gegen Null geht (im Gegensatz zu $\Omega_\Lambda = \mathrm{const.}$), muss $\Omega_m$ kompensatorisch h\"oher ausfallen, um den Gesamt-Fit zu erhalten. Diese Pr\"aferenz f\"ur h\"oheres $\Omega_m$ steht in Einklang mit j\"ungsten Befunden aus schwachen Gravitationslinsen-Surveys (KiDS, DES), die ebenfalls h\"ohere $\Omega_m$-Werte als Planck bevorzugen.
 
@@ -545,7 +547,7 @@ wobei der linke Pfeil die effektive Mittelung \"uber die geschwindigkeitsabh\"an
 
 \subsection{Beobachtbare Signaturen}
 
-\textbf{1.~Phantom-Zustandsgleichung $w(z) < -1$:} Das CRM sagt $|\Delta w| \approx 0{,}4$ \"uber den gesamten beobachtbaren Rotverschiebungsbereich voraus. Die ESA-Mission Euclid \cite{Euclid2024} und das Nancy Grace Roman Space Telescope (NASA, $\sim$2027) k\"onnen $\sigma_w \approx 0{,}02$--$0{,}05$ messen -- weit ausreichend, um diese Signatur nachzuweisen oder auszuschlie\ss{}en.
+\textbf{1.~Zustandsgleichungs-Diagnostik:} Der phänomenologische Pantheon+-Fit liefert $|\Delta w| \approx 0{,}4$ relativ zu $\Lambda$CDM, aber DESI DR2 verschiebt das physische Ziel weg von persistenter Phantomhaftigkeit hin zu einer $w_0>-1$, $w_a<0$-Trajektorie. Die ESA-Mission Euclid \cite{Euclid2024}, das Nancy Grace Roman Space Telescope und DESI können prüfen, ob diese Entwicklung besser durch Krümmungsrelaxation oder durch eine generische $w_0w_a$CDM-Parametrisierung beschrieben wird.
 
 \textbf{2.~Dezelerationsparameter:} Das CRM sagt einen fr\"uheren \"Ubergang zur beschleunigten Expansion voraus ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $\Lambda$CDM: $z_{\mathrm{acc}} = 0{,}84$) sowie eine st\"arkere heutige Beschleunigung ($q_0 = -0{,}81$ vs.\ $-0{,}63$). Dies ist unabh\"angig von $w(z)$ testbar.
 
@@ -565,7 +567,7 @@ wobei der linke Pfeil die effektive Mittelung \"uber die geschwindigkeitsabh\"an
 \textbf{Mission} & \textbf{Start} & $\sigma(w)$ & \textbf{Relevanz} \\
 \midrule
 Euclid & 2023 & ${\approx}\,0{,}02$ & BAO + Linsen \\
-Roman & ${\sim}$2027 & ${\approx}\,0{,}03$ & SN bis $z \approx 2$ \\
+Roman & 2026--2027 & ${\approx}\,0{,}03$ & SN bis $z \approx 2$ \\
 DESI & 2021-- & ${\approx}\,0{,}04$ & BAO + Wachstum \\
 \bottomrule
 \end{tabular}
@@ -621,6 +623,7 @@ $z_{\mathrm{acc}}$ (\"Ubergang) & 0,84 & 0,52 \\
 \item \textbf{Offene Tests:} CMB-Vorhersagen (ISW-Effekt, CMB-Leistungsspektrum), BAO-Signaturen und Gravitationslinsen-Effekte m\"ussen noch berechnet werden. Die Analyse mit der vollen Kovarianzmatrix (Abschnitt~\ref{subsec:ergebnisse}) best\"atigt jedoch die Ergebnisse der diagonalen Analyse.
 \item \textbf{Mikroskopische Basis:} Was ist $\Phi$ auf Quantenebene? Die Verbindung zu einer Theorie der Quantengravitation steht aus. Die m\"ogliche Beziehung zur Finsler-Gravitation (Abschnitt~\ref{sec:komplementaritaet}) k\"onnte hier eine Br\"ucke schlagen.
 \item \textbf{$H_0$-Spannung:} Die $H_0$-Analyse (Abschnitt~\ref{subsec:dezeleration}) zeigt $\Delta H_0 = +0{,}5\,$km/s/Mpc zwischen CRM und $\Lambda$CDM -- zu gering, um die $H_0$-Spannung zu l\"osen. Eine Aufl\"osung erfordert die Kombination mit CMB- und BAO-Daten.
+\item \textbf{DESI-DR2-Spannung und Lagrange-Theorie:} Der phänomenologische Pantheon+-Fit dieser Arbeit liefert $w_{\mathrm{eff}}< -1$ als phantomartige Diagnostik. DESI DR2 \cite{DESI2025} bevorzugt im $w_0w_a$CDM-Modell jedoch Lösungen im Quadranten $w_0>-1$, $w_a<0$; die veröffentlichte DESI+CMB+Union3-Zeile gibt $w_0=-0{,}667\pm0{,}088$ und $w_a=-1{,}09^{+0{,}31}_{-0{,}27}$ an, während Pantheon+ und DESY5 andere, aber ebenfalls nicht-phantomhafte $w_0$-Werte liefern. Diese Spannung betrifft die ursprüngliche Tanh-Lesart direkt und wird quantitativ an die Lagrange-Formulierung in Paper~III~\cite{Geiger2026c} delegiert: Der $f(R)=R+2\gamma R^2$-Sektor soll $w=-1$ von oben annähern, statt eine persistente physische Phantomkomponente zu verlangen. Der Wert $w=-1{,}355$ ist daher eine gefittete Effektivdiagnostik, keine Vorhersage der fundamentalen Theorie. Kovacs~\cite{Kovacs2026} ist in dieselbe Richtung relevant, weil die vorgeschlagene kovariante Erweiterung $w\geq -1$ als Kandidatenfolge der Curvature-Occupation-Kinetik aufführt; das Manuskript kennzeichnet die kosmologische Erweiterung aber ausdrücklich als konditional und noch nicht als abgeschlossene Störungstheorie. $w\geq -1$ ist daher das natürliche CRM-Testziel, kein bereits durch Paper~I bewiesenes Resultat.
 \end{enumerate}
 
 \subsection{Philosophische Implikationen}
@@ -679,13 +682,13 @@ Die vorliegende Arbeit hat gezeigt:
 \item Das daraus abgeleitete \textit{Curvature Relaxation Model} (CRM) erkl\"art die beschleunigte Expansion ohne Dunkle Energie und besteht den Test gegen 1590 reale Typ-Ia-Supernovae des Pantheon+-Katalogs \cite{Scolnic2022}: $\Delta\chi^2 = -12{,}2$ (diagonal) bzw.\ $-11{,}2$ (volle Kovarianzmatrix), $\Delta\mathrm{AIC} = -8{,}2$ bzw.\ $-7{,}2$, bessere Kreuzvalidierung.
 \item Die robuste Modellselektion (AIC, BIC, 5-Fold-Kreuzvalidierung) zeigt, dass der bessere Fit des CRM nicht auf Overfitting zur\"uckzuf\"uhren ist. Dies wird durch vier alternative Funktionalformen best\"atigt, die alle $\Delta\chi^2 \approx -9$ bis $-12$ liefern.
 \item MCMC-basierte Parameterunsicherheiten ($\Omega_m = 0{,}368 \pm 0{,}024$) und die Phantom-Stabilit\"atsanalyse (kein Big Rip, asymptotisch de-Sitter) unterst\"utzen die physikalische Konsistenz.
-\item Das CRM macht testbare Vorhersagen: eine durchgehende Phantom-Zustandsgleichung $w(z) < -1$ und einen sp\"ateren Beschleunigungs\"ubergang ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $0{,}84$ in $\Lambda$CDM), die mit Euclid und Roman innerhalb der n\"achsten Dekade \"uberpr\"ufbar sind. Bereits jetzt findet die CRM-Vorhersage einer verl\"angerten Wachstumsphase empirische Unterst\"utzung durch JWST-Beobachtungen unerwartet massereicher Galaxien bei hohen Rotverschiebungen \cite{Labbe2023, BoylanKolchin2023} und die statistisch un\-wahrscheinliche Existenz massiver Haufen wie El~Gordo \cite{Asencio2023}.
+\item Das CRM macht testbare Vorhersagen: einen späteren Beschleunigungsübergang ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $0{,}84$ in $\Lambda$CDM) und eine charakteristische effektive Zustandsgleichungsgeschichte, die gegen DESI-BAO-, CMB- und Supernova-Kombinationen geprüft werden muss, statt als persistente physische Phantomhaftigkeit interpretiert zu werden. Bereits jetzt findet die CRM-Vorhersage einer verlängerten Wachstumsphase empirische Unterstützung durch JWST-Beobachtungen unerwartet massereicher Galaxien bei hohen Rotverschiebungen \cite{Labbe2023, BoylanKolchin2023} und die statistisch un\-wahrscheinliche Existenz massiver Haufen wie El~Gordo \cite{Asencio2023}.
 \item Die Konvergenz dreier unabh\"angiger Ans\"atze (CRM, Finsler-Gravitation, Cosmological Teleodynamics) deutet auf einen m\"oglichen Paradigmenwechsel hin: \textit{Dunkle Energie als eigenst\"andige Entit\"at k\"onnte \"uberfl\"ussig sein.}
 \end{enumerate}
 
 \textbf{N\"achste Schritte} umfassen: (a)~Test gegen Planck-CMB- und DESI-BAO-Daten (die volle Pantheon+-Kovarianzmatrix wurde bereits ber\"ucksichtigt), (b)~Berechnung von CMB-Leistungsspektrum und Strukturwachstumsvorhersagen ($f\sigma_8$), (c)~Erforschung der Verbindung zwischen CRM und Finsler-Geometrie, (d)~Entwicklung einer kovarianten Formulierung von $\Phi(a)$ aus dem Ricci-Skalar~$R$, (e)~Untersuchung quantenmechanischer Grundlagen des Kr\"ummungs-R\"uckgabepotentials, und (f)~Kombination mit lokalen Entfernungsleiter-Daten zur direkten $H_0$-Bestimmung.
 
-\textbf{Ausblick: Vereinigung mit MOND -- Ein Universum ohne dunklen Sektor?} Eine besonders faszinierende Perspektive er\"offnet sich durch die Kombination des CRM mit \textit{Modified Newtonian Dynamics} (MOND) \cite{Milgrom1983}. W\"ahrend das CRM die Dunkle Energie als geometrischen Effekt eliminiert, ersetzt MOND die Dunkle Materie durch eine modifizierte Gravitationsdynamik auf galaktischen Skalen. Beide Rahmenwerke konvergieren in der Vorhersage, dass Strukturen fr\"uher und effizienter entstehen als in $\Lambda$CDM -- das CRM durch eine verl\"angerte materiedominierte \"Ara ($z_{\mathrm{acc}} = 0{,}52$), MOND durch effektiv st\"arkere Gravitation bei niedrigen Beschleunigungen \cite{Asencio2023}. Eine vorl\"aufige Analyse mit einem rein baryonischen Universum ($\Omega_m = \Omega_b \approx 0{,}05$) und einem erweiterten geometrischen Potential $\Omega_\Phi(a) = \Phi_0 \cdot f_{\mathrm{tanh}}(a) + \alpha \cdot a^{-\beta}$ liefert $\Delta\chi^2 = -26{,}3$ und $\Delta\mathrm{AIC} = -16{,}3$ gegen\"uber $\Lambda$CDM -- \textit{deutlich besser als sowohl das Standard-CRM als auch $\Lambda$CDM}. Die MCMC-Posterioranalyse ergibt $\beta = 2{,}02 \pm 0{,}20$, was exakt der Skalierung r\"aumlicher Kr\"ummung ($a^{-2}$) entspricht. Die ``Dunkle Materie'' w\"are demnach ein dynamischer Kr\"ummungseffekt, kein Teilchen. Dieses Ergebnis bedarf einer vollst\"andigen relativistischen Behandlung (z.\,B.\ im AeST-Rahmen \cite{Skordis2021}) und wird in einer Folgearbeit detailliert analysiert.
+\textbf{Ausblick: Vereinigung mit MOND -- Ein Universum ohne dunklen Sektor?} Eine besonders faszinierende Perspektive er\"offnet sich durch die Kombination des CRM mit \textit{Modified Newtonian Dynamics} (MOND) \cite{Milgrom1983}. W\"ahrend das CRM die Dunkle Energie als geometrischen Effekt eliminiert, ersetzt MOND die Dunkle Materie durch eine modifizierte Gravitationsdynamik auf galaktischen Skalen. Beide Rahmenwerke konvergieren in der Vorhersage, dass Strukturen fr\"uher und effizienter entstehen als in $\Lambda$CDM -- das CRM durch eine verl\"angerte materiedominierte \"Ara ($z_{\mathrm{acc}} = 0{,}52$), MOND durch effektiv st\"arkere Gravitation bei niedrigen Beschleunigungen \cite{Asencio2023}. Eine vorl\"aufige Analyse mit einem rein baryonischen Universum ($\Omega_m = \Omega_b \approx 0{,}05$) und einem erweiterten geometrischen Potential $\Omega_\Phi(a) = \Phi_0 \cdot f_{\mathrm{tanh}}(a) + \alpha \cdot a^{-\beta}$ liefert $\Delta\chi^2 = -26{,}3$ und $\Delta\mathrm{AIC} = -16{,}3$ gegen\"uber $\Lambda$CDM -- \textit{deutlich besser als sowohl das Standard-CRM als auch $\Lambda$CDM}. Die MCMC-Posterioranalyse ergibt $\beta = 2{,}02 \pm 0{,}20$, was exakt der Skalierung r\"aumlicher Kr\"ummung ($a^{-2}$) entspricht. Die ``Dunkle Materie'' w\"are demnach ein dynamischer Kr\"ummungseffekt, kein Teilchen. Dieses Ergebnis bedarf einer vollst\"andigen relativistischen Behandlung (z.\,B.\ TeVeS oder AeST \cite{Bekenstein2004,Skordis2021}) und wird in einer Folgearbeit detailliert analysiert.
 
 \begin{quote}
 \textit{``Manchmal ist die eleganteste Erkl\"arung nicht eine neue Kraft, sondern eine nachlassende Einschr\"ankung.''}
@@ -696,7 +699,7 @@ Die vorliegende Arbeit hat gezeigt:
 % ===================================================================
 \subsection*{Software}
 
-Diese Arbeit verwendet \texttt{emcee} \cite{ForemanMackey2013} f\"ur MCMC-Sampling, \texttt{NumPy} \cite{Harris2020}, \texttt{SciPy} \cite{Virtanen2020} f\"ur numerische Berechnungen und \texttt{Matplotlib} \cite{Hunter2007} f\"ur Visualisierungen.
+Diese Arbeit verwendet \texttt{emcee} \cite{ForemanMackey2013} f\"ur MCMC-Sampling, \texttt{NumPy} \cite{Harris2020}, \texttt{SciPy} \cite{Virtanen2020} f\"ur numerische Berechnungen und \texttt{Matplotlib} \cite{Hunter2007} f\"ur Visualisierungen; \texttt{CLASS} \cite{Blas2011} dient als Referenzcode f\"ur die geplanten CMB-Vergleiche.
 
 \begin{thebibliography}{99}
 
@@ -731,9 +734,10 @@ A Comprehensive Measurement of the Local Value of the Hubble Constant with 1\,km
 DOI: 10.3847/2041-8213/ac5c5b.
 
 \bibitem{DESI2024}
-DESI Collaboration (2024).
+DESI Collaboration (2025).
 DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.
-\textit{arXiv:2404.03002}.
+\textit{Journal of Cosmology and Astroparticle Physics}, 2025(02), 021.
+DOI: 10.1088/1475-7516/2025/02/021.
 
 \bibitem{Pfeifer2025}
 Pfeifer, C.\ et al.\ (2025).
@@ -742,9 +746,10 @@ From kinetic gases to an exponentially expanding universe -- the Finsler-Friedma
 DOI: 10.1088/1475-7516/2025/10/050.
 
 \bibitem{Trivedi2025}
-Trivedi, O.\ \& Venkatasubramanian, V.\ (2025).
-Game Theory in Cosmology.
-\textit{arXiv:2511.20739}.
+Trivedi, O.\ \& Venkatasubramanian, V.\ (2026).
+Game theory in cosmology.
+\textit{Physics of the Dark Universe}, 52, 102277.
+DOI: 10.1016/j.dark.2026.102277.
 
 \bibitem{Caldwell1998}
 Caldwell, R.\,R., Dave, R.\ \& Steinhardt, P.\,J.\ (1998).
@@ -796,8 +801,9 @@ DOI: 10.1103/PhysRevLett.90.091301.
 
 \bibitem{Euclid2024}
 Euclid Collaboration (2025).
-Euclid Quick Data Release 1.
+Euclid Quick Data Release (Q1) -- Data release overview.
 ESA/Euclid Consortium.
+DOI: 10.48550/arXiv.2503.15302.
 
 \bibitem{Casimir1948}
 Casimir, H.\,B.\,G.\ (1948).
@@ -819,7 +825,8 @@ DOI: 10.1073/pnas.36.1.48.
 \bibitem{DESI2025}
 DESI Collaboration (2025).
 DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints.
-\textit{arXiv:2503.14738}.
+\textit{Physical Review D}, 112, 083515.
+DOI: 10.1103/tr6y-kpc6.
 
 \bibitem{Scolnic2022}
 Scolnic, D.\ et al.\ (2022).
@@ -923,6 +930,18 @@ Matplotlib: A 2D Graphics Environment.
 \textit{Computing in Science \& Engineering}, 9(3), 90--95.
 DOI: 10.1109/MCSE.2007.55.
 
+\bibitem{GelmanRubin1992}
+Gelman, A.\ \& Rubin, D.~B.\ (1992).
+Inference from Iterative Simulation Using Multiple Sequences.
+\textit{Statistical Science}, 7(4), 457--472.
+DOI: 10.1214/ss/1177011136.
+
+\bibitem{Blas2011}
+Blas, D., Lesgourgues, J.\ \& Tram, T.\ (2011).
+The Cosmic Linear Anisotropy Solving System (CLASS) II: Approximation schemes.
+\textit{Journal of Cosmology and Astroparticle Physics}, 2011(07), 034.
+DOI: 10.1088/1475-7516/2011/07/034.
+
 \bibitem{Geiger2026c}
 Geiger, L.\ (2026).
 Microscopic Foundations of the Curvature Relaxation Model: From Quantum Geometry to Macroscopic Saturation.
@@ -932,6 +951,12 @@ Companion paper (Paper~III), submitted simultaneously.
 Geiger, L.\ (2026).
 The Galactic--Cosmological Nexus: Connecting CRM to MOND Dynamics via Curvature Saturation.
 Companion paper (Paper~IV), submitted simultaneously.
+
+\bibitem{Kovacs2026}
+Kovacs, G.\ (2026).
+Gravity Imprints, Time Fades: A Curvature-Memory Relaxation Model with Exact MOND Steady State.
+Non-peer-reviewed manuscript v4.4, March 2026.
+Available at \url{https://vixra.org/abs/2604.0006}.
 
 \bibitem{JacobsonNonRiemannian2026}
 Martinez, J.\,N., Rodriguez-Ruiz, J.\,F.\ \& Rodriguez, Y.\ (2026).

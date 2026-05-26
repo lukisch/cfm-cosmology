@@ -1,6 +1,8 @@
 \documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
 
 % MiKTeX REVTeX 4.2 needs explicit package loading
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -104,7 +106,7 @@ The scalaron (scalar sector) modifies gravity on cosmological scales through the
 
 In galactic outskirts, where $\rho \sim 100\,\rho_{\mathrm{crit}}$, the screening is weaker and the scalar fifth force yields $\mu \to 4/3$. But flat rotation curves require $v \propto \mathrm{const}$, implying an effective gravitational potential $\Phi \propto \ln(r)$ -- a logarithmic divergence that no Yukawa-type scalar field can produce.
 
-From the thermodynamic perspective of Paper~I:
+From the thermodynamic/emergent-gravity perspective of Paper~I, in the Jacobson--Verlinde tradition \cite{Jacobson1995,Verlinde2017}:
 \begin{enumerate}
 \item The Maximum Entropy Production Principle (MEPP) \cite{Dewar2003,Martyushev2006} requires the system to maximize its dissipation rate.
 \item Galaxies are dissipative structures in the sense of Prigogine \cite{Prigogine1977}: self-organized systems that maintain themselves far from equilibrium to produce entropy (radiation) efficiently.
@@ -1035,7 +1037,7 @@ The Aether Scalar Tensor (AeST) theory of Skordis \& Z{\l}o\'snik \cite{Skordis2
 \item \textbf{CMB compatibility:} AeST was demonstrated to fit the CMB power spectrum \cite{Skordis2021}; CRM has demonstrated CMB compatibility for the scalar sector (Paper~III) but the vector contribution to perturbations remains to be computed.
 \end{enumerate}
 
-A detailed comparison of the perturbation spectra (CMB $C_\ell$ and matter $P(k)$) between CRM and AeST would be highly informative but lies beyond the scope of this paper. Recent work has demonstrated that relativistic MOND theories with timelike vector fields -- including AeST -- can be reformulated as mimetic gravity theories, exposing deep conformal and disformal symmetries in the metric structure~\cite{MimeticMOND2024}. Whether the CRM vector sector admits a similar mimetic reformulation, potentially simplifying its stability analysis, is an open question.
+A detailed comparison of the perturbation spectra (CMB $C_\ell$ and matter $P(k)$) between CRM and AeST would be highly informative but lies beyond the scope of this paper. Recent work has demonstrated that relativistic MOND theories with timelike vector fields -- including AeST -- can be reformulated as mimetic gravity theories, exposing deep conformal and disformal symmetries in the metric structure~\cite{DomenechGanz2025}. Whether the CRM vector sector admits a similar mimetic reformulation, potentially simplifying its stability analysis, is an open question.
 
 \subsection{Independent convergence: Imprint-Fading theory}
 
@@ -1048,7 +1050,7 @@ The convergence of two independent frameworks on the same $a_0$ relation -- deri
 
 \item \textbf{Non-equilibrium predictions:} The IF theory provides a quantitative relaxation spectrum ($\tau = 0.09$--$204$\,Gyr) and predicts hyperbolic halo decay after baryon stripping, with a sharp dynamical bifurcation at $s_0 = \ln 2$. These non-equilibrium predictions -- testable with JWST, Gaia~DR4, and WEAVE -- have no analogue in the CRM or in any prior MOND formulation.
 
-\item \textbf{Dark energy equation of state:} The IF framework predicts $w \geq -1$ as a consequence of the null energy condition applied to the Fisher information metric on $s \in (0,1)$. This is consistent with DESI~DR2 results ($w_0 \approx -0.75$)~\cite{DESI2025} and with the CRM Lagrangian: the $f(R) = R + 2\gamma R^2$ sector of Paper~III generically yields $w \to -1$ from above, not from below. The phantom value $w = -1.355$ reported in Paper~I is an artefact of the phenomenological tanh fit to Pantheon+ data with diagonal covariance and should not be regarded as a prediction of the Lagrangian theory. We therefore regard $w \geq -1$ as the natural CRM prediction, in agreement with the IF result.
+\item \textbf{Dark energy equation of state:} The IF framework predicts $w \geq -1$ as a consequence of the null energy condition applied to the Fisher information metric on $s \in (0,1)$. This is directionally consistent with the DESI~DR2 preference for dynamical dark energy in the $w_0>-1$, $w_a<0$ quadrant~\cite{DESI2025} and with the CRM Lagrangian: the $f(R) = R + 2\gamma R^2$ sector of Paper~III generically yields $w \to -1$ from above, not from below. The phantom value $w = -1.355$ reported in Paper~I is an artefact of the phenomenological tanh fit to Pantheon+ data with diagonal covariance and should not be regarded as a prediction of the Lagrangian theory. We therefore regard $w \geq -1$ as the natural CRM prediction, in agreement with the IF result.
 \end{enumerate}
 
 The key difference in scope remains: the IF theory is currently developed at the non-relativistic galactic level (with a candidate covariant extension), while the CRM provides a complete cosmological framework validated against CMB, BAO, and supernova data. A synthesis of the IF thermodynamic structure with the CRM Lagrangian formulation may prove fruitful.
@@ -1086,7 +1088,7 @@ The CRM field equations at the galactic scale have the following status:
 
 \item \textbf{Uniqueness of $\mathcal{B}(\phi)$:} The $\mathrm{sech}^2$ form is motivated by P\"oschl-Teller consistency but not proven unique. An exclusion argument (analogous to the $R + \gamma R^2$ uniqueness in Paper~III) is desirable.
 
-\item \textbf{Vector perturbation theory:} A semi-analytical EFT estimate of the vector sector's contribution to the CMB power spectrum yields $\Delta C_\ell / C_\ell < 10^{-11}\%$, well below the percent-level threshold for Planck consistency. The estimate uses the EFT parametrization $\alpha_{M,0} = 0.0011$, $\alpha_T = 0$, $\alpha_B = -\alpha_M$ with the parasitic screening function from Sec.~\ref{sec:parasitic}. Combined with $\rho_A = 0$ on FLRW (Sec.~\ref{sec:rho_A}), this confirms that the vector sector is invisible to current CMB observations. A full numerical computation with \texttt{hi\_class} is therefore not required for Planck-level consistency but remains desirable for future precision tests.
+\item \textbf{Vector perturbation theory:} A semi-analytical EFT estimate of the vector sector's contribution to the CMB power spectrum yields $\Delta C_\ell / C_\ell < 10^{-11}\%$, well below the percent-level threshold for Planck consistency \cite{PlanckMG2016}. The estimate uses the EFT parametrization $\alpha_{M,0} = 0.0011$, $\alpha_T = 0$, $\alpha_B = -\alpha_M$ with the parasitic screening function from Sec.~\ref{sec:parasitic}. Combined with $\rho_A = 0$ on FLRW (Sec.~\ref{sec:rho_A}), this confirms that the vector sector is invisible to current CMB observations. A full numerical computation with \texttt{hi\_class} is therefore not required for Planck-level consistency but remains desirable for future precision tests.
 
 \item \textbf{Perturbation stability and well-posedness:} Ghost freedom (Constraint~5) is necessary but not sufficient for a well-posed theory. A complete stability analysis requires: (i)~the quadratic action for scalar and vector perturbations around FLRW, (ii)~the dispersion relations for all propagating modes, (iii)~positivity of $c_s^2$ (no gradient instabilities), (iv)~subluminality or controlled characteristics (a known subtlety in Einstein-Aether theories \cite{JacobsonMattingly2001}), and (v)~absence of strong coupling in the deep-MOND regime. We have established $\alpha_T = 0$ for tensor modes (Sec.~\ref{sec:alpha_T}), but the scalar and vector perturbation sectors remain to be analyzed for the specific coupling~\eqref{eq:coupling}.
 
@@ -1118,7 +1120,7 @@ We have presented the complete Curvature Relaxation Model action $S_{\mathrm{CRM
 \item The $4/3$ convergence factor from two independent derivations (perturbation theory and phase-space geometry) provides structural evidence for the nested hierarchy.
 \end{enumerate}
 
-The ontological picture is: two axioms (null-space fluctuation + thermodynamic optimization) $\to$ two degrees of freedom (scalar + vector) $\to$ three phenomena (dark energy, cosmological dark matter effects, MOND-compatible galactic dynamics) $\to$ one termination condition (standard physics below galactic scales). No $\Lambda$, no dark matter particles -- only geometry. The numerical confirmation that the Chameleon feedback produces the MOND attractor (median slope~$\approx 0.58$ across six decades of galaxy mass) and the consistency with the full 171-galaxy SPARC database ($a_0$ discrepancy $< 1\sigma$) strengthen this picture. The extraction of the emergent interpolation function $\mu_{\mathrm{CRM}}(x) = [1 - \exp(-x^\alpha)]^{-1}$ with $\alpha = 0.310 \pm 0.001$ from the BVP (Eq.~\ref{eq:mu_crm}) reveals that the CRM-native transition is shallower than the McGaugh form ($\alpha = 0.5$) and provides an $11\times$ better fit to the numerical data. A full SPARC reanalysis using $\mu_{\mathrm{CRM}}$ may improve the $\chi^2/\mathrm{dof}$ beyond the McGaugh proxy used here. Semi-analytical EFT estimates confirm that vector perturbations contribute $\Delta C_\ell/C_\ell < 10^{-11}\%$ to the CMB, establishing Planck-level safety of the vector sector.
+The ontological picture is: two axioms (null-space fluctuation + thermodynamic optimization) $\to$ two degrees of freedom (scalar + vector) $\to$ three phenomena (dark energy, cosmological dark matter effects, MOND-compatible galactic dynamics) $\to$ one termination condition (standard physics below galactic scales). No $\Lambda$, no dark matter particles -- only geometry. The numerical BVP confirms that Chameleon feedback can produce a MOND-like attractor (median slope~$\approx 0.58$ across six decades of galaxy mass), while the exploratory 171-galaxy SPARC check also exposes a real tension: the CRM-fixed value $a_0=cH_0/(2\pi)$ remains within the broad empirical $a_0$ uncertainty but fits substantially worse than free or best-global $a_0$ under the McGaugh proxy. The extraction of the emergent interpolation function $\mu_{\mathrm{CRM}}(x) = [1 - \exp(-x^\alpha)]^{-1}$ with $\alpha = 0.310 \pm 0.001$ from the BVP (Eq.~\ref{eq:mu_crm}) reveals that the CRM-native transition is shallower than the McGaugh form ($\alpha = 0.5$) and provides an $11\times$ better fit to the numerical data. A full SPARC reanalysis using $\mu_{\mathrm{CRM}}$ is therefore required before the galactic sector can be regarded as validated. Semi-analytical EFT estimates confirm that vector perturbations contribute $\Delta C_\ell/C_\ell < 10^{-11}\%$ to the CMB, establishing Planck-level safety of the vector sector.
 
 
 % ===================================================================
@@ -1135,7 +1137,7 @@ This research received no external funding.
 The SPARC database \cite{Lelli2016} is publicly available.
 All analysis code and numerical results are available at
 \url{https://github.com/research-line/crm-cosmology}
-(DOI: \href{https://doi.org/10.5281/zenodo.18728936}{10.5281/zenodo.18728936}).
+(DOI: \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}).
 
 % ===================================================================
 % BIBLIOGRAPHY
@@ -1147,19 +1149,19 @@ All analysis code and numerical results are available at
 Geiger, L.\ (2026).
 Game-Theoretic Cosmology and the Curvature Relaxation Model: Nash Equilibria Between Null Space and Spacetime Bubble.
 Companion paper. \url{https://github.com/research-line/crm-cosmology}.
-\href{https://doi.org/10.5281/zenodo.18728936}{DOI: 10.5281/zenodo.18728936}.
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026b}
 Geiger, L.\ (2026).
 Eliminating the Dark Sector: Unifying the Curvature Relaxation Model with MOND.
 Companion paper.
-\href{https://doi.org/10.5281/zenodo.18728936}{DOI: 10.5281/zenodo.18728936}.
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026c}
 Geiger, L.\ (2026).
 Microscopic Foundations of the Curvature Relaxation Model: From Quantum Geometry to Macroscopic Saturation.
 Companion paper.
-\href{https://doi.org/10.5281/zenodo.18728936}{DOI: 10.5281/zenodo.18728936}.
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Milgrom1983}
 Milgrom, M.\ (1983).
@@ -1305,9 +1307,9 @@ Emergent Gravity and the Dark Universe.
 
 \bibitem{DESI2025}
 DESI Collaboration (2025).
-DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints.
-\textit{arXiv:2503.14738}.
-\href{https://doi.org/10.48550/arXiv.2503.14738}{DOI: 10.48550/arXiv.2503.14738}.
+DESI DR2 results. II. Measurements of baryon acoustic oscillations and cosmological constraints.
+\textit{Physical Review D}, 112(8), 083515.
+\href{https://doi.org/10.1103/tr6y-kpc6}{DOI: 10.1103/tr6y-kpc6}.
 
 \bibitem{Riess2022}
 A.~G.~Riess \textit{et al.} (2022).
@@ -1322,9 +1324,9 @@ Fitting the radial acceleration relation to individual SPARC galaxies.
 \href{https://doi.org/10.1051/0004-6361/201732547}{DOI: 10.1051/0004-6361/201732547}.
 
 \bibitem{Brodie2026}
-G.~Brodie (2026).
+K.~Brodie (2026).
 The Radial Acceleration Relation from Two-Horizon Entropy Sharing with Zero Free Parameters.
-Zenodo. \href{https://doi.org/10.5281/zenodo.14751437}{DOI: 10.5281/zenodo.14751437}.
+Zenodo. \href{https://doi.org/10.5281/zenodo.18677307}{DOI: 10.5281/zenodo.18677307}.
 
 \bibitem{FamaeyMcGaugh2012}
 B.~Famaey and S.~S.~McGaugh (2012).
@@ -1336,13 +1338,13 @@ Modified Newtonian Dynamics (MOND): Observational Phenomenology and Relativistic
 G.~Kovacs (2026).
 Gravity Imprints, Time Fades: A Curvature-Memory Relaxation Model with Exact MOND Steady State.
 Manuscript v4.4, March 2026.
-Available at \url{https://vixra.org/abs/2604.0006}.
+Available at \url{https://ai.vixra.org/abs/2604.0006}.
 
-\bibitem{MimeticMOND2024}
-V.~Skordis and T.~Z{\l}o\'snik (2024).
+\bibitem{DomenechGanz2025}
+G.~Dom\`enech and A.~Ganz (2025).
 Connecting relativistic MOND theories with mimetic gravity.
-\textit{Physical Review D}, 110(6), 064060.
-% DOI not verified -- PRD 110, 064060 maps to a different paper (Bergmann-Wagoner-Nordtvedt). Citation details need checking.
+\textit{Journal of Cosmology and Astroparticle Physics}, 2025(06), 059.
+\href{https://doi.org/10.1088/1475-7516/2025/06/059}{DOI: 10.1088/1475-7516/2025/06/059}.
 
 \end{thebibliography}
 

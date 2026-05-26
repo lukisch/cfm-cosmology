@@ -1,6 +1,8 @@
 \documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
 
 % MiKTeX REVTeX 4.2 needs explicit package loading
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{booktabs}
@@ -15,7 +17,8 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    pdftitle={Der Galaktisch-Kosmologische Nexus: MOND-Dynamik aus Kruemmungss\"attigung},
+    unicode=true,
+    pdftitle={Der Galaktisch-Kosmologische Nexus: MOND-Dynamik aus Krümmungssättigung},
     pdfauthor={Lukas Geiger},
     colorlinks=true,
     linkcolor=black,
@@ -29,7 +32,7 @@
 % TITELSEITE
 % ===================================================================
 
-\title{Der Galaktisch--Kosmologische Nexus: MOND-Dynamik\\aus Kruemmungss\"attigung}
+\title{Der Galaktisch--Kosmologische Nexus: MOND-Dynamik\\aus Krümmungssättigung}
 
 \author{Lukas Geiger}
 \email{Correspondence: Bernau, Germany}
@@ -68,7 +71,7 @@ Dieses Paper erweitert das Curvature Relaxation Model (CRM) von der kosmologisch
 % ===================================================================
 % 1. EINFUEHRUNG
 % ===================================================================
-\section{Einfuehrung}
+\section{Einführung}
 \label{sec:intro}
 
 Das Paradigma der Modifizierten Newtonschen Dynamik (MOND) \cite{Milgrom1983} hat sich auf galaktischem Ma\ss{}stab als bemerkenswert erfolgreich erwiesen: die Radial Acceleration Relation (RAR) \cite{McGaugh2016} zeigt eine enge, universelle Korrelation zwischen beobachteter Gravitationsbeschleunigung $g_{\mathrm{obs}}$ und baryonischer Gravitationsbeschleunigung $g_{\mathrm{bar}}$, mit einer charakteristischen Skala $a_0 \approx 1.2 \times 10^{-10}$\,m/s$^2$. Die N\"ahe $a_0 \sim cH_0$ wurde seit Milgroms Originalarbeit bemerkt, bleibt aber sowohl in $\Lambda$CDM als auch in Standard-MOND unerkl\"art.
@@ -111,7 +114,7 @@ Das Skalarfeld (Tochter~1) modifiziert die Gravitation auf kosmologischen Skalen
 
 In den galaktischen Au\ss{}enbereichen, wo $\rho \sim 100\,\rho_{\mathrm{crit}}$, ist die Abschirmung schw\"acher und die skalare f\"unfte Kraft liefert $\mu \to 4/3$. Flache Rotationskurven erfordern jedoch $v \propto \mathrm{const}$, was ein effektives Gravitationspotential $\Phi \propto \ln(r)$ impliziert -- eine logarithmische Divergenz, die kein Yukawa-artiges Skalarfeld erzeugen kann.
 
-Aus der thermodynamischen Perspektive von Arbeit~I:
+Aus der thermodynamisch-emergenztheoretischen Perspektive von Arbeit~I, in der Tradition von Jacobson und Verlinde \cite{Jacobson1995,Verlinde2017}:
 \begin{enumerate}
 \item Das Prinzip der maximalen Entropieproduktion (MEPP) \cite{Dewar2003,Martyushev2006} erfordert, dass das System seine Dissipationsrate maximiert.
 \item Galaxien sind dissipative Strukturen im Sinne von Prigogine \cite{Prigogine1977}: selbstorganisierte Systeme, die sich weit vom Gleichgewicht entfernt halten, um Entropie (Strahlung) effizient zu produzieren.
@@ -392,13 +395,13 @@ a_0^{\mathrm{CRM}} = \frac{c \cdot 67.36\,\mathrm{km/s/Mpc}}{2\pi} \approx 1.04 
 \end{equation}
 verglichen mit dem empirischen Wert $a_0^{\mathrm{obs}} = (1.20 \pm 0.24) \times 10^{-10}$\,m/s$^2$ \cite{McGaugh2016}, wobei die Unsicherheit systematische Beitr\"age einschlie\ss{}t. Die $\sim 13\%$-Diskrepanz ($0{,}66\,\sigma$) ist die gr\"o\ss{}te einzelne Spannung im galaktischen Sektor und verdient eine ehrliche Bewertung. Drei Faktoren tragen bei: (i)~der S\"attigungsfaktor $\mathcal{B}_0$ von $\mathcal{O}(1)$ wurde nicht aus den Feldgleichungen berechnet, sondern als von der Ordnung Eins abgesch\"atzt; $\mathcal{B}_0 \approx 0.87$ gen\"ugt, um die Diskrepanz zu schlie\ss{}en; (ii)~der Wert von $H_0$ geht direkt ein, und die Verwendung von SH0ES ($H_0 = 73.04$\,km/s/Mpc \cite{Riess2022}) anstelle von Planck liefert $a_0^{\mathrm{CRM}} = 1.13 \times 10^{-10}$\,m/s$^2$, was die Diskrepanz auf $6\%$ ($0.3\,\sigma$) reduziert; (iii)~der $2\pi$-Faktor ist heuristisch aus Fourier-\"Uberlegungen hergeleitet, nicht rigoros aus den gekoppelten Feldgleichungen (siehe Anmerkung unten). Trotz dieser Spannung ist der Wert \textit{kein} angepasster Parameter -- er wird allein aus kosmologischen Gr\"o\ss{}en vorhergesagt, was selbst mit der $13\%$-Diskrepanz eine nichttriviale Leistung darstellt.
 
-\textit{Anmerkung zum $2\pi$-Faktor:} Diese Identifikation wird durch drei unabh\"angige Analysen best\"atigt:
+\textit{Anmerkung zum $2\pi$-Faktor:} Diese Identifikation wird durch drei verwandte Perspektiven gest\"utzt, die den CRM-S\"attigungsrahmen als gemeinsame Pr\"amisse teilen und daher nicht als vollst\"andig unabh\"angige Herleitungen gez\"ahlt werden sollten:
 \begin{enumerate}
 \item \textit{S\"attigungs-ODE-Attraktor:} Die quasi-statische Skalardynamik besitzt einen eindeutigen Fixpunkt bei $\bar{x} = 0$ ($\mathcal{B}_0 = \mathrm{sech}^2(0) = 1$), was exakt $a_0/(cH_0) = 1/(2\pi)$ ergibt.
 \item \textit{Fourier-Frequenz:} $H_0 = 2{,}183 \times 10^{-18}$\,rad/s ist eine Winkelgeschwindigkeit; die physikalische Hubble-Frequenz ist $f_H = H_0/(2\pi) = 3{,}474 \times 10^{-19}$\,Hz, sodass $a_0 = c \cdot f_H$.
 \item \textit{Dimensionaler Fixpunkt:} Das Verh\"altnis $a_0/(cH_0) = 1/(2\pi) = 0{,}15915$ ist der einzige Attraktor; kein anderer Wert erzeugt Konsistenz innerhalb $1\sigma$ mit $a_0^{\mathrm{obs}}$.
 \end{enumerate}
-Die $15{,}2\%$-Diskrepanz mit dem beobachteten $a_0 = 1{,}2 \times 10^{-10}$\,m/s$^2$ ($0{,}66\,\sigma$) reduziert sich auf $0{,}29\,\sigma$ bei Verwendung des SH0ES-Wertes $H_0 = 73$\,km/s/Mpc ($a_0^{\mathrm{SH0ES}} = 1{,}13 \times 10^{-10}$\,m/s$^2$). F\"ur die MCMC-Analyse (Abschn.~\ref{sec:mcmc}) behandeln wir $a_0 = cH_0/(2\pi)$ als Modellvorhersage und testen, ob die Daten mit diesem Wert konsistent sind.
+Die $15{,}2\%$-Diskrepanz mit dem beobachteten $a_0 = 1{,}2 \times 10^{-10}$\,m/s$^2$ ($0{,}66\,\sigma$) reduziert sich auf $0{,}29\,\sigma$ bei Verwendung des SH0ES-Wertes $H_0 = 73$\,km/s/Mpc ($a_0^{\mathrm{SH0ES}} = 1{,}13 \times 10^{-10}$\,m/s$^2$). F\"ur die MCMC-Analyse (Abschn.~\ref{sec:mcmc}) behandeln wir $a_0 = cH_0/(2\pi)$ als Konsistenzrelation und testen, ob die Daten mit diesem Wert vereinbar sind.
 
 \textit{Unabh\"angige Best\"atigung.} Eine unabh\"angige thermodynamische Herleitung von Brodie~\cite{Brodie2026} erh\"alt $a_0 = cH_0/6 \approx 1{,}09 \times 10^{-10}$\,m/s$^2$ aus Verschr\"ankungs-Aufteilung zwischen dem lokalen Rindler-Horizont und dem kosmologischen Hubble-Horizont. Der geometrische Faktor $1/6$ ergibt sich aus dem Winkel\"uberlappungsintegral $\int \cos^2\theta\,d\Omega$ \"uber die Hemisph\"are. Beide analytischen Vorhersagen -- $1/(2\pi) \approx 0{,}159$ (CRM) und $1/6 \approx 0{,}167$ (Brodie) -- liegen innerhalb der empirischen Unsicherheit von $a_0^{\mathrm{obs}}$ und unterscheiden sich um nur $5\%$ voneinander. Dass zwei konzeptionell verschiedene thermodynamische Rahmenwerke (Skalarfeld-Fourier-Dualit\"at vs.\ Horizont-Verschr\"ankungs-Partition) unabh\"angig $a_0$ ohne freie Parameter reproduzieren, legt stark nahe, dass $a_0 \sim cH_0$ echte Physik widerspiegelt und kein numerischer Zufall ist. Ein diskriminierender Test unter Verwendung der vollst\"andigen SPARC-Datenbank -- Vergleich von $\chi^2$ f\"ur $a_0 = cH_0/(2\pi)$ vs.\ $a_0 = cH_0/6$ vs.\ freies $a_0$ -- bleibt zuk\"unftiger Arbeit vorbehalten. F\"ur einen umfassenden ph\"anomenologischen \"Uberblick \"uber die $a_0 \sim cH_0$-Koinzidenz siehe Famaey \& McGaugh~\cite{FamaeyMcGaugh2012}.
 
@@ -447,7 +450,7 @@ Wir zeigen die Konsistenz des CRM mit dieser Relation in zwei asymptotischen Gre
 
 \textit{Newtonsches Limit} ($g_{\mathrm{bar}} \gg a_0$): Der Chameleon-Mechanismus unterdr\"uckt den Skalarongradient $\partial_r\phi$ exponentiell (Abschn.~\ref{sec:parasitic}), wodurch die Vektorquelle vernachl\"assigbar wird. Reine GR wird wiederhergestellt: $g_{\mathrm{obs}} \approx g_{\mathrm{bar}}$.
 
-Der sanfte \"Ubergang zwischen diesen Regimen -- d.h. die \textit{exakte} Interpolationsfunktion, die die beiden Grenzen verbindet -- erfordert das L\"osen des gekoppelten Skalar-Vektor-Metrik-Systems in der statischen, kugelf\"ormig symmetrischen Grenze f\"ur ein gegebenes baryonisches Dichteprofil $\rho_{\mathrm{bar}}(r)$. Dies stellt ein nichtlineares Randwertproblem dar, das wir einer dedizierten numerischen Analyse verschieben. F\"ur den SPARC-Test (Abschn.~\ref{sec:mcmc}) verwenden wir die empirische McGaugh-Interpolation~\eqref{eq:rar} mit $a_0 = cH_0/(2\pi)$, das durch Kosmologie festgelegt wird. Wenn dieser feste Wert Anpassungen produziert, die mit dem freien-$a_0$ MOND vergleichbar sind, wird der kosmologische Anker empirisch best\"atigt, unabh\"angig von der mikrokopischen Ableitung der Interpolationsfunktion.
+Der sanfte \"Ubergang zwischen diesen Regimen -- d.h. die \textit{exakte} Interpolationsfunktion, die die beiden Grenzen verbindet -- erfordert das L\"osen des gekoppelten Skalar-Vektor-Metrik-Systems in der statischen, kugelf\"ormig symmetrischen Grenze f\"ur ein gegebenes baryonisches Dichteprofil $\rho_{\mathrm{bar}}(r)$. Dies stellt ein nichtlineares Randwertproblem dar, das wir einer dedizierten numerischen Analyse verschieben. F\"ur den SPARC-Test (Abschn.~\ref{sec:mcmc}) verwenden wir die empirische McGaugh-Interpolation~\eqref{eq:rar} mit $a_0 = cH_0/(2\pi)$, das durch Kosmologie festgelegt wird. Wenn dieser feste Wert Anpassungen produziert, die mit freiem-$a_0$ MOND vergleichbar sind, st\"utzt dies die kosmologische Verankerung; deutlich schlechtere Fits w\"urden die Konsistenzrelation falsifizieren.
 
 \subsection{Die $4/3$-Konvergenz: unabh\"angige Evidenz}
 \label{sec:four_thirds}
@@ -951,10 +954,10 @@ Wir schlagen einen entscheidenden Test mithilfe der SPARC-Datenbasis \cite{Lelli
 \textbf{Entscheidungstest:} Wir f\"uhren zwei MCMC-Analysen durch:
 \begin{itemize}
 \item \textbf{Run~A:} Standard-MOND ($a_0$ frei). Erwartetes Ergebnis: $a_0 \approx 1.2 \times 10^{-10}$\,m/s$^2$.
-\item \textbf{Run~B:} CRM-Deduktion ($a_0 = cH_0/(2\pi)$, festgelegt). Wenn Run~B vergleichbares oder besseres $\chi^2$ als Run~A erreicht, ist die CRM-Vorhersage best\"atigt: $a_0$ ist \textit{nicht} ein freier galaktischer Parameter, sondern eine kosmologische Gleichgewichtsbedingung.
+\item \textbf{Run~B:} CRM-Deduktion ($a_0 = cH_0/(2\pi)$, festgelegt). Wenn Run~B $\chi^2$-Werte erreicht, die mit Run~A vergleichbar sind (etwa innerhalb von $\Delta\chi^2 \lesssim 2N_{\mathrm{gal}}$), st\"utzt dies die Konsistenz des CRM-deduzierten Wertes mit galaktischen Daten, ist aber keine unabh\"angige Vorhersage, da $a_0 = cH_0/(2\pi)$ so konstruiert ist, dass der beobachtete MOND-Ma\ss{}stab reproduziert wird. Deutlich schlechtere $\chi^2$-Werte w\"urden diese Konsistenzrelation falsifizieren.
 \end{itemize}
 
-\textit{Kl\"arung:} ``Null-Parameter'' bezieht sich auf die Abwesenheit freier Dunkle-Materie- oder MOND-Parameter. Die Pro-Galaxie-$\Upsilon_*$-Werte sind Standard-astrophysikalische Nuisance-Parameter, die in \textit{jeder} Rotationskurvenanalyse vorhanden sind (einschlie\ss{}lich $\Lambda$CDM mit NFW-Halos).
+\textit{Kl\"arung und Vorbehalt zur Nomenklatur:} ``Null-Parameter'' bezieht sich auf die Abwesenheit freier Dunkle-Materie-Halo-Parameter oder freier MOND-Beschleunigungsparameter. Die Pro-Galaxie-$\Upsilon_*$-Werte (171 Galaxien = 171 zus\"atzliche Parameter) sind Standard-astrophysikalische Nuisance-Parameter, die in \textit{jeder} Rotationskurvenanalyse vorhanden sind (einschlie\ss{}lich $\Lambda$CDM mit NFW-Halos). Dennoch kann das Label missverst\"andlich sein: Run~A besitzt $171+1$ freie Parameter ($\Upsilon_*$ pro Galaxie plus $a_0$), Run~B besitzt $171$ freie Parameter. Der Vergleich testet nur, ob das Festlegen von $a_0$ auf den CRM-Wert den Fit verschlechtert, nicht ob CRM eine genuin parameterfreie Theorie ist.
 
 \subsection{Vollst\"andiger SPARC-Datenbanktest}
 \label{sec:sparc_results}
@@ -968,7 +971,9 @@ Wir testen die CRM-Vorhersage $a_0 = cH_0/(2\pi) = 1{,}042 \times 10^{-10}$\,m/s
 \item \textbf{Run~C} (bestes globales $a_0$, frei): $\chi^2/\mathrm{dof} = 9{,}30$ ($N_{\mathrm{dof}} = 3204$), bestes $a_0 = 0{,}880 \times 10^{-10}$\,m/s$^2$.
 \end{itemize}
 
-Die erh\"ohten $\chi^2/\mathrm{dof}$-Werte spiegeln wider, dass wir die empirische McGaugh-Interpolation~\eqref{eq:rar} statt der CRM-nativen Interpolationsfunktion verwenden (die aus dem nichtlinearen BVP noch zu extrahieren ist). Die McGaugh-Funktion liefert bekanntlich nur eine n\"aherungsweise Beschreibung der vollst\"andigen SPARC-Streuung \cite{Li2018}. Entscheidend ist der \textit{relative} Vergleich zwischen den Runs: Das $\Delta\chi^2$ zwischen Run~B (CRM-festgelegt) und Run~C (bestes globales) betr\"agt nur $1183$, entsprechend $\Delta\chi^2/N_{\mathrm{gal}} \approx 6{,}9$ pro Galaxie -- eine moderate Einbu\ss{}e f\"ur das Festlegen von $a_0$ auf den kosmologischen Vorhersagewert.
+Die erh\"ohten $\chi^2/\mathrm{dof}$-Werte spiegeln wider, dass wir die empirische McGaugh-Interpolation~\eqref{eq:rar} statt der CRM-nativen Interpolationsfunktion verwenden (die aus dem nichtlinearen BVP noch analytisch zu extrahieren ist). Die McGaugh-Funktion liefert bekanntlich nur eine n\"aherungsweise Beschreibung der vollst\"andigen SPARC-Streuung \cite{Li2018}. Das $\Delta\chi^2$ zwischen Run~B (CRM-festgelegt) und Run~C (bestes globales) betr\"agt $1183$.
+
+\textit{Kritische Bewertung der Fit-Qualit\"at:} Der Faktor-von-$\sim 2$-Anstieg in $\chi^2/\mathrm{dof}$ von Run~A ($4{,}88$) zu Run~B ($9{,}67$) ist statistisch substanziell und darf nicht als blo\ss{}e ``moderate Einbu\ss{}e'' gewertet werden. W\"ortlich genommen sprechen die Daten gegen den CRM-festgelegten Wert $a_0 = cH_0/(2\pi) = 1{,}042 \times 10^{-10}$\,m/s$^2$ relativ zum pro-Galaxie-freien Wert (Run~A-Median: $0{,}733$) und zum besten globalen konstanten Wert (Run~C: $0{,}880$). Dies ist eine echte Spannung, nicht aufgel\"ost durch die Beobachtung, dass Run~B und Run~C dasselbe $N_{\mathrm{dof}}$ besitzen. Der CRM-deduzierte Wert liegt $\approx 15\%$ \"uber dem besten globalen Fit; bei der SPARC-Pr\"azision ist dies eine statistisch relevante Diskrepanz. Die vollst\"andige Interpretation h\"angt von drei offenen Punkten ab: (i)~der CRM-nativen Interpolationsfunktion, (ii)~dem S\"attigungsfaktor $\mathcal{B}_0$, der noch nicht unabh\"angig eingeschr\"ankt ist, und (iii)~einem m\"oglichen systematischen Offset durch Verwendung der McGaugh-Form f\"ur ein Modell, das eine andere \"Ubergangsform vorhersagt. Der hier berichtete SPARC-Test ist daher ein \emph{explorativer Konsistenzcheck}, keine best\"atigte Validierung.
 
 Das global beste $a_0 = 0{,}880 \times 10^{-10}$\,m/s$^2$ liegt \textit{zwischen} der CRM-Vorhersage ($1{,}042$) und dem Pro-Galaxie-Median ($0{,}733$), was darauf hindeutet, dass die wahre \"Ubergangs\-skala durch den S\"attigungsfaktor $\mathcal{B}_0$ verschoben sein k\"onnte (siehe Bewertung unten).
 
@@ -1024,7 +1029,23 @@ Die Aether Scalar Tensor (AeST)-Theorie von Skordis \& Z{\l}o\'snik \cite{Skordi
 
 Ein detaillierter Vergleich der St\"orungsspektren (CMB $C_\ell$ und Materie $P(k)$) zwischen CRM und AeST w\"are hochinformativ, liegt aber au\ss{}erhalb des Umfangs dieses Papiers.
 
-Neuere Arbeiten haben gezeigt, dass relativistische MOND-Theorien mit zeitartigen Vektorfeldern -- einschlie\ss{}lich AeST -- als mimetische Gravitationstheorien umformuliert werden k\"onnen, wobei tiefe konforme und disformale Symmetrien in der Metrikstruktur offengelegt werden~\cite{MimeticMOND2024}. Ob der CRM-Vektorsektor eine \"ahnliche mimetische Umformulierung erlaubt, die m\"oglicherweise seine Stabilit\"atsanalyse vereinfacht, ist eine offene Frage.
+Neuere Arbeiten haben gezeigt, dass relativistische MOND-Theorien mit zeitartigen Vektorfeldern -- einschlie\ss{}lich AeST -- als mimetische Gravitationstheorien umformuliert werden k\"onnen, wobei tiefe konforme und disformale Symmetrien in der Metrikstruktur offengelegt werden~\cite{DomenechGanz2025}. Ob der CRM-Vektorsektor eine \"ahnliche mimetische Umformulierung erlaubt, die m\"oglicherweise seine Stabilit\"atsanalyse vereinfacht, ist eine offene Frage.
+
+\subsection{Unabh\"angige Konvergenz: Imprint-Fading-Theorie}
+
+Unabh\"angig und mit einer anderen Methode leitet Kovacs~\cite{Kovacs2026} dieselbe fundamentale Skala $a_0 = cH_0/(2\pi)$ aus der Gleichheit der Gibbons--Hawking-Temperatur des de-Sitter-Raums und der Unruh-Temperatur bei Beschleunigung $a_0$ ab. Seine Imprint-Fading-Theorie (IF) f\"uhrt ein skalares Kr\"ummungs-Ged\"achtnisfeld $s(\mathbf{x},t) \in (0,1)$ ein, das einer einzelnen dissipativen Entwicklungsgleichung $\dot{s} = H_0[y - s^2/(1-s)]$ folgt, wobei $y \equiv g_\mathrm{N}/a_0$ ist. Im station\"aren Zustand ergibt dies die einfache MOND-Interpolationsfunktion $\nu(y) = [1 + \sqrt{1+4/y}]/2$ \emph{exakt und algebraisch}; das Resultat ist nicht gefittet, sondern folgt aus der Fixpunktbedingung. Globale asymptotische Stabilit\"at wird \"uber ein Lyapunov-Funktional bewiesen.
+
+Die Konvergenz zweier unabh\"angiger Rahmenwerke auf dieselbe $a_0$-Relation -- hier aus dem S\"attigungs-ODE-Attraktor und der Fourier-Frequenzumrechnung (Abs.~\ref{sec:a0_derivation}), bei Kovacs aus thermodynamischer Temperaturgleichheit -- st\"arkt den Hinweis auf physikalische Signifikanz. Drei Vergleichspunkte sind besonders relevant:
+
+\begin{enumerate}
+\item \textbf{Komplement\"are MOND-Herleitungen:} Die IF-Theorie gewinnt MOND als exaktes algebraisches Gleichgewicht einer dissipativen Ein-Feld-Gleichung; CRM gewinnt MOND als emergenten numerischen Attraktor des Zwei-Feld-Systems (Skalar + Vektor) durch BVP-Extraktion. Beide Wege konvergieren auf MOND-Ph\"anomenologie, aber aus unterschiedlichen mathematischen Strukturen.
+
+\item \textbf{Nichtgleichgewichts-Vorhersagen:} Die IF-Theorie liefert ein quantitatives Relaxationsspektrum ($\tau = 0{,}09$--$204$\,Gyr) und sagt hyperbolischen Halo-Zerfall nach baryonischem Stripping voraus, mit einer scharfen dynamischen Bifurkation bei $s_0 = \ln 2$. Diese Nichtgleichgewichts-Vorhersagen -- testbar mit JWST, Gaia~DR4 und WEAVE -- haben kein direktes Analogon im CRM oder in fr\"uheren MOND-Formulierungen.
+
+\item \textbf{Dunkle-Energie-Zustandsgleichung:} Der IF-Rahmen sagt $w \geq -1$ als Konsequenz der Nullenergiebedingung angewandt auf die Fisher-Informationsmetrik auf $s \in (0,1)$ voraus. Dies ist der Richtung nach konsistent mit der DESI-DR2-Pr\"aferenz f\"ur dynamische Dunkle Energie im Bereich $w_0>-1$, $w_a<0$~\cite{DESI2025} und mit dem CRM-Lagrangian: Der $f(R) = R + 2\gamma R^2$-Sektor von Arbeit~III ergibt generisch $w \to -1$ von oben, nicht von unten. Der in Arbeit~I berichtete Phantomwert $w = -1{,}355$ ist ein Artefakt des ph\"anomenologischen tanh-Fits an Pantheon+-Daten mit diagonaler Kovarianz und sollte nicht als Vorhersage der Lagrange-Theorie gelten. Daher betrachten wir $w \geq -1$ als nat\"urliche CRM-Vorhersage, in \"Ubereinstimmung mit dem IF-Resultat.
+\end{enumerate}
+
+Der wesentliche Unterschied im Umfang bleibt: Die IF-Theorie ist gegenw\"artig auf der nichtrelativistischen galaktischen Ebene ausgearbeitet (mit einer Kandidaten-Kovarianterweiterung), w\"ahrend CRM einen vollst\"andigen kosmologischen Rahmen bereitstellt, der gegen CMB-, BAO- und Supernova-Daten validiert wurde. Eine Synthese der IF-thermodynamischen Struktur mit der CRM-Lagrange-Formulierung k\"onnte fruchtbar sein.
 
 \subsection{Die Kopplungsfunktion: Ableitung vs.\ Ansatz}
 
@@ -1046,11 +1067,11 @@ Dies ist vergleichbar mit dem Status des Starobinsky-Modells: Der $R^2$-Term ist
 \begin{enumerate}
 \item \textbf{RAR-Interpolationsfunktion aus Feldgleichungen:} Die BVP-Extraktion \"uber 19 Galaxien ($10^8$--$10^{12{,}5}\,M_\odot$) liefert eine CRM-native Interpolationsfunktion $\mu_{\mathrm{CRM}}(x) = [1 - \exp(-x^\alpha)]^{-1}$ mit $\alpha = 0{,}310 \pm 0{,}001$ (Gl.~\ref{eq:mu_crm}). Dies unterscheidet sich von der McGaugh-Form ($\alpha = 0{,}5$) und liefert eine $11$-fach bessere Anpassung an die BVP-Daten ($\chi^2_{\mathrm{red}} = 1\,467$ vs.\ $16\,519$). Die verbleibende Aufgabe ist eine vollst\"andige SPARC-Reanalyse mit $\mu_{\mathrm{CRM}}$ anstelle des McGaugh-Proxys, was den $\chi^2/\mathrm{dof}$ von Run~B verbessern k\"onnte.
 
-\item \textbf{Rigorose $2\pi$-Ableitung:} Der Faktor $2\pi$ in $a_0 = cH_0/(2\pi)$ wurde durch drei unabh\"angige Methoden best\"atigt (Abs.~\ref{sec:a0_derivation}): den S\"attigungs-ODE-Attraktor bei $\mathcal{B}_0 = 1$, die Fourier-Umrechnung von Winkel- zu Linearfrequenz ($f_H = H_0/(2\pi)$) und die Eindeutigkeit des dimensionalen Fixpunkts $a_0/(cH_0) = 1/(2\pi)$. Die $15{,}2\%$-Diskrepanz mit $a_0^{\mathrm{obs}}$ betr\"agt $0{,}66\,\sigma$ (Planck $H_0$) bzw.\ $0{,}29\,\sigma$ (SH0ES $H_0$). Der $2\pi$-Faktor ist somit die Standard-Umrechnung von Winkel- zu Linearfrequenz, kein freier Parameter.
+\item \textbf{Rigorose $2\pi$-Ableitung:} Der Faktor $2\pi$ in $a_0 = cH_0/(2\pi)$ wurde durch drei verwandte Perspektiven gest\"utzt (Abs.~\ref{sec:a0_derivation}): den S\"attigungs-ODE-Attraktor bei $\mathcal{B}_0 = 1$, die Fourier-Umrechnung von Winkel- zu Linearfrequenz ($f_H = H_0/(2\pi)$) und die Eindeutigkeit des dimensionalen Fixpunkts $a_0/(cH_0) = 1/(2\pi)$. Diese Perspektiven teilen gemeinsame CRM-Pr\"amissen und sollten nicht als vollst\"andig unabh\"angige Herleitungen gez\"ahlt werden. Die $15{,}2\%$-Diskrepanz mit $a_0^{\mathrm{obs}}$ betr\"agt $0{,}66\,\sigma$ (Planck $H_0$) bzw.\ $0{,}29\,\sigma$ (SH0ES $H_0$). Der $2\pi$-Faktor ist somit die Standard-Umrechnung von Winkel- zu Linearfrequenz, kein freier Parameter.
 
 \item \textbf{Eindeutigkeit von $\mathcal{B}(\phi)$:} Die $\mathrm{sech}^2$-Form ist motiviert durch P\"oschl-Teller-Konsistenz, aber nicht als eindeutig bewiesen. Ein Ausschlussargument (analog zur $R + \gamma R^2$-Eindeutigkeit in Paper~III) ist w\"unschenswert.
 
-\item \textbf{Vektorst\"orungstheorie:} Eine semi-analytische EFT-Absch\"atzung des Beitrags des Vektorsektors zum CMB-Leistungsspektrum ergibt $\Delta C_\ell / C_\ell < 10^{-11}\%$, weit unterhalb der Prozent-Schwelle f\"ur Planck-Konsistenz. Die Absch\"atzung verwendet die EFT-Parametrisierung $\alpha_{M,0} = 0{,}0011$, $\alpha_T = 0$, $\alpha_B = -\alpha_M$ mit der parasitischen Abschirmungsfunktion aus Abs.~\ref{sec:parasitic}. Zusammen mit $\rho_A = 0$ auf FLRW (Abs.~\ref{sec:rho_A}) best\"atigt dies, dass der Vektorsektor f\"ur aktuelle CMB-Beobachtungen unsichtbar ist. Eine vollst\"andige numerische Berechnung mit \texttt{hi\_class} ist daher f\"ur Planck-Konsistenz nicht erforderlich, bleibt aber f\"ur zuk\"unftige Pr\"azisionstests w\"unschenswert.
+\item \textbf{Vektorst\"orungstheorie:} Eine semi-analytische EFT-Absch\"atzung des Beitrags des Vektorsektors zum CMB-Leistungsspektrum ergibt $\Delta C_\ell / C_\ell < 10^{-11}\%$, weit unterhalb der Prozent-Schwelle f\"ur Planck-Konsistenz \cite{PlanckMG2016}. Die Absch\"atzung verwendet die EFT-Parametrisierung $\alpha_{M,0} = 0{,}0011$, $\alpha_T = 0$, $\alpha_B = -\alpha_M$ mit der parasitischen Abschirmungsfunktion aus Abs.~\ref{sec:parasitic}. Zusammen mit $\rho_A = 0$ auf FLRW (Abs.~\ref{sec:rho_A}) best\"atigt dies, dass der Vektorsektor f\"ur aktuelle CMB-Beobachtungen unsichtbar ist. Eine vollst\"andige numerische Berechnung mit \texttt{hi\_class} ist daher f\"ur Planck-Konsistenz nicht erforderlich, bleibt aber f\"ur zuk\"unftige Pr\"azisionstests w\"unschenswert.
 
 \item \textbf{St\"orungs-Stabilit\"at und Wohlgestelltheit:} Geisterfreiheit (Bedingung~5) ist notwendig aber nicht hinreichend f\"ur eine wohlgestellte Theorie. Eine vollst\"andige Stabilitatanalyse erfordert: (i)~die quadratische Wirkung f\"ur Skalar- und Vektorst\"orungen um FLRW, (ii)~die Dispersionsrelationen f\"ur alle propagierenden Modi, (iii)~Positivit\"at von $c_s^2$ (keine Gradienten-Instabilit\"aten), (iv)~Subluminalit\"at oder gesteuerte Charakteristiken (eine bekannte Subtilit\"at in Einstein-Aether-Theorien \cite{JacobsonMattingly2001}), und (v)~Abwesenheit starker Kopplung im tiefen-MOND-Regime. Wir haben $\alpha_T = 0$ f\"ur Tensor-Modi etabliert (Abs.~\ref{sec:alpha_T}), aber die Skalar- und Vektor-St\"orungssektoren bleiben f\"ur die spezifische Kopplung~\eqref{eq:coupling} zu analysieren.
 
@@ -1071,7 +1092,7 @@ Wir haben die vollst\"andige Curvature Relaxation Model-Wirkung $S_{\mathrm{CRM}
 
 \item Die Kopplungsfunktion $\mathcal{F} = |T|/\rho_{\mathrm{crit}} \cdot \mathrm{sech}^2(\phi/\phi_0) \cdot A_\mu\partial^\mu\phi$ erf\"ullt alle sechs Bedingungen (BBN, MOND-Limes, Abschirmung, $a_0 \sim cH_0$, Geisterfreiheit, $\alpha_T = 0$).
 
-\item Die MOND-Skala $a_0 = cH_0/(2\pi)$ ist eine Gr\"o\ss{}enordnungsvorhersage (innerhalb von $\sim 13\%$ des beobachteten Wertes, entsprechend $0{,}66\,\sigma$), nicht ein angepasster Parameter. Galaxien ``wissen'' die Expansionsrate, weil das Vektorfeld an das Skalarfeld gekoppelt ist, das die Expansion treibt. Drei unabh\"angige Analysen best\"atigen den $2\pi$-Faktor: den S\"attigungs-ODE-Attraktor, die Fourier-Umrechnung von Winkel- zu Linearfrequenz und die Eindeutigkeit des dimensionalen Fixpunkts (Abs.~\ref{sec:a0_derivation}).
+\item Die MOND-Skala $a_0 = cH_0/(2\pi)$ ist eine Gr\"o\ss{}enordnungsvorhersage (innerhalb von $\sim 13\%$ des beobachteten Wertes, entsprechend $0{,}66\,\sigma$), nicht ein angepasster Parameter. Galaxien ``wissen'' die Expansionsrate, weil das Vektorfeld an das Skalarfeld gekoppelt ist, das die Expansion treibt. Drei verwandte Perspektiven mit gemeinsamen CRM-Pr\"amissen st\"utzen den $2\pi$-Faktor: der S\"attigungs-ODE-Attraktor, die Fourier-Umrechnung von Winkel- zu Linearfrequenz und die Eindeutigkeit des dimensionalen Fixpunkts (Abs.~\ref{sec:a0_derivation}).
 
 \item Drei rigorose Konsistenzbeweise sind etabliert: (i)~$\alpha_T = 0$ exakt, bewahrt $c_T = c$ (Abs.~\ref{sec:alpha_T}); (ii)~parasitische Abschirmung unterdr\"uckt die Vektorquelle im Sonnensystem um einen Faktor $\sim 10^{-3 \times 10^9}$ (Abs.~\ref{sec:parasitic}); (iii)~$\rho_A = 0$ auf FLRW, sichernd dass der Vektorsektor kosmologische Hintergrundanpassungen nicht beeinflusst (Abs.~\ref{sec:rho_A}).
 
@@ -1082,7 +1103,7 @@ Wir haben die vollst\"andige Curvature Relaxation Model-Wirkung $S_{\mathrm{CRM}
 \item Ein Null-Dunkle-Materie-Parameter-Test gegen SPARC (171 von 175 Galaxien) wurde durchgef\"uhrt: Run~A ($a_0$ frei) liefert $\chi^2/\mathrm{dof} = 4{,}88$; Run~B (CRM: $a_0 = cH_0/(2\pi)$ festgelegt) $\chi^2/\mathrm{dof} = 9{,}67$; Run~C (globales $a_0$) $\chi^2/\mathrm{dof} = 9{,}30$. Die $13\%$-Diskrepanz in $a_0$ entspricht $0{,}66\,\sigma$ (Abs.~\ref{sec:sparc_results}).
 \end{enumerate}
 
-Das ontologische Bild ist: zwei Axiome (Null-Raum-Fluktuationen + thermodynamische Optimierung) $\to$ zwei Freiheitsgrade (Skalar + Vektor) $\to$ drei Ph\"anomene (Dunkle Energie, kosmologische Dunkle-Materie-Effekte, MOND-kompatible galaktische Dynamik) $\to$ eine Terminierungsbedingung (Standardphysik unterhalb galaktischer Skalen). Kein $\Lambda$, keine Dunkle-Materie-Teilchen -- nur Geometrie. Der MOND-Attraktor bei RAR-Steigung $= 0{,}5$ wurde numerisch best\"atigt (Abs.~\ref{sec:bvp_results}), und der parameterfreie SPARC-Test liefert eine $13\%$-Diskrepanz ($0{,}66\,\sigma$) zwischen CRM-Vorhersage und Beobachtung (Abs.~\ref{sec:sparc_results}). Die Extraktion der emergierenden Interpolationsfunktion $\mu_{\mathrm{CRM}}(x) = [1 - \exp(-x^\alpha)]^{-1}$ mit $\alpha = 0{,}310 \pm 0{,}001$ aus dem Randwertproblem (Gl.~\ref{eq:mu_crm}) zeigt, dass der CRM-native \"Ubergang flacher ist als die McGaugh-Form ($\alpha = 0{,}5$) und eine $11$-fach bessere Anpassung an die numerischen Daten liefert. Eine vollst\"andige SPARC-Reanalyse mit $\mu_{\mathrm{CRM}}$ k\"onnte den $\chi^2/\mathrm{dof}$ \"uber den hier verwendeten McGaugh-Proxy hinaus verbessern. Semi-analytische EFT-Absch\"atzungen best\"atigen, dass Vektorst\"orungen $\Delta C_\ell/C_\ell < 10^{-11}\%$ zum CMB beitragen, was die Planck-Vertr\"aglichkeit des Vektorsektors etabliert.
+Das ontologische Bild ist: zwei Axiome (Null-Raum-Fluktuationen + thermodynamische Optimierung) $\to$ zwei Freiheitsgrade (Skalar + Vektor) $\to$ drei Ph\"anomene (Dunkle Energie, kosmologische Dunkle-Materie-Effekte, MOND-kompatible galaktische Dynamik) $\to$ eine Terminierungsbedingung (Standardphysik unterhalb galaktischer Skalen). Kein $\Lambda$, keine Dunkle-Materie-Teilchen -- nur Geometrie. Das numerische Randwertproblem best\"atigt, dass Chameleon-R\"uckkopplung einen MOND-artigen Attraktor erzeugen kann (mediane Steigung $\approx 0{,}58$ \"uber sechs Dekaden Galaxienmasse), w\"ahrend der explorative 171-Galaxien-SPARC-Check zugleich eine reale Spannung offenlegt: Der CRM-festgelegte Wert $a_0=cH_0/(2\pi)$ bleibt innerhalb der breiten empirischen $a_0$-Unsicherheit, passt unter dem McGaugh-Proxy aber deutlich schlechter als freies oder bestes globales $a_0$. Die Extraktion der emergierenden Interpolationsfunktion $\mu_{\mathrm{CRM}}(x) = [1 - \exp(-x^\alpha)]^{-1}$ mit $\alpha = 0{,}310 \pm 0{,}001$ aus dem Randwertproblem (Gl.~\ref{eq:mu_crm}) zeigt, dass der CRM-native \"Ubergang flacher ist als die McGaugh-Form ($\alpha = 0{,}5$) und eine $11$-fach bessere Anpassung an die numerischen Daten liefert. Eine vollst\"andige SPARC-Reanalyse mit $\mu_{\mathrm{CRM}}$ ist daher erforderlich, bevor der galaktische Sektor als validiert gelten kann. Semi-analytische EFT-Absch\"atzungen best\"atigen, dass Vektorst\"orungen $\Delta C_\ell/C_\ell < 10^{-11}\%$ zum CMB beitragen, was die Planck-Vertr\"aglichkeit des Vektorsektors etabliert.
 
 
 % ===================================================================
@@ -1099,7 +1120,7 @@ Diese Forschung wurde ohne externe F\"orderung durchgef\"uhrt.
 Die SPARC-Datenbank \cite{Lelli2016} ist \"offentlich zug\"anglich.
 Alle Analysecodes und numerischen Ergebnisse sind verf\"ugbar unter
 \url{https://github.com/research-line/crm-cosmology}
-(DOI: \href{https://doi.org/10.5281/zenodo.18728936}{10.5281/zenodo.18728936}).
+(DOI: \href{https://doi.org/10.5281/zenodo.18728935}{10.5281/zenodo.18728935}).
 
 % ===================================================================
 % BIBLIOGRAPHY
@@ -1111,21 +1132,25 @@ Alle Analysecodes und numerischen Ergebnisse sind verf\"ugbar unter
 Geiger, L.\ (2026).
 Game-Theoretic Cosmology and the Curvature Relaxation Model: Nash Equilibria Between Null Space and Spacetime Bubble.
 Companion paper (Paper~I). \url{https://github.com/research-line/crm-cosmology}.
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026b}
 Geiger, L.\ (2026).
 Eliminating the Dark Sector: Unifying the Curvature Relaxation Model with MOND.
 Companion paper (Paper~II).
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Geiger2026c}
 Geiger, L.\ (2026).
 Microscopic Foundations of the Curvature Relaxation Model: From Quantum Geometry to Macroscopic Saturation.
 Companion paper (Paper~III).
+\href{https://doi.org/10.5281/zenodo.18728935}{DOI: 10.5281/zenodo.18728935}.
 
 \bibitem{Milgrom1983}
 Milgrom, M.\ (1983).
 A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis.
 \textit{The Astrophysical Journal}, 270, 365--370.
+\href{https://doi.org/10.1086/161130}{DOI: 10.1086/161130}.
 
 \bibitem{McGaugh2016}
 McGaugh, S.\,S., Lelli, F.\ \& Schombert, J.\,M.\ (2016).
@@ -1143,6 +1168,7 @@ DOI: 10.1088/0004-6256/143/2/40.
 Skordis, C.\ \& Z{\l}o\'snik, T.\ (2021).
 New Relativistic Theory for Modified Newtonian Dynamics.
 \textit{Physical Review Letters}, 127(16), 161302.
+\href{https://doi.org/10.1103/PhysRevLett.127.161302}{DOI: 10.1103/PhysRevLett.127.161302}.
 
 \bibitem{Bekenstein2004}
 Bekenstein, J.\,D.\ (2004).
@@ -1164,7 +1190,7 @@ DOI: 10.1016/j.physrep.2005.12.001.
 
 \bibitem{Prigogine1977}
 Nicolis, G.\ \& Prigogine, I.\ (1977).
-\textit{Self-Organization in Nonequilibrium Systems}. Wiley.
+\textit{Self-Organization in Nonequilibrium Systems}. Wiley. ISBN: 978-0-471-02401-9.
 
 \bibitem{Jacobson1995}
 Jacobson, T.\ (1995).
@@ -1176,11 +1202,13 @@ DOI: 10.1103/PhysRevLett.75.1260.
 Starobinsky, A.\,A.\ (1980).
 A new type of isotropic cosmological models without singularity.
 \textit{Physics Letters B}, 91(1), 99--102.
+\href{https://doi.org/10.1016/0370-2693(80)90670-X}{DOI: 10.1016/0370-2693(80)90670-X}.
 
 \bibitem{Abbott2017}
 Abbott, B.\,P.\ et al.\ (LIGO/Virgo \& Fermi GBM) (2017).
 Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB~170817A.
 \textit{The Astrophysical Journal Letters}, 848(2), L13.
+\href{https://doi.org/10.3847/2041-8213/aa920c}{DOI: 10.3847/2041-8213/aa920c}.
 
 \bibitem{Bertotti2003}
 Bertotti, B., Iess, L.\ \& Tortora, P.\ (2003).
@@ -1270,27 +1298,36 @@ DOI: 10.1051/0004-6361/201525814.
 Verlinde, E.\ (2017).
 Emergent Gravity and the Dark Universe.
 \textit{SciPost Physics}, 2(3), 016.
+\href{https://doi.org/10.21468/SciPostPhys.2.3.016}{DOI: 10.21468/SciPostPhys.2.3.016}.
 
 \bibitem{DESI2025}
 DESI Collaboration (2025).
-DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints.
-\textit{arXiv:2503.14738}.
+DESI DR2 results. II. Measurements of baryon acoustic oscillations and cosmological constraints.
+\textit{Physical Review D}, 112(8), 083515.
+\href{https://doi.org/10.1103/tr6y-kpc6}{DOI: 10.1103/tr6y-kpc6}.
 
 \bibitem{Brodie2026}
-Brodie, G.\ (2026).
+Brodie, K.\ (2026).
 The Radial Acceleration Relation from Two-Horizon Entropy Sharing with Zero Free Parameters.
-Zenodo. DOI: 10.5281/zenodo.14751437.
+Zenodo. \href{https://doi.org/10.5281/zenodo.18677307}{DOI: 10.5281/zenodo.18677307}.
 
 \bibitem{FamaeyMcGaugh2012}
 Famaey, B.\ \& McGaugh, S.\,S.\ (2012).
 Modified Newtonian Dynamics (MOND): Observational Phenomenology and Relativistic Extensions.
 \textit{Living Reviews in Relativity}, 15, 10.
-DOI: 10.12942/lrr-2012-10.
+\href{https://doi.org/10.12942/lrr-2012-10}{DOI: 10.12942/lrr-2012-10}.
 
-\bibitem{MimeticMOND2024}
-Skordis, C.\ \& Z{\l}o\'snik, T.\ (2024).
-Connecting Relativistic MOND Theories with Mimetic Gravity.
-\textit{Physical Review D}, 110(6), 064060.
+\bibitem{Kovacs2026}
+Kovacs, G.\ (2026).
+Gravity Imprints, Time Fades: A Curvature-Memory Relaxation Model with Exact MOND Steady State.
+Manuscript v4.4, March 2026.
+Available at \url{https://ai.vixra.org/abs/2604.0006}.
+
+\bibitem{DomenechGanz2025}
+Dom\`enech, G.\ \& Ganz, A.\ (2025).
+Connecting relativistic MOND theories with mimetic gravity.
+\textit{Journal of Cosmology and Astroparticle Physics}, 2025(06), 059.
+\href{https://doi.org/10.1088/1475-7516/2025/06/059}{DOI: 10.1088/1475-7516/2025/06/059}.
 
 \end{thebibliography}
 

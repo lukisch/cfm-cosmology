@@ -2,6 +2,10 @@
 \documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
 
 % MiKTeX REVTeX 4.2 needs explicit package loading
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -20,6 +24,7 @@
 
 \usepackage{hyperref}
 \hypersetup{
+    unicode=true,
     pdftitle={QG-CRM: Ultraviolette Vervollständigung des Curvature Relaxation Model mittels quantenquadratischer Gravitation},
     pdfauthor={Lukas Geiger},
     colorlinks=true,
@@ -63,7 +68,7 @@ Die Paper~I--IV der Curvature Relaxation Model (CRM)-Reihe haben gezeigt, dass d
 
 Das Curvature Relaxation Model (CRM) bietet eine geometrische Alternative zur Standard-$\Lambda$CDM-Kosmologie. Über fünf Begleitpaper wurde das Rahmenwerk von spieltheoretischen Axiomen (Paper~I~\cite{Geiger2026}) über eine vereinheitlichte Behandlung von Dunkler Energie und MOND-artiger Dunkler Materie (Paper~II~\cite{Geiger2026b}), zu mikroskopischen Grundlagen mittels einer $R + \gamma R^2$-Lagrangedichte mit Pöschl-Teller-Sättigung (Paper~III~\cite{Geiger2026c}), dem galaktisch-kosmologischen Nexus über einen Vektorsektor (Paper~IV~\cite{Geiger2026d}) und dem Saturation Theorem, das $\tanh$ als universelle Normalform kapazitätsbegrenzter kooperativer Relaxation etabliert (Paper~V~\cite{Geiger2026e}), entwickelt.
 
-Das zentrale phänomenologische Ergebnis---die Sättigungs-ODE $dX/da = k(1-X^2)$ und ihre eindeutige Lösung $X(a) = \tanh(k(a-a_0))$---wurde gegen Pantheon+-Supernovae, Planck-CMB-Observablen, BAO-Messungen und SPARC-Rotationskurven getestet (Paper~I--IV), wobei $\Delta\chi^2 = -5.5$ gegenüber $\Lambda$CDM bei null früher Dunkler Energie und nur 6 freien Parametern erreicht wurde.
+Das zentrale phänomenologische Ergebnis---die Sättigungs-ODE $dX/da = k(1-X^2)$ und ihre eindeutige Lösung $X(a) = \tanh(k(a-a_0))$---wurde gegen Pantheon+-Supernovae~\cite{Scolnic2022}, Planck-CMB-Observablen~\cite{Planck2020}, DESI-BAO-Messungen~\cite{DESI2025} und SPARC-/MOND-Rotationskurven~\cite{Milgrom1983} getestet (Paper~I--IV), wobei $\Delta\chi^2 = -5.5$ gegenüber $\Lambda$CDM bei null früher Dunkler Energie und nur 6 freien Parametern erreicht wurde.
 
 Die CRM-Reihe blieb jedoch bisher agnostisch bezüglich des ultravioletten Regimes. Paper~V schloss mit einer expliziten offenen Frage:
 \begin{quote}
@@ -97,7 +102,7 @@ Im sehr frühen Universum, wenn die Krümmung planckisch ist, wird der Einstein-
 S_\mathrm{UV} \approx -\int d^4x\,\sqrt{-g}\,\frac{R^2}{\xi},
 \label{eq:pure-r2}
 \end{equation}
-wobei $\xi \equiv -1/\gamma$ (gemäß der Vorzeichenkonvention von~\cite{LiuQuintinAfshordi2026}; man beachte, dass $\gamma > 0$ in Paper~III $\xi < 0$ entspricht, d.\,h.\ der tachyonfreien Region, die die RG-Trajektorie im IR erreicht). Während der Inflation gilt $\xi > 0$. Dies ist eine skaleninvariante Theorie: jede Raumzeit konstanter Krümmung---Minkowski, de~Sitter oder Anti-de~Sitter---extremiert die Wirkung~\cite{Hell2024,Hell2025}.
+wobei $\xi \equiv -1/\gamma$ (gemäß der Vorzeichenkonvention von~\cite{LiuQuintinAfshordi2026}; man beachte, dass $\gamma > 0$ in Paper~III $\xi < 0$ entspricht, d.\,h.\ der tachyonfreien Region, die die RG-Trajektorie im IR erreicht). Während der Inflation gilt $\xi > 0$. Dies ist eine skaleninvariante Theorie: jede Raumzeit konstanter Krümmung---Minkowski, de~Sitter oder Anti-de~Sitter---extremiert die Wirkung~\cite{Hell2024,Hell2025}. Der Zusatz eines $R^2$-Terms zum Einstein-Hilbert-Anteil ist zugleich der Ausgangspunkt der Starobinsky-Inflation~\cite{Starobinsky1980}, während die vollständige quadratische Gravitationswirkung einschließlich $C^2$ renormierbar ist~\cite{Stelle1977}.
 
 \subsection{Von Skaleninvarianz zu Inflation}
 
@@ -290,7 +295,7 @@ wobei die Doppellogarithmus-Struktur ein Standardmerkmal integrierter RG-Flüsse
 \section{Beziehung zur tensorinduzierten Inflation}
 \label{sec:tensor-inflation}
 
-Bertacca et~al.~\cite{Bertacca2025} schlugen ein Szenario vor, in dem Skalarperturbationen rein als Effekt zweiter Ordnung aus Tensorfluktuationen in exaktem de~Sitter entstehen, ohne skalare Freiheitsgrade in linearer Ordnung. Obwohl dies eine elegante Konstruktion ist, ist sie aus folgenden Gründen strukturell inkompatibel mit der Sättigungskosmologie:
+Bertacca et~al.~\cite{Bertacca2025} schlugen---aufbauend auf der grundlegenden Arbeit von Matarrese, Mollerach und Bruni~\cite{Matarrese1998}---ein Szenario vor, in dem Skalarperturbationen rein als Effekt zweiter Ordnung aus Tensorfluktuationen in exaktem de~Sitter entstehen, ohne skalare Freiheitsgrade in linearer Ordnung. Obwohl dies eine elegante Konstruktion ist, ist sie aus folgenden Gründen strukturell inkompatibel mit der Sättigungskosmologie:
 
 \begin{enumerate}
 \item \textbf{Kein linearer Skalarsektor.} Das Szenario schließt explizit lineare Skalarperturbationen aus. Das CRM erfordert hingegen das Scalaron als dynamischen Freiheitsgrad sowohl für den Inflationshintergrund als auch für den spätzeitlichen Sättigungsmechanismus.
@@ -321,6 +326,8 @@ Wir haben die Inflationsobservablen numerisch über den gesamten lebensfähigen 
 
 \begin{table}[h]
 \caption{QG-CRM-Inflationsvorhersagen für repräsentative Parameterwerte. Die beobachtete skalare Amplitude $A_s = e^{3.06} \times 10^{-10}$ wird verwendet, um $\lambda_0$ für jedes $(\lambda_\mathrm{tH}, N)$-Paar festzulegen.}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
 \begin{tabular}{cccccc}
 \toprule
 $\lambda_\mathrm{tH}$ & $N$ & $n_s$ & $r$ & $\lambda_0$ & $\mathcal{N}$ \\
@@ -356,7 +363,7 @@ $\lambda_\mathrm{tH}$ & $N$ & $n_s$ & $r$ & $\lambda_0$ & $\mathcal{N}$ \\
 \item \textbf{Späterer Beschleunigungsbeginn:} $z_\mathrm{acc} = 0.52$ vs.\ $0.84$ ($\Lambda$CDM). Die verlängerte materiedominierte Phase erklärt JWST-``Universe Breakers'' bei $z > 7$~\cite{Labbe2023}.
 \item \textbf{Signaturen modifizierter Gravitation:} $\mu(k,a) \neq 1$, Gravitationsschlupf $\eta \neq 1$, Linseneffekt $\Sigma = 1$---was QG-CRM von $\Lambda$CDM unterscheidet. Testbar mit Euclid und Roman.
 \item \textbf{Gravitationswellengeschwindigkeit:} $c_T = c$ (exakt), konsistent mit GW170817~\cite{GW170817}.
-\item \textbf{MOND-Konsistenzrelation:} $a_0 = cH_0/(2\pi)$, die lokale galaktische Dynamik mit der kosmologischen Expansionsrate verbindet.
+\item \textbf{MOND-Konsistenzrelation:} $a_0 = cH_0/(2\pi)$~\cite{Milgrom1983}, die lokale galaktische Dynamik mit der kosmologischen Expansionsrate verbindet.
 \end{itemize}
 
 
@@ -405,6 +412,8 @@ Paper~I etablierte eine thermodynamische Äquivalenz, die die spieltheoretischen
 
 \begin{table}[h]
 \caption{Vergleich kosmologischer Rahmenwerke.}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
 \begin{tabular}{lccc}
 \toprule
  & $\Lambda$CDM & Starobinsky & QG-CRM \\
@@ -654,115 +663,157 @@ Phys.\ Rev.\ Research \textbf{7}, L032010 (2025),
 \bibitem{Buccio2024}
 D.~Buccio, J.~F.~Donoghue, G.~Menezes and R.~Percacci,
 ``Physical running of couplings in quadratic gravity,''
-Phys.\ Rev.\ Lett.\ \textbf{133}, 021604 (2024).
+Phys.\ Rev.\ Lett.\ \textbf{133}, 021604 (2024),
+\href{https://doi.org/10.1103/PhysRevLett.133.021604}{10.1103/PhysRevLett.133.021604}.
 
 \bibitem{Starobinsky1980}
 A.~A.~Starobinsky,
 ``A new type of isotropic cosmological models without singularity,''
-Phys.\ Lett.\ B \textbf{91}, 99 (1980).
+Phys.\ Lett.\ B \textbf{91}, 99--102 (1980),
+\href{https://doi.org/10.1016/0370-2693(80)90670-X}{10.1016/0370-2693(80)90670-X}.
 
 \bibitem{Hell2024}
 A.~Hell, D.~Lust and G.~Zoupanos,
 ``On the degrees of freedom of $R^2$ gravity in flat spacetime,''
-JHEP \textbf{02}, 039 (2024).
+JHEP \textbf{2024}(02), 039 (2024),
+\href{https://doi.org/10.1007/JHEP02(2024)039}{10.1007/JHEP02(2024)039}.
 
 \bibitem{Hell2025}
 A.~Hell and D.~Lust,
 ``Conformal and pure scale-invariant gravities in $d$ dimensions,''
-JHEP \textbf{09}, 202 (2025).
+JHEP \textbf{2025}(09), 202 (2025),
+\href{https://doi.org/10.1007/JHEP09(2025)202}{10.1007/JHEP09(2025)202}.
 
 \bibitem{CapperDuff1974}
 D.~M.~Capper and M.~J.~Duff,
 ``Trace anomalies in dimensional regularization,''
-Nuovo Cimento Soc.\ Ital.\ Fis.\ \textbf{23A}, 173 (1974).
+Nuovo Cimento Soc.\ Ital.\ Fis.\ \textbf{23A}, 173--183 (1974),
+\href{https://doi.org/10.1007/BF02748300}{10.1007/BF02748300}.
 
 \bibitem{Duff1994}
 M.~J.~Duff,
 ``Twenty years of the Weyl anomaly,''
-Class.\ Quant.\ Grav.\ \textbf{11}, 1387 (1994).
+Class.\ Quant.\ Grav.\ \textbf{11}, 1387--1404 (1994),
+\href{https://doi.org/10.1088/0264-9381/11/6/004}{10.1088/0264-9381/11/6/004}.
 
 \bibitem{HoldomRen2016}
 B.~Holdom and J.~Ren,
 ``QCD analogy for quantum gravity,''
-Phys.\ Rev.\ D \textbf{93}, 124030 (2016).
+Phys.\ Rev.\ D \textbf{93}, 124030 (2016),
+\href{https://doi.org/10.1103/PhysRevD.93.124030}{10.1103/PhysRevD.93.124030}.
 
 \bibitem{GeigerDE2026}
 L.~Geiger,
 ``Dark Energy as Residual Vacuum Free Energy: A Thermodynamic Bound on the Cosmological Constant,''
-Zenodo (2026), \href{https://doi.org/10.5281/zenodo.19106160}{10.5281/zenodo.19106160}.
+Zenodo (2026), \href{https://doi.org/10.5281/zenodo.19036235}{10.5281/zenodo.19036235} (concept DOI; latest v1.9).
 
 \bibitem{HuSawicki2007}
 W.~Hu and I.~Sawicki,
-Phys.\ Rev.\ D \textbf{76}, 064004 (2007).
+``Models of $f(R)$ cosmic acceleration that evade solar-system tests,''
+Phys.\ Rev.\ D \textbf{76}, 064004 (2007),
+\href{https://doi.org/10.1103/PhysRevD.76.064004}{10.1103/PhysRevD.76.064004}.
 
 \bibitem{Stelle1977}
 K.~S.~Stelle,
 ``Renormalization of higher-derivative quantum gravity,''
-Phys.\ Rev.\ D \textbf{16}, 953 (1977).
+Phys.\ Rev.\ D \textbf{16}, 953--969 (1977),
+\href{https://doi.org/10.1103/PhysRevD.16.953}{10.1103/PhysRevD.16.953}.
 
 \bibitem{DvaliGomezZell2017}
 G.~Dvali, C.~Gomez and S.~Zell,
-JCAP \textbf{06}, 028 (2017).
+``Quantum break-time of de Sitter,''
+JCAP \textbf{2017}(06), 028 (2017),
+\href{https://doi.org/10.1088/1475-7516/2017/06/028}{10.1088/1475-7516/2017/06/028}.
 
 \bibitem{Mottola1985}
 E.~Mottola,
-Phys.\ Rev.\ D \textbf{31}, 754 (1985).
+``Particle creation in de Sitter space,''
+Phys.\ Rev.\ D \textbf{31}, 754 (1985),
+\href{https://doi.org/10.1103/PhysRevD.31.754}{10.1103/PhysRevD.31.754}.
 
 \bibitem{Mottola1986}
 E.~Mottola,
-Phys.\ Rev.\ D \textbf{33}, 1616 (1986).
+``Thermodynamic instability of de Sitter space,''
+Phys.\ Rev.\ D \textbf{33}, 1616 (1986),
+\href{https://doi.org/10.1103/PhysRevD.33.1616}{10.1103/PhysRevD.33.1616}.
 
 \bibitem{Matarrese1998}
 S.~Matarrese, S.~Mollerach and M.~Bruni,
-Phys.\ Rev.\ D \textbf{58}, 043504 (1998).
+``Second order perturbations of the Einstein-de Sitter universe,''
+Phys.\ Rev.\ D \textbf{58}, 043504 (1998),
+\href{https://doi.org/10.1103/PhysRevD.58.043504}{10.1103/PhysRevD.58.043504}.
 
 \bibitem{ACT2025}
 T.~Louis et~al.\ (Atacama Cosmology Telescope Collaboration),
-JCAP \textbf{11}, 062 (2025).
+``The Atacama Cosmology Telescope: DR6 power spectra, likelihoods and $\Lambda$CDM parameters,''
+JCAP \textbf{2025}(11), 062 (2025),
+\href{https://doi.org/10.1088/1475-7516/2025/11/062}{10.1088/1475-7516/2025/11/062}.
 
 \bibitem{SPT3G2026}
 E.~Camphuis et~al.\ (SPT-3G Collaboration),
-arXiv:2506.20707.
+``SPT-3G D1: CMB temperature and polarization power spectra and cosmology from 2019 and 2020 observations of the SPT-3G main field,''
+Phys.\ Rev.\ D \textbf{113}, 083504 (2026),
+\href{https://doi.org/10.1103/7wt3-9v2y}{10.1103/7wt3-9v2y}.
 
 \bibitem{Labbe2023}
 I.~Labb\'e et~al.,
-Nature \textbf{616}, 266 (2023).
+``A population of red candidate massive galaxies $\sim$600 Myr after the Big Bang,''
+Nature \textbf{616}, 266--269 (2023),
+\href{https://doi.org/10.1038/s41586-023-05786-2}{10.1038/s41586-023-05786-2}.
 
 \bibitem{GW170817}
 B.~P.~Abbott et~al.\ (LIGO/Virgo),
-Phys.\ Rev.\ Lett.\ \textbf{119}, 161101 (2017).
+``GW170817: Observation of gravitational waves from a binary neutron star inspiral,''
+Phys.\ Rev.\ Lett.\ \textbf{119}, 161101 (2017),
+\href{https://doi.org/10.1103/PhysRevLett.119.161101}{10.1103/PhysRevLett.119.161101}.
 
 \bibitem{Alicki2023}
 R.~Alicki, G.~Barenboim and A.~Jenkins,
-Phys.\ Rev.\ D \textbf{108}, 123530 (2023).
+``Quantum thermodynamics of de Sitter space,''
+Phys.\ Rev.\ D \textbf{108}, 123530 (2023),
+\href{https://doi.org/10.1103/PhysRevD.108.123530}{10.1103/PhysRevD.108.123530}.
 
 \bibitem{Alicki2025}
 R.~Alicki, G.~Barenboim and A.~Jenkins,
-Phys.\ Lett.\ B \textbf{866}, 139519 (2025).
+``The irreversible relaxation of inflation,''
+Phys.\ Lett.\ B \textbf{866}, 139519 (2025),
+\href{https://doi.org/10.1016/j.physletb.2025.139519}{10.1016/j.physletb.2025.139519}.
 
 \bibitem{Jacobson1995}
 T.~Jacobson,
-Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+``Thermodynamics of spacetime: The Einstein equation of state,''
+Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995),
+\href{https://doi.org/10.1103/PhysRevLett.75.1260}{10.1103/PhysRevLett.75.1260}.
 
 \bibitem{Scolnic2022}
 D.~M.~Scolnic et~al.,
-Astrophys.\ J.\ \textbf{938}, 113 (2022).
+``The Pantheon+ analysis: The full data set and light-curve release,''
+Astrophys.\ J.\ \textbf{938}, 113 (2022),
+\href{https://doi.org/10.3847/1538-4357/ac8b7a}{10.3847/1538-4357/ac8b7a}.
 
 \bibitem{Milgrom1983}
 M.~Milgrom,
-Astrophys.\ J.\ \textbf{270}, 365 (1983).
+``A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis,''
+Astrophys.\ J.\ \textbf{270}, 365--370 (1983),
+\href{https://doi.org/10.1086/161130}{10.1086/161130}.
 
 \bibitem{Planck2020}
 Y.~Akrami et~al.\ (Planck Collaboration),
-Astron.\ Astrophys.\ \textbf{641}, A10 (2020).
+``Planck 2018 results. X. Constraints on inflation,''
+Astron.\ Astrophys.\ \textbf{641}, A10 (2020),
+\href{https://doi.org/10.1051/0004-6361/201833887}{10.1051/0004-6361/201833887}.
 
 \bibitem{DESI2025}
 A.~G.~Adame et~al.\ (DESI Collaboration),
-JCAP \textbf{02}, 021 (2025).
+``DESI 2024 VI: cosmological constraints from the measurements of baryon acoustic oscillations,''
+JCAP \textbf{2025}(02), 021 (2025),
+\href{https://doi.org/10.1088/1475-7516/2025/02/021}{10.1088/1475-7516/2025/02/021}.
 
 \bibitem{Afshordi2017}
 N.~Afshordi, C.~Coriano, L.~Delle~Rose, E.~Gould and K.~Skenderis,
-Phys.\ Rev.\ Lett.\ \textbf{118}, 041301 (2017).
+``From Planck data to Planck era: Observational tests of holographic cosmology,''
+Phys.\ Rev.\ Lett.\ \textbf{118}, 041301 (2017),
+\href{https://doi.org/10.1103/PhysRevLett.118.041301}{10.1103/PhysRevLett.118.041301}.
 
 \end{thebibliography}
 
