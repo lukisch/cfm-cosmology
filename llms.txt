@@ -1,0 +1,38 @@
+# Curvature Relaxation Model (CRM)
+
+Canonical repository: https://github.com/research-line/crm-cosmology
+Primary DOI concept: https://doi.org/10.5281/zenodo.18728935
+Latest local status noted in repo docs: open research/preprint repository; latest local paper rebuilds may be newer than the live Zenodo v7 record.
+License: CC BY 4.0
+
+## Summary
+
+CRM is a geometric cosmology and modified-gravity research program. It studies curvature relaxation, scalaron dynamics, f(R)/Horndeski-style perturbation modeling, and a MOND-oriented vector sector as alternatives to separate dark-sector components.
+
+The repository includes:
+
+- English and German LaTeX/PDF papers for CRM Papers I-IV.
+- Extension papers on saturation dynamics and QG-CRM.
+- Python scripts for Planck 2018 CMB, Pantheon+, MOND, and SPARC-oriented checks.
+- Figures and result tables used by the paper series.
+- Project review notes and publication strategy documents.
+
+## Recommended Reading Order
+
+1. `README.md` for repository orientation and key figures.
+2. `TODO.md` for the current automation and publication backlog.
+3. `Plan.txt` for full review history, open theoretical issues, and journal-preparation context.
+4. `PUBLIKATIONSSTRATEGIE.md` for the Zenodo/SciPost publication strategy.
+5. `papers/Paper1_EN.tex` through `papers/Paper4_EN.tex` for the core paper series.
+
+## Important Cautions
+
+- Treat the work as preprint-stage research, not as established consensus cosmology.
+- Preserve the distinction between reported numerical results and independently validated findings.
+- Several limitations are explicitly tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`.
+- Do not describe Paper IV or the MOND/vector-sector components as fully settled; the repository tracks open SPARC, a0, ghost/stability, and circularity concerns.
+- When citing this repository, cite the Zenodo DOI and include the accessed commit or version where possible.
+
+## Search Keywords
+
+curvature relaxation model, CRM cosmology, modified gravity, f(R) gravity, Horndeski, hi_class, Planck 2018 CMB, Pantheon+, MOND, SPARC rotation curves, scalaron dynamics, dark energy alternative, dark matter phenomenology, geometric cosmology, preprint research code

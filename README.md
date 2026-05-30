@@ -1,15 +1,36 @@
 # Curvature Relaxation Model (CRM)
 
-**A Four-Paper Program for Geometric Cosmology Without the Dark Sector**
+**Research code and papers for a geometric modified-gravity cosmology program**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18728935.svg)](https://doi.org/10.5281/zenodo.18728935)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ## Overview
 
-The Curvature Relaxation Model (CRM) replaces dark energy with a geometric curvature return potential and embeds modified gravity within the Horndeski/f(R) framework. The model is validated against Planck 2018 CMB data (TT+TE+EE, 6,405 data points) using [hi_class](https://github.com/miguelzuma/hi_class_public) with a custom `crm_fR` gravity model.
+The Curvature Relaxation Model (CRM) is a research program for geometric cosmology and modified gravity. It explores whether dark-energy and dark-matter phenomenology can be modeled through curvature relaxation, scalaron dynamics, and a MOND-oriented vector sector instead of introducing separate dark-sector components.
 
-**Key result:** The native `crm_fR` model achieves **Delta chi2 = -3.7** vs. LCDM on Planck CMB data (MCMC best-fit), with alpha_M_0 = 0.0011 +/- 0.0007 (1.76 sigma detection, P(alpha_M_0 > 0) = 100%) and 100*theta_s = 1.04173 (identical to LCDM).
+The repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` analysis scripts, result tables, and figures for CMB, Pantheon+, MOND, and SPARC-related checks.
+
+**Current reported CMB result:** the native `crm_fR` model gives **Delta chi2 = -3.7** vs. LCDM on Planck 2018 CMB TT+TE+EE data in the current MCMC best-fit run, with alpha_M_0 = 0.0011 +/- 0.0007 and 100*theta_s = 1.04173.
+
+**Research status:** this is an open research/preprint repository, not a consensus cosmology package. Several theoretical and statistical limitations are tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`; the live Zenodo v7 record also needs a future version upload to match the latest local paper rebuilds.
+
+## What This Repository Is For
+
+- **Modified-gravity reproduction:** scripts and figures for Planck 2018 CMB, Pantheon+ supernova, MOND, and SPARC-oriented analyses.
+- **Paper archive:** English and German LaTeX/PDF papers for the CRM program and extension papers.
+- **hi_class patching:** a patch workflow for adding the `crm_fR` model to [hi_class](https://github.com/miguelzuma/hi_class_public).
+- **Review trail:** project notes, publication strategy, and open review items for follow-up work.
+
+## Visual Overview
+
+| CMB spectrum comparison | MCMC posterior |
+|---|---|
+| ![CMB TT power spectrum comparison for CFM models against Planck 2018](figures/paper1/cfm_cl_comparison.png) | ![crm_fR MCMC posterior corner plot](figures/paper2/cfm_contour.png) |
+
+| MOND posterior | SPARC RAR comparison |
+|---|---|
+| ![CFM plus MOND MCMC posterior plot](figures/paper3/CFM_MOND_MCMC_Posteriors.png) | ![SPARC radial acceleration relation comparison](results/paper4/sparc/rar_full_sparc.png) |
 
 ## Core Papers (I--IV)
 
