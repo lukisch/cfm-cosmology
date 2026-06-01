@@ -219,7 +219,10 @@ This work uses the following open-source software:
 
 ## Citation
 
-If you use this work, please cite the Zenodo deposit:
+If you use this work, please cite the Zenodo deposit and include the accessed Git commit when referring to the repository code. GitHub can also read the repository-level `CITATION.cff` file for citation export.
+
+- Concept DOI for all CRM I--IV versions: [10.5281/zenodo.18728935](https://doi.org/10.5281/zenodo.18728935)
+- Latest published Zenodo v7.0 record checked for this README: [10.5281/zenodo.19233559](https://doi.org/10.5281/zenodo.19233559)
 
 ```bibtex
 @misc{Geiger2026CRM,
@@ -228,8 +231,9 @@ If you use this work, please cite the Zenodo deposit:
                for Geometric Cosmology Without the Dark Sector},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.18728935},
-  url       = {https://doi.org/10.5281/zenodo.18728935}
+  version   = {7.0},
+  doi       = {10.5281/zenodo.19233559},
+  url       = {https://doi.org/10.5281/zenodo.19233559}
 }
 ```
 
@@ -279,7 +283,7 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 
 ## Haftung / Liability
 
-Dieses Projekt ist eine **unentgeltliche Open-Source-Schenkung** im Sinne der §§ 516 ff. BGB. Die Haftung des Urhebers ist gemäß **§ 521 BGB** auf **Vorsatz und grobe Fahrlässigkeit** beschränkt. Ergänzend gelten die Haftungsausschlüsse aus GPL-3.0 / MIT / Apache-2.0 §§ 15–16 (je nach gewählter Lizenz).
+Dieses Projekt ist eine **unentgeltliche Open-Science-Veröffentlichung**. Die Haftung des Urhebers ist gemäß **§ 521 BGB** auf **Vorsatz und grobe Fahrlässigkeit** beschränkt.
 
 Nutzung auf eigenes Risiko. Keine Wartungszusage, keine Verfügbarkeitsgarantie, keine Gewähr für Fehlerfreiheit oder Eignung für einen bestimmten Zweck.
 

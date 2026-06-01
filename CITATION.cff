@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this research code or paper series, please cite the Zenodo record and include the accessed commit."
+type: software
+title: "The Curvature Relaxation Model: A Four-Paper Program for Geometric Cosmology Without the Dark Sector"
+authors:
+  - family-names: Geiger
+    given-names: Lukas
+    orcid: "https://orcid.org/0009-0005-7296-1534"
+version: "7.0"
+date-released: "2026-03-26"
+license: CC-BY-4.0
+doi: 10.5281/zenodo.19233559
+url: "https://github.com/research-line/crm-cosmology"
+repository-code: "https://github.com/research-line/crm-cosmology"
+abstract: "Research code, papers, result tables, and figures for the Curvature Relaxation Model (CRM), a preprint-stage modified-gravity cosmology program."
+keywords:
+  - cosmology
+  - modified-gravity
+  - f(R) gravity
+  - MOND
+  - CMB
+  - Pantheon+
+  - SPARC
+  - research-code

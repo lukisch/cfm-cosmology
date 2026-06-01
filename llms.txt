@@ -2,6 +2,7 @@
 
 Canonical repository: https://github.com/research-line/crm-cosmology
 Primary DOI concept: https://doi.org/10.5281/zenodo.18728935
+Latest published Zenodo v7.0 record checked in this run: https://doi.org/10.5281/zenodo.19233559
 Latest local status noted in repo docs: open research/preprint repository; latest local paper rebuilds may be newer than the live Zenodo v7 record.
 License: CC BY 4.0
 
@@ -16,6 +17,7 @@ The repository includes:
 - Python scripts for Planck 2018 CMB, Pantheon+, MOND, and SPARC-oriented checks.
 - Figures and result tables used by the paper series.
 - Project review notes and publication strategy documents.
+- `CITATION.cff` with the current GitHub/Zenodo citation metadata.
 
 ## Recommended Reading Order
 
