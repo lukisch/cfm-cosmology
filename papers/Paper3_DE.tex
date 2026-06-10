@@ -52,10 +52,10 @@
 \title{\textbf{\huge Von der Kr\"ummungs-R\"uckgabe zur Quantengravitation}\\[0.5em]
 \Large Lagrange-Fundament, Skalaron-Dynamik und testbare Vorhersagen des CRM}
 
-\author[1]{Lukas Geiger\thanks{Korrespondenz: Lukas Geiger, Bernau, Deutschland.}}
-\affil[1]{Unabh\"angiger Forscher, Bernau}
+\author[1]{Lukas Geiger}
+\affil[1]{Unabh\"angiger Forscher, Bernau\\ \small Korrespondenz: Lukas Geiger, Bernau, Deutschland.}
 
-\date{Februar 2026 \\ \vspace{0.5em} \small \textit{Paper~III der CRM-Serie \cite{Geiger2026,Geiger2026b}}}
+\date{\today \\ \vspace{0.5em} \small \textit{Paper~III der CRM-Serie \cite{Geiger2026,Geiger2026b}}}
 
 \maketitle
 
@@ -69,13 +69,19 @@
 \noindent \textbf{Themenbereiche:} Theoretische Physik, Quantengravitation, Mathematische Physik
 \end{abstract}
 
-\newpage
+\clearpage
+\begingroup
+\footnotesize
+\setstretch{1.0}
+\setlength{\parskip}{0pt}
 \tableofcontents
-\newpage
 
-\footnotetext{Bei der Erstellung dieses Manuskripts wurden KI-gest\"utzte Werkzeuge (Claude, Anthropic; Copilot, Microsoft/GitHub; Gemini, Google DeepMind) f\"ur mathematische Formalisierung, Code-Entwicklung und Textgenerierung eingesetzt. Alle physikalischen Hypothesen, wissenschaftliche Interpretation und Verantwortung f\"ur den Inhalt liegen ausschlie\ss{}lich beim Autor. Der Analysecode ist verf\"ugbar unter \url{https://github.com/research-line/crm-cosmology}.}
-
-\newpage
+\vspace{0.35em}
+{\scriptsize
+\noindent\textbf{KI-Offenlegung:} KI-gest\"utzte Werkzeuge wurden f\"ur Formalisierung, Code-Entwicklung und Redaktion genutzt; alle physikalischen Hypothesen, die wissenschaftliche Interpretation und die Verantwortung f\"ur den Inhalt liegen ausschlie\ss{}lich beim Autor. \href{https://github.com/research-line/crm-cosmology}{GitHub-Repository}.}
+\par
+\endgroup
+\clearpage
 
 % ===================================================================
 % 1. EINLEITUNG
@@ -160,7 +166,7 @@ erzeugt eine Skalenfeldgleichung, deren sp\"atzeitliche L\"osung auf dem FLRW-Hi
 \end{equation}
 mit $V'(\phi) = -2V_0 \tanh(\phi/\phi_0)/(\phi_0 \cosh^2(\phi/\phi_0))$, besitzt die L\"osung $\phi = \phi_0 \tanh(\lambda t)$ im Slow-Roll-Regime, in dem $\ddot{\phi} \ll 3H\dot{\phi}$, wobei $\lambda$ mit $k$ und $H_0$ zusammenh\"angt. Die Energiedichte $\rho_\phi = \frac{1}{2}\dot{\phi}^2 + V(\phi)$ bildet dann ab auf $\Omega_\Phi(a) = \Phi_0 \cdot f_{\mathrm{sat}}(a)$. \hfill $\square$
 
-\textit{Anmerkung:} Das $\cosh^{-2}$-Potential ist in der Quantenmechanik als P\"oschl-Teller-Potential wohlbekannt. Sein Auftreten hier legt eine tiefe Verbindung zwischen quantenmechanischen Bindungszust\"anden und kosmologischer S\"attigung nahe.\footnote{Das P\"oschl-Teller-Potential hat in j\"ungster Zeit erneute Anwendung in der Physik Schwarzer L\"ocher gefunden, wo es analytisch handhabbare Quasinormalmoden-Spektren f\"ur Schwarzschild- und Nariai-Raumzeiten liefert~\cite{ZhongPT2022, NariaiQNM2025}. Dass dasselbe Potential sowohl die kosmologische S\"attigung (CRM) als auch das Ringdown Schwarzer L\"ocher bestimmt, unterstreicht eine tiefere Verbindung zwischen gebundener Quantenmechanik und Raumzeitdynamik.}
+\textit{Anmerkung:} Das $\cosh^{-2}$-Potential ist in der Quantenmechanik als P\"oschl-Teller-Potential wohlbekannt. Sein Auftreten hier legt eine tiefe Verbindung zwischen quantenmechanischen Bindungszust\"anden und kosmologischer S\"attigung nahe.\footnote{\hypertarget{Hfootnote.1}{}Das P\"oschl-Teller-Potential hat in j\"ungster Zeit erneute Anwendung in der Physik Schwarzer L\"ocher gefunden, wo es analytisch handhabbare Quasinormalmoden-Spektren f\"ur Schwarzschild- und Nariai-Raumzeiten liefert~\cite{ZhongPT2022, NariaiQNM2025}. Dass dasselbe Potential sowohl die kosmologische S\"attigung (CRM) als auch das Ringdown Schwarzer L\"ocher bestimmt, unterstreicht eine tiefere Verbindung zwischen gebundener Quantenmechanik und Raumzeitdynamik.}
 
 \textit{Philosophische Spannung:} Die Einf\"uhrung eines zus\"atzlichen Skalarfelds $\phi$ scheint der Behauptung des CRM zu widersprechen, den dunklen Sektor zu eliminieren. Wir betonen, dass $\phi$ \textit{keine} neue dunkle Komponente analog zu Dunkler Energie oder Dunkler Materie ist: Es hat einen eindeutigen Lagrange-Ursprung (Gl.~\ref{eq:double_well}), ein bekanntes quantenmechanisches Analogon, und seine Sp\"atzeitdynamik ist vollst\"andig durch $V_0$ und $\phi_0$ bestimmt -- es ist nicht frei justierbar. Dennoch bleibt die Ableitung von $\phi$ direkt aus dem geometrischen Sektor (z.\,B.\ als konformaler Modus der Metrik oder als Kondensat des $R^2$-Scalarons) ein wichtiges offenes Problem, das den rein geometrischen Charakter des CRM st\"arken w\"urde.
 
@@ -385,7 +391,7 @@ Dies folgt aus der konformen \"Aquivalenz zur Einstein-Gravitation mit einem kan
 -k^2 \Psi = 4\pi G\,a^2\,\mu(k,a)\,\rho_m\,\delta_m
 \label{eq:modified_poisson}
 \end{equation}
-wobei $\mu(k,a)$ die effektive Gravitationskopplung ist:\footnote{Nicht zu verwechseln mit der MOND-Verst\"arkung $\mu_{\mathrm{eff}} \approx \sqrt{\pi}$ auf Hintergrundebene aus Paper~II. Hier modifiziert $\mu(k,a)$ die Poisson-Gleichung auf St\"orungsebene.}
+wobei $\mu(k,a)$ die effektive Gravitationskopplung ist:\footnote{\hypertarget{Hfootnote.2}{}Nicht zu verwechseln mit der MOND-Verst\"arkung $\mu_{\mathrm{eff}} \approx \sqrt{\pi}$ auf Hintergrundebene aus Paper~II. Hier modifiziert $\mu(k,a)$ die Poisson-Gleichung auf St\"orungsebene.}
 \begin{equation}
 {\mu(k,a) = 1 + \frac{1}{3}\,\frac{k^2}{k^2 + a^2\,m_{\mathrm{eff}}^2(a)}}
 \label{eq:mu_ka}
