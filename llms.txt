@@ -1,3 +1,5 @@
+## Last-checked: 2026-06-11
+
 # Curvature Relaxation Model (CRM)
 
 Canonical repository: https://github.com/research-line/crm-cosmology
@@ -16,25 +18,42 @@ The repository includes:
 - Extension papers on saturation dynamics and QG-CRM.
 - Python scripts for Planck 2018 CMB, Pantheon+, MOND, and SPARC-oriented checks.
 - Figures and result tables used by the paper series.
-- Project review notes and publication strategy documents.
 - `CITATION.cff` with the current GitHub/Zenodo citation metadata.
 
 ## Recommended Reading Order
 
 1. `README.md` for repository orientation and key figures.
-2. `TODO.md` for the current automation and publication backlog.
-3. `Plan.txt` for full review history, open theoretical issues, and journal-preparation context.
-4. `PUBLIKATIONSSTRATEGIE.md` for the Zenodo/SciPost publication strategy.
-5. `papers/Paper1_EN.tex` through `papers/Paper4_EN.tex` for the core paper series.
+2. `CITATION.cff` for the current citation metadata, version, and Zenodo DOI.
+3. `MCMC_SETUP_GUIDE.md` for instructions on running the MCMC analyses.
+4. `papers/Paper1_EN.tex` through `papers/Paper4_EN.tex` for the core paper series.
 
 ## Important Cautions
 
 - Treat the work as preprint-stage research, not as established consensus cosmology.
 - Preserve the distinction between reported numerical results and independently validated findings.
-- Several limitations are explicitly tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`.
-- Do not describe Paper IV or the MOND/vector-sector components as fully settled; the repository tracks open SPARC, a0, ghost/stability, and circularity concerns.
+- Several open limitations are documented in the paper series and noted in open GitHub issues.
+- Do not describe Paper IV or the MOND/vector-sector components as fully settled; open SPARC, a0, ghost/stability, and circularity concerns remain under investigation.
 - When citing this repository, cite the Zenodo DOI and include the accessed commit or version where possible.
 
-## Search Keywords
+## Audience
 
-curvature relaxation model, CRM cosmology, modified gravity, f(R) gravity, Horndeski, hi_class, Planck 2018 CMB, Pantheon+, MOND, SPARC rotation curves, scalaron dynamics, dark energy alternative, dark matter phenomenology, geometric cosmology, preprint research code
+- **Cosmologists and astrophysicists** researching dark energy, dark matter, and modified gravity alternatives
+- **Theoretical physicists** working on f(R) gravity, Horndeski theories, scalaron dynamics, and quantum quadratic gravity
+- **Computational cosmologists** using hi_class, MCMC tools, or CLASS for CMB and large-scale structure analysis
+- **Graduate students and independent researchers** looking for preprint-stage open-science cosmology code and paper series
+- **AI agents and search tools** indexing open-science research repositories, Zenodo preprints, and modified-gravity programs
+
+## Search Phrases
+
+```
+curvature relaxation model CRM cosmology
+modified gravity f(R) gravity without dark sector
+geometric cosmology MOND dark matter alternative
+Planck 2018 CMB hi_class crm_fR Python
+Horndeski scalaron dynamics MCMC preprint
+dark energy alternative curvature saturation theorem
+open science cosmology research code papers
+CRM papers I II III IV LaTeX PDF Zenodo
+quantum quadratic gravity UV completion QG-CRM
+Pantheon+ SPARC rotation curves CRM analysis
+```
