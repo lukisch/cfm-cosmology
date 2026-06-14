@@ -369,6 +369,26 @@ This suggests that the dark matter density in $\Lambda$CDM ($\Omega_{\mathrm{CDM
 
 We use the Pantheon+ catalog \cite{Scolnic2022} comprising 1,590 Type~Ia supernovae with $z > 0.01$ (redshift range $0.01$--$2.26$). Luminosity distances are computed via cumulative trapezoidal integration on a fine redshift grid ($N = 2{,}000$). The nuisance parameter~$M$ is analytically marginalized. Parameter optimization uses differential evolution with L-BFGS-B polish.
 
+To keep the empirical argument auditable, Table~\ref{tab:evidence_gate_ledger} separates the current background-level support from the remaining theory and perturbation gates. This prevents the SN-only result from being read as a completed full-cosmology validation.
+
+\begin{table*}[t]
+\centering
+\caption{Evidence-gate ledger for the main data layers in Paper II.}
+\label{tab:evidence_gate_ledger}
+\footnotesize
+\begin{tabular}{@{}llll@{}}
+\toprule
+\parbox[t]{0.17\textwidth}{\raggedright \textbf{Layer}} & \parbox[t]{0.21\textwidth}{\raggedright \textbf{Data object}} & \parbox[t]{0.26\textwidth}{\raggedright \textbf{Current presentation}} & \parbox[t]{0.24\textwidth}{\raggedright \textbf{Open gate}} \\
+\midrule
+\parbox[t]{0.17\textwidth}{\raggedright SN background fit} & \parbox[t]{0.21\textwidth}{\raggedright 1,590 Pantheon+ SNe Ia with $z>0.01$} & \parbox[t]{0.26\textwidth}{\raggedright Model comparison and MCMC posterior support a curvature-like term with $\Delta\chi^2=-26.3$ vs.\ $\Lambda$CDM.} & \parbox[t]{0.24\textwidth}{\raggedright Repeat with alternative SN covariance choices and independent low-redshift systematics cuts.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Out-of-sample check} & \parbox[t]{0.21\textwidth}{\raggedright 5-fold Pantheon+ cross-validation} & \parbox[t]{0.26\textwidth}{\raggedright Held-out predictive $\chi^2/n$ is slightly lower for Extended CRM+MOND than for $\Lambda$CDM.} & \parbox[t]{0.24\textwidth}{\raggedright Stress-test folds, seeds, and nuisance treatment before treating the gain as robust generalization.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Compressed joint background} & \parbox[t]{0.21\textwidth}{\raggedright Pantheon+ plus Planck distance priors and 9 BAO points} & \parbox[t]{0.26\textwidth}{\raggedright The running-coupling variant reaches zero EDE and a competitive joint background fit.} & \parbox[t]{0.24\textwidth}{\raggedright Replace compressed priors with a full Boltzmann and CMB likelihood analysis.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Running coupling and MOND bridge} & \parbox[t]{0.21\textwidth}{\raggedright Optimized $\beta_{\mathrm{eff}}(a)$ and $\mu(a)$ profiles} & \parbox[t]{0.26\textwidth}{\raggedright Later tables show that scale dependence can remove the CMB sound-horizon failure of constant $\beta$.} & \parbox[t]{0.24\textwidth}{\raggedright Derive the profiles from a covariant action and test stability across redshift.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Perturbation and lensing sector} & \parbox[t]{0.21\textwidth}{\raggedright Boltzmann-code path, lensing, and Bullet-Cluster logic} & \parbox[t]{0.26\textwidth}{\raggedright Presented as a validation program rather than as a completed dataset-level test.} & \parbox[t]{0.24\textwidth}{\raggedright Provide CRM perturbation equations and compare against CMB spectra, growth, and lensing surveys.} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
 \subsection{Results: Model Comparison}
 
 \begin{table*}

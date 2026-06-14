@@ -1,19 +1,19 @@
-# Curvature Relaxation Model (CRM)
+﻿# Curvature Relaxation Model (CRM)
 
-**Research code and papers for a geometric modified-gravity cosmology program**
+**Research code and papers for a geometric modified-gravity cosmology project**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18728935.svg)](https://doi.org/10.5281/zenodo.18728935)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ## Overview
 
-The Curvature Relaxation Model (CRM) is a research program for geometric cosmology and modified gravity. It explores whether dark-energy and dark-matter phenomenology can be modeled through curvature relaxation, scalaron dynamics, and a MOND-oriented vector sector instead of introducing separate dark-sector components.
+The Curvature Relaxation Model (CRM) is a research program in geometric cosmology and modified gravity. It investigates whether parts of dark-energy and dark-matter phenomenology can be modeled through curvature relaxation, scalaron dynamics, and a MOND-oriented vector sector rather than by introducing separate dark-sector components.
 
-The repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` analysis scripts, result tables, and figures for CMB, Pantheon+, MOND, and SPARC-related checks.
+This repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` analysis scripts, result tables, and figures for CMB, Pantheon+, MOND, and SPARC-related checks.
 
-**Current reported CMB result:** the native `crm_fR` model gives **Delta chi2 = -3.7** vs. LCDM on Planck 2018 CMB TT+TE+EE data in the current MCMC best-fit run, with alpha_M_0 = 0.0011 +/- 0.0007 and 100*theta_s = 1.04173.
+**Current headline CMB result in this repository:** the native `crm_fR` model yields **Delta chi2 = -3.7** relative to LCDM on Planck 2018 CMB TT+TE+EE data in the current MCMC best-fit run, with alpha_M_0 = 0.0011 +/- 0.0007 and 100*theta_s = 1.04173.
 
-**Research status:** this is an open research/preprint repository, not a consensus cosmology package. Several theoretical and statistical limitations are tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`; the live Zenodo v7 record also needs a future version upload to match the latest local paper rebuilds.
+**Research status:** this is an open research/preprint repository, not a consensus cosmology package. Theoretical and statistical limitations are tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`; the live Zenodo v7 record has not yet been updated to the latest local paper rebuilds.
 
 ## What This Repository Is For
 
@@ -48,9 +48,9 @@ The repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` anal
 | V | `papers/extensions/Paper5_EN.tex` | `papers/extensions/Paper5_DE.tex` | The Saturation Theorem: conditional projective-collar normal form for tanh saturation | [10.5281/zenodo.19036188](https://doi.org/10.5281/zenodo.19036188) |
 | VI | `papers/extensions/Paper6_EN.tex` | `papers/extensions/Paper6_DE.tex` | QG-CRM: Ultraviolet Completion via Quantum Quadratic Gravity (DRAFT) | [10.5281/zenodo.19352448](https://doi.org/10.5281/zenodo.19352448) |
 
-**Paper V -- The Saturation Theorem** identifies a conditional normal form for saturation dynamics. Axioms A--D, together with the signed interior composition assumptions, force an Abel/collar structure; the exact tanh representative follows once the additional projective boundary quotient D' is imposed. Major QG programs motivate the macroscopic A--D structure, while D' remains an explicit diagnostic/open physical ingredient rather than a derived microscopic theorem.
+**Paper V -- The Saturation Theorem** identifies a conditional normal form for saturation dynamics. Axioms A--D, together with the signed interior composition assumptions, imply an Abel/collar structure; the exact tanh representative appears once the additional projective boundary quotient D' is imposed. Major QG programs motivate the macroscopic A--D structure, while D' remains an explicit diagnostic and open physical ingredient rather than a derived microscopic theorem.
 
-**Paper VI -- QG-CRM: Ultraviolet Completion** answers the open question from Paper V: "which UV completion selects k and Phi_0?" By identifying the gamma*R^2 sector of the CRM Lagrangian with asymptotically free quantum quadratic gravity (QQG), inflation is generated dynamically via RG running without an inflaton field. The Saturation Theorem provides the unique UV-IR interface. Predictions: n_s ~ 1 - 4/(3N) ~ 0.976, r >= 0.01, testable with Stage IV CMB experiments.
+**Paper VI -- QG-CRM: Ultraviolet Completion** addresses an open question from Paper V: which UV completion selects k and Phi_0? It explores a proposed identification of the gamma*R^2 sector of the CRM Lagrangian with asymptotically free quantum quadratic gravity (QQG), under which inflation is generated dynamically via RG running without an inflaton field. In this draft, the Saturation Theorem is treated as the UV-IR interface. The resulting headline predictions are n_s ~ 1 - 4/(3N) ~ 0.976 and r >= 0.01, testable with Stage IV CMB experiments.
 
 ## Key Results
 

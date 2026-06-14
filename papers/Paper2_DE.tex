@@ -1,4 +1,8 @@
 \documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode.tex}
+\pdfgentounicode=1
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -40,7 +44,7 @@
 
 
 \begin{abstract}
-Wir schlagen ein vereinheitlichtes geometrisches Rahmenwerk vor, das sowohl Dunkle Energie als auch partikul\"are Dunkle Materie durch Raumzeit-Kr\"ummung ersetzt. Aufbauend auf dem Kr\"ummungs-R\"uckgabemodell (CRM) \cite{Geiger2026} erweitern wir das Modell zu einem Universum mit ausschlie\ss{}lich baryonischer Materie ($\Omega_b \approx 0{,}05$), kompatibel mit MOND \cite{Milgrom1983}. Drei zentrale Neuerungen werden eingef\"uhrt: (i)~eine \textit{laufende Kr\"ummungskopplung} $\beta_{\mathrm{eff}}(a)$, die von CDM-artig ($\beta \approx 2{,}8$) zu kr\"ummungsartig ($\beta \approx 2{,}0$) \"ubergeht; (ii)~eine skalenabh\"angige MOND-Hintergrundkopplung $\mu(a) = \sqrt{\pi}$ bei sp\"aten Zeiten, $\mu \to 1$ bei $z > 4000$, die Fr\"uhe Dunkle Energie \"uberfl\"ussig macht; und (iii)~ein geometrischer Potenzgesetz-Term $\alpha \cdot a^{-\beta}$, der die kosmologische Rolle der Dunklen Materie ersetzt. Gemeinsam getestet gegen 1.590 Pantheon+-Supernovae, Planck-CMB-Observablen und 9 BAO-Messungen erreicht die bevorzugte Variante $\Delta\chi^2 = -5{,}5$ gegen\"uber $\Lambda$CDM bei $H_0 = 67{,}3$\,km/s/Mpc mit null Fr\"uher Dunkler Energie, passt Planck exakt ($\ell_A = 301{,}471$, $\mathcal{R} = 1{,}7502$) und nutzt nur 6 freie Parameter. Die reine SN-Analyse liefert $\Delta\chi^2 = -26{,}3$ mit MCMC-Posterior $\beta = 2{,}02 \pm 0{,}20$, was Kr\"ummungsskalierung best\"atigt. Das Scalaron erzeugt testbare Signaturen: $\mu(k,a) \neq 1$, gravitational slip $\eta \neq 1$, aber Lensing $\Sigma = 1$ -- eine Kombination, die dieses Framework von CDM unterscheidet.
+Wir schlagen ein vereinheitlichtes geometrisches Rahmenwerk vor, das sowohl Dunkle Energie als auch partikul\"are Dunkle Materie durch Raumzeit-Kr\"ummung ersetzt. Aufbauend auf dem Kr\"ummungs-R\"uckgabemodell (CRM) \cite{Geiger2026} erweitern wir das Modell zu einem Universum mit ausschließlich baryonischer Materie ($\Omega_b \approx 0{,}05$), kompatibel mit MOND \cite{Milgrom1983}. Drei zentrale Neuerungen werden eingef\"uhrt: (i)~eine \textit{laufende Kr\"ummungskopplung} $\beta_{\mathrm{eff}}(a)$, die von CDM-artig ($\beta \approx 2{,}8$) zu kr\"ummungsartig ($\beta \approx 2{,}0$) \"ubergeht; (ii)~eine skalenabh\"angige MOND-Hintergrundkopplung $\mu(a) = \sqrt{\pi}$ bei sp\"aten Zeiten, $\mu \to 1$ bei $z > 4000$, die Fr\"uhe Dunkle Energie \"uberfl\"ussig macht; und (iii)~ein geometrischer Potenzgesetz-Term $\alpha \cdot a^{-\beta}$, der die kosmologische Rolle der Dunklen Materie ersetzt. Gemeinsam getestet gegen 1.590 Pantheon+-Supernovae, Planck-CMB-Observablen und 9 BAO-Messungen erreicht die bevorzugte Variante $\Delta\chi^2 = -5{,}5$ gegen\"uber $\Lambda$CDM bei $H_0 = 67{,}3$\,km/s/Mpc mit null Fr\"uher Dunkler Energie, passt Planck exakt ($\ell_A = 301{,}471$, $\mathcal{R} = 1{,}7502$) und nutzt nur 6 freie Parameter. Die reine SN-Analyse liefert $\Delta\chi^2 = -26{,}3$ mit MCMC-Posterior $\beta = 2{,}02 \pm 0{,}20$, was Kr\"ummungsskalierung best\"atigt. Das Scalaron erzeugt testbare Signaturen: $\mu(k,a) \neq 1$, gravitational slip $\eta \neq 1$, aber Lensing $\Sigma = 1$ -- eine Kombination, die dieses Framework von CDM unterscheidet.
 
 \end{abstract}
 
@@ -79,7 +83,7 @@ Auf den ersten Blick befassen sich CRM und MOND mit unterschiedlichen "`dunklen"
 \item MOND ersetzt \textbf{Dunkle Materie} (galaktische Dynamik)
 \end{itemize}
 
-Eine naive Kombination st\"o\ss{}t jedoch auf eine fundamentale Spannung: Das Standard-CRM fittet $\Omega_m \approx 0{,}36$, was erhebliche Dunkle Materie impliziert ($\Omega_m - \Omega_b \approx 0{,}31$). Wenn MOND korrekt ist und Dunkle Materie nicht existiert, muss das Modell allein mit $\Omega_m = \Omega_b \approx 0{,}05$ funktionieren.
+Eine naive Kombination st\"oßt jedoch auf eine fundamentale Spannung: Das Standard-CRM fittet $\Omega_m \approx 0{,}36$, was erhebliche Dunkle Materie impliziert ($\Omega_m - \Omega_b \approx 0{,}31$). Wenn MOND korrekt ist und Dunkle Materie nicht existiert, muss das Modell allein mit $\Omega_m = \Omega_b \approx 0{,}05$ funktionieren.
 
 \subsection{Strukturbildung: Gemeinsame Basis}
 
@@ -87,7 +91,7 @@ Beide Rahmenwerke konvergieren in einer kritischen Vorhersage: Strukturen bilden
 
 \begin{itemize}
 \item \textbf{CRM:} Der sp\"atere Einsatz der kosmischen Beschleunigung ($z_{\mathrm{acc}} = 0{,}52$ vs.\ $0{,}84$) verl\"angert die materiedominierte Wachstumsphase \cite{Geiger2026}.
-\item \textbf{MOND:} Verst\"arkte Gravitationsanziehung bei niedrigen Beschleunigungen f\"uhrt zu schnellerem gravitativen Kollaps auf gro\ss{}en Skalen \cite{Asencio2023}.
+\item \textbf{MOND:} Verst\"arkte Gravitationsanziehung bei niedrigen Beschleunigungen f\"uhrt zu schnellerem gravitativen Kollaps auf großen Skalen \cite{Asencio2023}.
 \end{itemize}
 
 Diese gemeinsame Vorhersage wird durch mehrere Beobachtungsanomalien gest\"utzt: die JWST-"`Universe Breakers"' bei $z > 7$ \cite{Labbe2023, BoylanKolchin2023}, der El~Gordo-Galaxienhaufen bei $z \approx 0{,}87$ (${>}6\sigma$ Spannung mit $\Lambda$CDM) \cite{Asencio2023} und unerwartet reife Protocluster bei $z > 4$ \cite{Miller2018}.
@@ -109,7 +113,7 @@ mit
 \Omega_\Phi(a) = \Phi_0 \cdot \frac{\tanh\!\big(k\cdot(a - a_{\mathrm{trans}})\big) + s}{1 + s}
 \end{equation}
 
-F\"ur die Erweiterung auf ein Universum mit ausschlie\ss{}lich baryonischem Materieinhalt zerlegen wir das geometrische Potential in zwei Komponenten:
+F\"ur die Erweiterung auf ein Universum mit ausschließlich baryonischem Materieinhalt zerlegen wir das geometrische Potential in zwei Komponenten:
 \begin{equation}
 \begin{split}
 H^2(a) = H_0^2 \Big[&\mu_{\mathrm{eff}}\,\Omega_b\,a^{-3} + \underbrace{\Phi_0 \cdot f_{\mathrm{sat}}(a)}_{\text{geom.\ DE}} \\
@@ -120,7 +124,7 @@ H^2(a) = H_0^2 \Big[&\mu_{\mathrm{eff}}\,\Omega_b\,a^{-3} + \underbrace{\Phi_0 \
 
 wobei:
 \begin{itemize}
-\item $\mu_{\mathrm{eff}}\,\Omega_b$ die MOND-verst\"arkte baryonische Materiedichte ist, wobei $\mu_{\mathrm{eff}} \approx 1{,}77$ die gravitative Verst\"arkung durch die MOND-Interpolationsfunktion auf kosmologischen Skalen kodiert.\footnote{Wir verwenden $\mu_{\mathrm{eff}}$ f\"ur die Hintergrund-MOND-Verst\"arkung und reservieren $\mu(k,a)$ f\"ur die modifizierte Poisson-Gleichung auf St\"orungsebene (Paper~III). Dies sind verschiedene Gr\"o\ss{}en.}
+\item $\mu_{\mathrm{eff}}\,\Omega_b$ die MOND-verst\"arkte baryonische Materiedichte ist, wobei $\mu_{\mathrm{eff}} \approx 1{,}77$ die gravitative Verst\"arkung durch die MOND-Interpolationsfunktion auf kosmologischen Skalen kodiert.\footnote{Wir verwenden $\mu_{\mathrm{eff}}$ f\"ur die Hintergrund-MOND-Verst\"arkung und reservieren $\mu(k,a)$ f\"ur die modifizierte Poisson-Gleichung auf St\"orungsebene (Paper~III). Dies sind verschiedene Größen.}
 \item $\Phi_0 \cdot f_{\mathrm{sat}}(a)$ der S\"attigungs-Ersatzterm f\"ur Dunkle Energie ist (aus dem dynamischen S\"attigungsmechanismus)
 \item $\alpha \cdot a^{-\beta}$ ein Potenzgesetz-Term ist, der die \textit{kosmologische} Rolle der Dunklen Materie \"ubernimmt
 \end{itemize}
@@ -129,7 +133,7 @@ Die Flachheitsbedingung $H^2(a{=}1)/H_0^2 = 1$ ergibt:
 \begin{equation}
 \mu_{\mathrm{eff}}\,\Omega_b + \Phi_0 \cdot f_{\mathrm{sat}}(1) + \alpha = 1
 \end{equation}
-Beachte, dass bei $a=1$ der erste Term in Gl.~\eqref{eq:extended_cfm} $\mu_{\mathrm{eff}}\,\Omega_b$ ist, nicht $\Omega_b$ allein, da der MOND-Verst\"arkungsfaktor $\mu_{\mathrm{eff}}$ auf die baryonische Dichte zu allen Epochen einschlie\ss{}lich heute angewendet wird.
+Beachte, dass bei $a=1$ der erste Term in Gl.~\eqref{eq:extended_cfm} $\mu_{\mathrm{eff}}\,\Omega_b$ ist, nicht $\Omega_b$ allein, da der MOND-Verst\"arkungsfaktor $\mu_{\mathrm{eff}}$ auf die baryonische Dichte zu allen Epochen einschließlich heute angewendet wird.
 
 \subsection{Spur-Kopplung und BBN-Konsistenz}
 \label{subsec:trace_coupling}
@@ -207,7 +211,7 @@ Die beiden Mechanismen sind komplement\"ar: MOND behandelt die lokale Dynamik, w
 \subsection{Die Effizienzhypothese: Warum keine Dunkle Materie?}
 \label{subsec:efficiency}
 
-Eine kritische Frage bleibt: Das erweiterte CRM zeigt, dass die Daten ein Universum mit ausschlie\ss{}lich baryonischem Materieinhalt \textit{erlauben}, aber warum sollte das Universum so sein? Das CRM verlangt nicht, dass nicht-baryonische Materie nie existiert hat -- nur dass Baryonen das sind, was als Materieinhalt des heutigen Universums \"ubrig geblieben ist, w\"ahrend die gravitativen Effekte der Dunklen Materie geometrisch sind (das Scalaron-Feld). Das Rahmenwerk von Paper~I liefert eine \"uberzeugende Antwort.
+Eine kritische Frage bleibt: Das erweiterte CRM zeigt, dass die Daten ein Universum mit ausschließlich baryonischem Materieinhalt \textit{erlauben}, aber warum sollte das Universum so sein? Das CRM verlangt nicht, dass nicht-baryonische Materie nie existiert hat -- nur dass Baryonen das sind, was als Materieinhalt des heutigen Universums \"ubrig geblieben ist, w\"ahrend die gravitativen Effekte der Dunklen Materie geometrisch sind (das Scalaron-Feld). Das Rahmenwerk von Paper~I liefert eine \"uberzeugende Antwort.
 
 Im Gleichgewicht zwischen Nullraum und Raumzeitblase \cite{Geiger2026} erh\"alt die Raumzeitblase ein endliches Energiebudget $E_0$ vom Nullraum. Ihr Ziel ist es, den Konzentrationsgradienten $G$ so effizient wie m\"oglich zu neutralisieren und gleichzeitig das \"ubergeordnete System zu sch\"utzen. Dies erzeugt ein Ressourcenallokationsproblem:
 
@@ -220,7 +224,7 @@ Im Gleichgewicht zwischen Nullraum und Raumzeitblase \cite{Geiger2026} erh\"alt 
 In einem optimal konfigurierten Universum w\"are die Zuweisung von 85\% des Energiebudgets an eine Komponente, die kaum zum prim\"aren Ziel (entropiegetriebene Gradientenreduktion) beitr\"agt, eine \textit{strategisch unterlegene Allokation}. Ein optimales System maximiert die Entropieproduktion pro Energieeinheit, indem es das gesamte Budget in "`aktive"' (baryonische) Materie kanalisiert.
 
 \begin{proposition}[Effizienzprinzip -- Konditionale Form]
-\textit{Wenn} das Gleichgewicht zwischen Nullraum und Raumzeitblase die Entropieproduktion pro Energieeinheit optimiert (Pr\"amisse~P1), und \textit{wenn} baryonische Materie pro Masseneinheit mehr Entropie erzeugt als jede hypothetische Dunkle-Materie-Spezies (Pr\"amisse~P2), \textit{dann} besteht der optimale Materieinhalt ausschlie\ss{}lich aus baryonischer Materie ($\Omega_m = \Omega_b$). Die gravitativen Effekte, die konventionell der Dunklen Materie zugeschrieben werden, sind stattdessen geometrische Konsequenzen des Kr\"ummungsr\"uckstellmechanismus (der $\alpha \cdot a^{-\beta}$-Term).
+\textit{Wenn} das Gleichgewicht zwischen Nullraum und Raumzeitblase die Entropieproduktion pro Energieeinheit optimiert (Pr\"amisse~P1), und \textit{wenn} baryonische Materie pro Masseneinheit mehr Entropie erzeugt als jede hypothetische Dunkle-Materie-Spezies (Pr\"amisse~P2), \textit{dann} besteht der optimale Materieinhalt ausschließlich aus baryonischer Materie ($\Omega_m = \Omega_b$). Die gravitativen Effekte, die konventionell der Dunklen Materie zugeschrieben werden, sind stattdessen geometrische Konsequenzen des Kr\"ummungsr\"uckstellmechanismus (der $\alpha \cdot a^{-\beta}$-Term).
 \end{proposition}
 
 \textit{Logische Struktur:} Das Argument hat die Form $P1 \wedge P2 \Rightarrow S$, was deduktiv g\"ultig ist. Pr\"amisse~P2 ist empirisch fundiert: Baryonen bilden Sterne, treiben Nukleosynthese und speisen Schwarzloch-Akkretion, w\"ahrend Dunkle Materie (falls sie existierte) nur gravitativ wechselwirken und vernachl\"assigbar zur Entropieproduktion beitragen w\"urde. Pr\"amisse~P1 -- dass das Nash-Gleichgewicht maximale Entropieproduktion selektiert -- ist die \textit{zu testende Hypothese}. Sie wird durch den empirischen Erfolg des Modells ($\Delta\chi^2 = -26{,}3$) gest\"utzt, ist aber nicht unabh\"angig bewiesen. Das Effizienzprinzip ist daher eine \textit{testbare konditionale Vorhersage}: Es w\"urde durch den experimentellen Nachweis von Dunkle-Materie-Teilchen falsifiziert.
@@ -254,6 +258,26 @@ Das geometrische Potential ist ein zerfallendes \"Uberbleibsel der anf\"angliche
 
 Wir verwenden den Pantheon+-Katalog \cite{Scolnic2022} mit 1.590 Typ~Ia-Supernovae mit $z > 0{,}01$ (Rotverschiebungsbereich $0{,}01$--$2{,}26$). Leuchtkraftentfernungen werden mittels kumulativer Trapezintegration auf einem feinen Rotverschiebungsgitter ($N = 2.000$) berechnet. Der St\"orparameter~$M$ wird analytisch marginalisiert. Die Parameteroptimierung verwendet differentielle Evolution mit L-BFGS-B-Feinschliff.
 
+Zur besseren Nachvollziehbarkeit trennt Tabelle~\ref{tab:evidenz_gate_ledger} die Evidenzebenen von den offenen Prüfgates. Dadurch wird der SN-Befund nicht als abgeschlossene Vollkosmologie gelesen.
+
+\begin{table*}[t]
+\centering
+\caption{Evidenz- und Prüfgate-Übersicht für die zentralen Datenschichten in Paper II.}
+\label{tab:evidenz_gate_ledger}
+\footnotesize
+\begin{tabular}{@{}llll@{}}
+\toprule
+\parbox[t]{0.17\textwidth}{\raggedright \textbf{Ebene}} & \parbox[t]{0.21\textwidth}{\raggedright \textbf{Datenobjekt}} & \parbox[t]{0.26\textwidth}{\raggedright \textbf{Aktuelle Darstellung}} & \parbox[t]{0.24\textwidth}{\raggedright \textbf{Offenes Prüfgate}} \\
+\midrule
+\parbox[t]{0.17\textwidth}{\raggedright SN-Hintergrundfit} & \parbox[t]{0.21\textwidth}{\raggedright 1.590 Pantheon+-SNe Ia mit $z>0{,}01$} & \parbox[t]{0.26\textwidth}{\raggedright Modellvergleich und MCMC-Posterior stützen einen krümmungsartigen Term mit $\Delta\chi^2=-26{,}3$ gegenüber $\Lambda$CDM.} & \parbox[t]{0.24\textwidth}{\raggedright Mit alternativen SN-Kovarianzen und unabhängigen Low-$z$-Systematik-Schnitten wiederholen.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Generalisierungstest} & \parbox[t]{0.21\textwidth}{\raggedright 5-Fold-Kreuzvalidierung auf Pantheon+} & \parbox[t]{0.26\textwidth}{\raggedright Der prädiktive $\chi^2/n$ auf Testdaten liegt für Erweitertes CRM+MOND leicht unter $\Lambda$CDM.} & \parbox[t]{0.24\textwidth}{\raggedright Folds, Seeds und Störparameterbehandlung stress-testen, bevor der Gewinn als robuste Generalisierung gilt.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Komprimierter gemeinsamer Hintergrund} & \parbox[t]{0.21\textwidth}{\raggedright Pantheon+ plus Planck-Distanzprioren und 9 BAO-Punkte} & \parbox[t]{0.26\textwidth}{\raggedright Die Variante mit laufender Kopplung erreicht null Frühe Dunkle Energie und einen konkurrenzfähigen gemeinsamen Hintergrundfit.} & \parbox[t]{0.24\textwidth}{\raggedright Komprimierte Priors durch vollständige Boltzmann- und CMB-Likelihood-Analyse ersetzen.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Laufende Kopplung und MOND-Brücke} & \parbox[t]{0.21\textwidth}{\raggedright Optimierte $\beta_{\mathrm{eff}}(a)$- und $\mu(a)$-Profile} & \parbox[t]{0.26\textwidth}{\raggedright Nachfolgende Tabellen zeigen, dass Skalenabhängigkeit das CMB-Schallhorizont-Problem konstanter $\beta$ entfernen kann.} & \parbox[t]{0.24\textwidth}{\raggedright Profile aus einer kovarianten Wirkung herleiten und Stabilität über die Rotverschiebung testen.} \\
+\parbox[t]{0.17\textwidth}{\raggedright Perturbations- und Lensing-Sektor} & \parbox[t]{0.21\textwidth}{\raggedright Boltzmann-Code-Pfad, Lensing- und Bullet-Cluster-Logik} & \parbox[t]{0.26\textwidth}{\raggedright Als Validierungsprogramm dargestellt, nicht als abgeschlossener Datensatztest.} & \parbox[t]{0.24\textwidth}{\raggedright CRM-Perturbationsgleichungen angeben und gegen CMB-Spektren, Wachstum und Lensing-Surveys testen.} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
 \subsection{Ergebnisse: Modellvergleich}
 
 \begin{table*}
@@ -280,7 +304,7 @@ CRM Baryon Band & 0,070 & 4 & 894,7 & $+165{,}7$ & 902,7 & 924,1 \\
 \begin{enumerate}
 \item \textbf{Einfaches Baryonen-CRM scheitert:} Mit $\Omega_m = 0{,}05$ und nur dem $\tanh$-S\"attigungsterm verschlechtert sich der Fit katastrophal ($\Delta\chi^2 = +216{,}5$). Der Optimierer versucht extreme Parameter ($k = 86$, $a_{\mathrm{trans}} = 0{,}06$), um eine nahezu stufenf\"ormige Funktion zu erzeugen, was best\"atigt, dass das Standard-CRM die fehlende Dunkle Materie \textit{nicht} kompensieren kann.
 
-\item \textbf{Erweitertes CRM gelingt spektakul\"ar:} Die Hinzuf\"ugung des geometrischen DM-Terms $\alpha \cdot a^{-\beta}$ stellt die Fit-Qualit\"at wieder her und \textit{\"ubertrifft} sie, mit $\Delta\chi^2 = -26{,}3$ gegen\"uber $\Lambda$CDM -- besser als sowohl $\Lambda$CDM \textit{als auch} das Standard-CRM mit gro\ss{}em Abstand.
+\item \textbf{Erweitertes CRM gelingt spektakul\"ar:} Die Hinzuf\"ugung des geometrischen DM-Terms $\alpha \cdot a^{-\beta}$ stellt die Fit-Qualit\"at wieder her und \textit{\"ubertrifft} sie, mit $\Delta\chi^2 = -26{,}3$ gegen\"uber $\Lambda$CDM -- besser als sowohl $\Lambda$CDM \textit{als auch} das Standard-CRM mit großem Abstand.
 
 \item \textbf{Best-Fit-Parameter (MCMC):} Eine vollst\"andige Markov-Chain-Monte-Carlo-Analyse (emcee, 48 Walker, 5000 Schritte) ergibt:
 \begin{itemize}
@@ -301,7 +325,7 @@ CRM Baryon Band & 0,070 & 4 & 894,7 & $+165{,}7$ & 902,7 & 924,1 \\
 
 Mit f\"unf freien Parametern gegen\"uber zwei f\"ur $\Lambda$CDM ist eine Bedenken hinsichtlich \"Uberanpassung nat\"urlich. Wir adressieren dies mit einer rigorosen 5-Fold-Kreuzvalidierung am Pantheon+-Datensatz ($n = 1.590$).
 
-\textbf{Methode:} Die Daten werden zuf\"allig in f\"unf gleiche Folds aufgeteilt (Seed $= 42$). F\"ur jeden Fold werden beide Modelle ($\Lambda$CDM und Erweitertes CRM) auf den verbleibenden 80\% (Trainingssatz) mittels differentieller Evolution optimiert, und der pr\"adiktive $\chi^2/n$ wird am zur\"uckgehaltenen 20\%-Testsatz evaluiert. Dieses Verfahren testet \textit{Generalisierung}, nicht blo\ss{}e Anpassungsg\"ute.
+\textbf{Methode:} Die Daten werden zuf\"allig in f\"unf gleiche Folds aufgeteilt (Seed $= 42$). F\"ur jeden Fold werden beide Modelle ($\Lambda$CDM und Erweitertes CRM) auf den verbleibenden 80\% (Trainingssatz) mittels differentieller Evolution optimiert, und der pr\"adiktive $\chi^2/n$ wird am zur\"uckgehaltenen 20\%-Testsatz evaluiert. Dieses Verfahren testet \textit{Generalisierung}, nicht bloße Anpassungsg\"ute.
 
 \begin{table*}
 \centering
@@ -317,7 +341,7 @@ Erw.\ CRM+MOND (5 Param.) & 0,456 & 0,428 & 0,465 & 0,411 & 0,467 & $0{,}445 \pm
 \end{tabular}
 \end{table*}
 
-\textbf{Ergebnis:} Das Erweiterte CRM erzielt einen \textit{niedrigeren} mittleren pr\"adiktiven $\chi^2/n$ auf ungesehenen Daten ($\Delta\langle\chi^2/n\rangle = -0{,}007$). Trotz 2{,}5$\times$ mehr Parametern generalisiert das Modell \textit{besser} als $\Lambda$CDM, was \"Uberanpassung als Erkl\"arung f\"ur die $\Delta\chi^2 = -26{,}3$-Verbesserung ausschlie\ss{}t.
+\textbf{Ergebnis:} Das Erweiterte CRM erzielt einen \textit{niedrigeren} mittleren pr\"adiktiven $\chi^2/n$ auf ungesehenen Daten ($\Delta\langle\chi^2/n\rangle = -0{,}007$). Trotz 2{,}5$\times$ mehr Parametern generalisiert das Modell \textit{besser} als $\Lambda$CDM, was \"Uberanpassung als Erkl\"arung f\"ur die $\Delta\chi^2 = -26{,}3$-Verbesserung ausschließt.
 
 % -------------------------------------------------------------------
 % 4. DISKUSSION
@@ -343,7 +367,7 @@ Die MOND-Hintergrundkopplung $\mu_{\mathrm{eff}}$, die in diesem Paper verwendet
 
 Paper~IV \cite{Geiger2026d} liefert die dynamische Grundlage. Der Vektorsektor -- ein zeitartiges Einheitsvektorfeld $A_\mu$, abgeleitet aus dem Prinzip maximaler Entropieproduktion -- erzeugt die MOND-Verst\"arkung durch eine teleodynamische Kopplung an den Scalaron. Die Aufgabenteilung lautet:
 \begin{itemize}
-\item \textbf{Dieses Paper (Paper~II):} Demonstriert, \emph{dass} die MOND-Hintergrundkopplung gemeinsame SN+CMB+BAO-Kompatibilit\"at erreicht, und bestimmt die effektive Gr\"o\ss{}e $\mu_{\mathrm{eff}} \approx \sqrt{\pi}$.
+\item \textbf{Dieses Paper (Paper~II):} Demonstriert, \emph{dass} die MOND-Hintergrundkopplung gemeinsame SN+CMB+BAO-Kompatibilit\"at erreicht, und bestimmt die effektive Größe $\mu_{\mathrm{eff}} \approx \sqrt{\pi}$.
 \item \textbf{Paper~IV:} Demonstriert, \emph{warum} -- leitet die Kopplung aus Feldgleichungen ab und etabliert $a_0 = cH_0/(2\pi)$ als Konsistenzrelation.
 \end{itemize}
 
@@ -363,11 +387,11 @@ Dieses Ergebnis hat tiefgreifende Implikationen: Die Komponente, die traditionel
 Die relativistische MOND-Theorie AeST (Aether-Skalar-Tensor) \cite{Skordis2021}, die die fr\"uhere TeVeS-Theorie von Bekenstein \cite{Bekenstein2004} abl\"ost, indem sie Kompatibilit\"at mit Gravitationswellengeschwindigkeits-Constraints und dem CMB erreicht, liefert das einzige bekannte Rahmenwerk, das gleichzeitig:
 \begin{enumerate}
 \item MOND-Dynamik auf galaktischen Skalen reproduziert
-\item Das CMB-Leistungsspektrum fittet (einschlie\ss{}lich des dritten akustischen Maximums)
+\item Das CMB-Leistungsspektrum fittet (einschließlich des dritten akustischen Maximums)
 \item Das Materiedichtespektrum fittet
 \end{enumerate}
 
-AeST erreicht dies durch ein Skalarfeld $\phi$ und ein zeitartiges Vektorfeld $A_\mu$, die einen effektiven Energie-Impuls-Tensor erzeugen. Die kosmologischen Hintergrundgleichungen in AeST enthalten Terme, die mit nicht-standardm\"a\ss{}iger Skalierung zu $H^2(a)$ beitragen. Ein detaillierter Vergleich zwischen den AeST-Hintergrundgleichungen und der erweiterten CRM-Friedmann-Gleichung~\eqref{eq:extended_cfm} ist ein zentrales Ziel f\"ur zuk\"unftige Arbeiten.
+AeST erreicht dies durch ein Skalarfeld $\phi$ und ein zeitartiges Vektorfeld $A_\mu$, die einen effektiven Energie-Impuls-Tensor erzeugen. Die kosmologischen Hintergrundgleichungen in AeST enthalten Terme, die mit nicht-standardm\"aßiger Skalierung zu $H^2(a)$ beitragen. Ein detaillierter Vergleich zwischen den AeST-Hintergrundgleichungen und der erweiterten CRM-Friedmann-Gleichung~\eqref{eq:extended_cfm} ist ein zentrales Ziel f\"ur zuk\"unftige Arbeiten.
 
 \subsection{Die kosmologischen "`Endgegner"'}
 \label{subsec:endgegner}
@@ -387,7 +411,7 @@ Die relativen H\"ohen der akustischen CMB-Maxima -- insbesondere das Verh\"altni
 
 Der geometrische DM-Term tr\"agt auf Hintergrundniveau nur $\sim$0{,}5\% der baryonischen Dichte bei $z_*$ bei, da $a^{-\beta}$ mit $\beta \approx 2$ \textit{langsamer} skaliert als Materie ($a^{-3}$). \textit{Dies ist jedoch nicht der relevante Mechanismus.} Die akustischen CMB-Maxima werden durch \textit{Metrik-St\"orungen} $\Phi$ und $\Psi$ bestimmt, nicht durch Hintergrunddichtebeitr\"age. Im erweiterten CRM enth\"alt die Lagrange-Dichte (Paper~III \cite{Geiger2026c}) einen $R^2$-Term und ein Skalarfeld $\phi$ mit P\"oschl-Teller-Potential, die beide die St\"orungsgleichungen unabh\"angig von ihrem Hintergrundbeitrag modifizieren.
 
-\textit{Existenzbeweis durch AeST:} Die relativistische MOND-Theorie AeST \cite{Skordis2021} hat gezeigt, dass ein Universum mit ausschlie\ss{}lich baryonischem Materieinhalt ($\Omega_m = \Omega_b$) mit zus\"atzlichen geometrischen Freiheitsgraden (Skalar- + Vektorfelder) das \textit{vollst\"andige} CMB-Leistungsspektrum fitten kann, einschlie\ss{}lich des dritten akustischen Maximums. Das erweiterte CRM teilt die wesentlichen Zutaten mit AeST:
+\textit{Existenzbeweis durch AeST:} Die relativistische MOND-Theorie AeST \cite{Skordis2021} hat gezeigt, dass ein Universum mit ausschließlich baryonischem Materieinhalt ($\Omega_m = \Omega_b$) mit zus\"atzlichen geometrischen Freiheitsgraden (Skalar- + Vektorfelder) das \textit{vollst\"andige} CMB-Leistungsspektrum fitten kann, einschließlich des dritten akustischen Maximums. Das erweiterte CRM teilt die wesentlichen Zutaten mit AeST:
 \begin{itemize}
 \item Reiner Baryonen-Materieinhalt ($\Omega_m = \Omega_b \approx 0{,}05$)
 \item Ein Skalarfeld, das auf St\"orungsniveau zus\"atzliche Gravitationspotentiale liefert
@@ -401,7 +425,7 @@ Der AeST-Pr\"azedenzfall belegt, dass das \textit{Prinzip} der CMB-Kompatibilit\
 
 \paragraph{Herausforderung 2: Der Bullet-Cluster}
 
-Der Bullet-Cluster (1E~0657-56) wird h\"aufig als definitiver Beweis f\"ur partikul\"are Dunkle Materie angef\"uhrt: Gravitationslinsen-Karten zeigen Massenkonzentrationen, die nach einer Haufenkollision vom r\"ontgenemittierenden Gas versetzt sind \cite{Clowe2006}. Das Argument lautet, dass Dunkle Materie als sto\ss{}freie Komponente hindurchging, w\"ahrend das Gas durch Staudruck abgebremst wurde.
+Der Bullet-Cluster (1E~0657-56) wird h\"aufig als definitiver Beweis f\"ur partikul\"are Dunkle Materie angef\"uhrt: Gravitationslinsen-Karten zeigen Massenkonzentrationen, die nach einer Haufenkollision vom r\"ontgenemittierenden Gas versetzt sind \cite{Clowe2006}. Das Argument lautet, dass Dunkle Materie als stoßfreie Komponente hindurchging, w\"ahrend das Gas durch Staudruck abgebremst wurde.
 
 \textit{Aufl\"osung:} In diesem geometrischen Rahmenwerk ist die "`Dunkle Materie"'-Komponente \textit{Raumzeitgeometrie}, keine Substanz. Bei der Rotverschiebung des Bullet-Clusters ($z = 0{,}296$, $a = 0{,}77$) betr\"agt das Hintergrundverh\"altnis von geometrischer DM zu baryonischer Materie:
 \begin{equation}
@@ -412,11 +436,11 @@ Zum Vergleich ist das CDM-zu-Baryon-Verh\"altnis in $\Lambda$CDM $\Omega_{\mathr
 W\"ahrend einer Haufenkollision:
 \begin{itemize}
 \item Das \textit{baryonische Gas} erf\"ahrt Staudruck und wird abgebremst.
-\item Das \textit{geometrische Potential} ist eine Eigenschaft der Kr\"ummungsverteilung der Raumzeit, die von der gesamten Energieverteilung \textit{einschlie\ss{}lich ihrer eigenen Geschichte} gespeist wird. Als geometrisches "`Ged\"achtnis"' folgt es der Massenverteilung vor der Kollision und muss die Gasverteilung nach der Kollision nicht instantan nachverfolgen.
-\item Die \textit{Galaxien} (stellare Komponente), die wie das geometrische Potential effektiv sto\ss{}frei sind, passieren ungehindert.
+\item Das \textit{geometrische Potential} ist eine Eigenschaft der Kr\"ummungsverteilung der Raumzeit, die von der gesamten Energieverteilung \textit{einschließlich ihrer eigenen Geschichte} gespeist wird. Als geometrisches "`Ged\"achtnis"' folgt es der Massenverteilung vor der Kollision und muss die Gasverteilung nach der Kollision nicht instantan nachverfolgen.
+\item Die \textit{Galaxien} (stellare Komponente), die wie das geometrische Potential effektiv stoßfrei sind, passieren ungehindert.
 \end{itemize}
 
-Das Linsensignal w\"urde dann das geometrische Potential (das mit den Galaxien mitbewegt) statt des Gases nachzeichnen -- genau wie beobachtet. Dies ist analog zur AeST-Vorhersage, bei der die Skalar- und Vektorfelder Linseneffekte erzeugen, die vom Gas versetzt sind. Eine quantitative Linsenvorhersage erfordert die L\"osung der St\"orungsgleichungen der vollst\"andigen CRM-Lagrange-Dichte (Paper~III \cite{Geiger2026c}), aber die Hintergrund-Analyse best\"atigt, dass das geometrische Potential die richtige Gr\"o\ss{}enordnung hat.
+Das Linsensignal w\"urde dann das geometrische Potential (das mit den Galaxien mitbewegt) statt des Gases nachzeichnen -- genau wie beobachtet. Dies ist analog zur AeST-Vorhersage, bei der die Skalar- und Vektorfelder Linseneffekte erzeugen, die vom Gas versetzt sind. Eine quantitative Linsenvorhersage erfordert die L\"osung der St\"orungsgleichungen der vollst\"andigen CRM-Lagrange-Dichte (Paper~III \cite{Geiger2026c}), aber die Hintergrund-Analyse best\"atigt, dass das geometrische Potential die richtige Größenordnung hat.
 
 \textit{Quantitative Lensing-Analyse:} Das Gravitationslinsen-Potential ist $\Phi_{\mathrm{lens}} = (\Phi + \Psi)/2$, charakterisiert durch den Horndeski-Lensing-Parameter $\Sigma$. Im Horndeski-Rahmenwerk gilt \cite{Amendola2018}:
 \begin{equation}
@@ -428,9 +452,9 @@ Da das CRM-Lagrangian $\alpha_T = 0$ identisch hat (best\"atigt durch GW170817 \
 \end{equation}
 Dies bedeutet, dass Gravitationslinsen im cfm\_fR-Modell \textit{identisch} zu GR sind. Konsequenzen:
 \begin{enumerate}
-\item Die geometrische "`Dunkle Materie"' ist automatisch \textit{sto\ss{}frei} (es ist die Raumzeitkr\"ummung selbst)
+\item Die geometrische "`Dunkle Materie"' ist automatisch \textit{stoßfrei} (es ist die Raumzeitkr\"ummung selbst)
 \item Das Masse-zu-Licht-Verh\"altnis bei $z = 0{,}296$ ist $M_{\mathrm{lens}}/M_{\mathrm{Baryon}} \approx 10{,}6$, konsistent mit $M_{\mathrm{total}}/M_{\mathrm{Gas}} \sim 6$--$8$ im Bullet Cluster \cite{Clowe2006}
-\item Zuk\"unftige Linsen-Surveys (Euclid, Rubin/LSST) werden $\Sigma$ auf Prozentniveau messen: $\Sigma \neq 1$ w\"urde das cfm\_fR-Modell ausschlie\ss{}en
+\item Zuk\"unftige Linsen-Surveys (Euclid, Rubin/LSST) werden $\Sigma$ auf Prozentniveau messen: $\Sigma \neq 1$ w\"urde das cfm\_fR-Modell ausschließen
 \end{enumerate}
 
 \textit{Vorbehalt:} Diese Hintergrundanalyse demonstriert quantitative Hinl\"anglichkeit, ersetzt jedoch keine vollst\"andige nichtlineare Behandlung. Eine definitive Aufl\"osung des Bullet-Clusters im CRM-Rahmenwerk erfordert relativistische N-K\"orper-Simulationen mit der modifizierten Poisson-Gleichung, was den Rahmen dieser Arbeit \"ubersteigt.
@@ -487,7 +511,7 @@ Die Ergebnisse dieses Papers -- ein reines Baryonen-Modell mit skalenabh\"angige
 
 \item \textbf{Die $\beta = 2$-Koinzidenz:} W\"ahrend wir $\beta \approx 2$ als Hinweis auf einen Kr\"ummungsursprung interpretieren, existieren alternative Erkl\"arungen. Die $a^{-2}$-Skalierung k\"onnte ein Zufall oder ein Artefakt der Parametrisierung sein.
 
-\item \textbf{St\"orungstheorie:} Die Hintergrund-Observablen sind vollst\"andig reproduziert. Die "`Effective CDM"'-Analyse mit CLASS/hi\_class \cite{Lewis2000, Zumalacarregui2017} ergibt $\mathcal{P}_3/\mathcal{P}_1 = 0{,}4212$ (98{,}1\% von Planck); mit minimaler $\beta_{\mathrm{early}}$-Anpassung ($2{,}82 \to 2{,}829$, nur 0{,}32\%) erreichen wir $\mathcal{P}_3/\mathcal{P}_1 = 0{,}4295$ (\textbf{innerhalb der Planck-Unsicherheiten}). BBN ist konsistent ($\Delta N_{\mathrm{eff}} \approx 0$). Die zentrale verbleibende Herausforderung ist der $\theta_s$-Offset ($1{,}025$ vs.\ Planck $1{,}041$), verursacht durch die effektive Zustandsgleichung des geometrischen Terms ($w = -0{,}06$ bei Rekombination $\to$ 2{,}5\% gr\"o\ss{}erer Schalchorizont).
+\item \textbf{St\"orungstheorie:} Die Hintergrund-Observablen sind vollst\"andig reproduziert. Die "`Effective CDM"'-Analyse mit CLASS/hi\_class \cite{Lewis2000, Zumalacarregui2017} ergibt $\mathcal{P}_3/\mathcal{P}_1 = 0{,}4212$ (98{,}1\% von Planck); mit minimaler $\beta_{\mathrm{early}}$-Anpassung ($2{,}82 \to 2{,}829$, nur 0{,}32\%) erreichen wir $\mathcal{P}_3/\mathcal{P}_1 = 0{,}4295$ (\textbf{innerhalb der Planck-Unsicherheiten}). BBN ist konsistent ($\Delta N_{\mathrm{eff}} \approx 0$). Die zentrale verbleibende Herausforderung ist der $\theta_s$-Offset ($1{,}025$ vs.\ Planck $1{,}041$), verursacht durch die effektive Zustandsgleichung des geometrischen Terms ($w = -0{,}06$ bei Rekombination $\to$ 2{,}5\% größerer Schalchorizont).
 \end{enumerate}
 
 \textbf{Ehrliche Bewertung:} Das skalenabh\"angige $\mu(a)$ l\"ost alle zuvor kritischen Probleme: $H_0$ ($60 \to 67{,}3$\,km/s/Mpc), Schallhorizont ($165 \to 146{,}9$\,Mpc), EDE ($52\% \to 0\%$), Parameterzahl ($\sim$9 $\to$ 6), BBN-Konsistenz ($\Delta N_{\mathrm{eff}} \approx 0$). Die St\"orungsanalyse mit CLASS/hi\_class ergibt $\mathcal{P}_3/\mathcal{P}_1 = 0{,}4295$ (100\% Planck) bei optimiertem $\beta_{\mathrm{early}} = 2{,}829$. Die zentrale Herausforderung ist der $\theta_s$-Offset ($1{,}025$ vs.\ $1{,}041$), dessen Ursprung die effektive Zustandsgleichung $w = -0{,}06$ des geometrischen Terms bei Rekombination ist. Vollst\"andige modifizierte Boltzmann-Gleichungen und die Lagrange-Herleitung bleiben als Aufgaben bestehen.
@@ -497,7 +521,7 @@ Die Ergebnisse dieses Papers -- ein reines Baryonen-Modell mit skalenabh\"angige
 \begin{enumerate}
 \item \textbf{CMB-Leistungsspektrum:} Das Winkelleistungsspektrum $C_\ell$ ist der kritischste verbleibende Test. W\"ahrend der geometrische DM-Term ($\beta \approx 2$) auf Hintergrundniveau bei der Rekombination subdominant ist, werden die St\"orungseffekte des $R^2$-Terms und des Skalarfelds aus der CRM-Lagrange-Dichte (Paper~III) die Metrik-St\"orungen $\Phi$ und $\Psi$ modifizieren. Der AeST-Pr\"azedenzfall \cite{Skordis2021} zeigt, dass dieser Mechanismus in einem reinen Baryonen-Universum funktionieren kann. Die Berechnung von $C_\ell$ mit den spezifischen CRM-St\"orungsgleichungen ist in Vorbereitung.
 
-\item \textbf{BAO-Messungen:} Baryonische akustische Oszillationen bei $z \sim 0{,}5$--$2{,}5$ (BOSS DR12 \cite{Alam2017} und DESI DR2) liefern ein unabh\"angiges Entfernungsma\ss{}, das mit dem erweiterten CRM konsistent sein muss.
+\item \textbf{BAO-Messungen:} Baryonische akustische Oszillationen bei $z \sim 0{,}5$--$2{,}5$ (BOSS DR12 \cite{Alam2017} und DESI DR2) liefern ein unabh\"angiges Entfernungsmaß, das mit dem erweiterten CRM konsistent sein muss.
 
 \item \textbf{Urknall-Nukleosynthese -- KONSISTENT:} Das skalenabh\"angige $\mu(a)$ geht bei $z > z_\mu \approx 3918$ auf $\mu \to 1$ \"uber. Numerische Auswertung best\"atigt $\mu(z = 10^{10}) = 1{,}000$ und $\mu(z = 3 \times 10^8) = 1{,}000$, sodass die MOND-Verst\"arkung w\"ahrend der BBN vollst\"andig abwesend ist. Das resultierende $\Delta N_{\mathrm{eff}} \approx 0{,}000$ liegt gut innerhalb der Planck-Schranke ($N_{\mathrm{eff}} = 3{,}046 \pm 0{,}2$) und der BBN-Schranke ($N_{\mathrm{eff}} = 2{,}88 \pm 0{,}28$; \cite{Pitrou2018}).
 
@@ -514,7 +538,7 @@ Die Ergebnisse dieses Papers -- ein reines Baryonen-Modell mit skalenabh\"angige
 \section{Fazit und Ausblick}
 \label{sec:conclusion}
 
-Wir haben gezeigt, dass ein Universum mit ausschlie\ss{}lich baryonischem Materieinhalt ($\Omega_m = \Omega_b \approx 0{,}05$), wobei die gravitative Rolle der Dunklen Materie vom geometrischen $R^2$-Scalaron \"ubernommen wird, kosmologische Daten \textit{\"uber alle drei gro\ss{}en Sonden hinweg} -- Supernovae, CMB und BAO -- kompetitiv mit und teilweise besser als $\Lambda$CDM fitten kann, bei \textit{gleicher Parameterzahl} und \textit{ohne} Early Dark Energy.
+Wir haben gezeigt, dass ein Universum mit ausschließlich baryonischem Materieinhalt ($\Omega_m = \Omega_b \approx 0{,}05$), wobei die gravitative Rolle der Dunklen Materie vom geometrischen $R^2$-Scalaron \"ubernommen wird, kosmologische Daten \textit{\"uber alle drei großen Sonden hinweg} -- Supernovae, CMB und BAO -- kompetitiv mit und teilweise besser als $\Lambda$CDM fitten kann, bei \textit{gleicher Parameterzahl} und \textit{ohne} Early Dark Energy.
 
 Drei Schl\"usselinnovationen erm\"oglichen dies: (i)~die \textit{laufende Kr\"ummungskopplung} $\beta_{\mathrm{eff}}(a)$; (ii)~die \textit{MOND-Hintergrundkopplung} $\mu(a) = \sqrt{\pi}$ bei sp\"aten Zeiten -- wobei wir $\sqrt{\pi}$ als Vermutung vorschlagen, die eine unabh\"angige Herleitung erfordert, da dieser Wert m\"oglicherweise die dimensionale Geometrie des gravitativen Phasenraums widerspiegelt und keine blosse numerische Koinzidenz darstellt; und (iii)~die \textit{skalenabh\"angige} Evolution $\mu(a) \to 1$ bei $z > 4000$, die EDE vollst\"andig eliminiert.
 
