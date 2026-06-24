@@ -13,7 +13,7 @@ This repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` ana
 
 **Current headline CMB result in this repository:** the native `crm_fR` model yields **Delta chi2 = -3.7** relative to LCDM on Planck 2018 CMB TT+TE+EE data in the current MCMC best-fit run, with alpha_M_0 = 0.0011 +/- 0.0007 and 100*theta_s = 1.04173.
 
-**Research status:** this is an open research/preprint repository, not a consensus cosmology package. Theoretical and statistical limitations are tracked in `TODO.md`, `Plan.txt`, and `PUBLIKATIONSSTRATEGIE.md`; the live Zenodo v7 record has not yet been updated to the latest local paper rebuilds.
+**Research status:** this is an open research/preprint repository, not a consensus cosmology package. Theoretical and statistical limitations are summarized in the paper texts and public result artifacts included here; additional working notes remain local. The live Zenodo v7 record has not yet been updated to the latest local paper rebuilds.
 
 ## What This Repository Is For
 

@@ -52,6 +52,7 @@ Thumbs.db
 desktop.ini
 
 # Internal/private files
+LOCK*.txt
 Plan.txt
 BEWEISNOTIZ.md
 BEWEISNOTIZ*.md

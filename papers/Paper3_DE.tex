@@ -32,7 +32,8 @@
 \titleformat{\subsubsection}{\normalsize\bfseries\sffamily\color{darkgray}}{\thesubsubsection}{1em}{}
 
 \hypersetup{
-    pdftitle={Von der Kr\"ummungs-R\"uckgabe zur Quantengravitation},
+    unicode=true,
+    pdftitle={Von der Krümmungs-Rückgabe zur Quantengravitation},
     pdfauthor={Lukas Geiger},
     colorlinks=true,
     linkcolor=black,
@@ -734,6 +735,31 @@ Dies sind \textit{keine} konkurrierenden Parametrisierungen, sondern \textit{kom
 \end{itemize}
 
 Die Konsistenzpr\"ufung ist dreifach: (i)~die akustische Winkelskala $\theta_s$ ist in beiden Rahmenwerken identisch (Tabelle~\ref{tab:theta_s}); (ii)~die Wachstumsrate $f\sigma_8$ aus der Lagrange-St\"orungsanalyse verbessert den BOSS-Fit gegen\"uber $\Lambda$CDM, konsistent mit der verst\"arkten Strukturbildung von Paper~II; und (iii)~die CMB-Entfernungspriors ($\ell_A$, $\mathcal{R}$) stimmen auf besser als $0{,}01\%$ \"uberein.
+
+\begin{table}[H]
+\centering
+\caption{Validierungs- und offene-Pr\"ufgate-Tabelle f\"ur Paper~III. Die Tabelle trennt gefittete Evidenz, abgeleitete Pr\"ufungen und noch offene Tests; sie ist eine Lesehilfe, keine zus\"atzliche statistische Analyse.}
+\label{tab:validation_gate_ledger}
+\footnotesize
+\begingroup
+\renewcommand{\arraystretch}{1.14}
+\setlength{\tabcolsep}{3pt}
+\newcommand{\ledgercell}[2]{\parbox[t]{#1}{\raggedright #2}}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\ledgercell{0.17\textwidth}{\textbf{Evidenzebene}} & \ledgercell{0.23\textwidth}{\textbf{Datenanker}} & \ledgercell{0.27\textwidth}{\textbf{Aktueller Befund}} & \ledgercell{0.25\textwidth}{\textbf{Pr\"ufgate vor st\"arkerem Claim}} \\
+\midrule
+\ledgercell{0.17\textwidth}{SN-Hintergrund} & \ledgercell{0.23\textwidth}{Pantheon+-Hintergrundfit aus Paper~II, 1.590 SN-Ia-Punkte} & \ledgercell{0.27\textwidth}{Das erweiterte CRM erreicht $\Delta\chi^2=-26{,}3$ gegen\"uber $\Lambda$CDM in der ph\"anomenologischen Hintergrundanalyse.} & \ledgercell{0.25\textwidth}{Als Hintergrundmotivation beibehalten; dies ist noch kein Lagrange-St\"orungs- oder Lensing-Test.} \\
+\ledgercell{0.17\textwidth}{Gemeinsame Distanzanker} & \ledgercell{0.23\textwidth}{Paper-II-SN+CMB+BAO-Distanzanker} & \ledgercell{0.27\textwidth}{$\ell_A=301{,}471$, $\mathcal{R}=1{,}7502$, $H_0=67{,}3$\,km/s/Mpc und $\Delta\chi^2=-5{,}5$ mit null Fr\"uher Dunkler Energie.} & \ledgercell{0.25\textwidth}{Erst mit voller Kovarianz und einer einheitlichen End-to-End-Likelihood hochstufen.} \\
+\ledgercell{0.17\textwidth}{Nativer St\"orungsfit} & \ledgercell{0.23\textwidth}{Planck 2018 TT+TE+EE, 6.405 High-$\ell$-Punkte in hi\_class} & \ledgercell{0.27\textwidth}{Der cfm\_fR-MCMC-Best-Fit liefert $\Delta\chi^2=-3{,}7$; die marginalisierte Einschr\"ankung ist $\alpha_{M,0}=0{,}0011^{+0{,}0010}_{-0{,}0006}$.} & \ledgercell{0.25\textwidth}{Vor Detektionssprache die volle Planck-TTTEEE+lowl+lowE+lensing-Likelihood verwenden.} \\
+\ledgercell{0.17\textwidth}{Wachstum / RSD} & \ledgercell{0.23\textwidth}{BOSS-$f\sigma_8$-Punkte in Abschnitt~\ref{sec:numerical}} & \ledgercell{0.27\textwidth}{Der konservative CRM-Punkt erh\"oht $f\sigma_8$ moderat und verbessert das LOWZ-Residuum gegen\"uber $\Lambda$CDM.} & \ledgercell{0.25\textwidth}{Korrelierte RSD-Likelihoods und Modellkovarianz erg\"anzen, bevor gel\"oste Wachstumsspannungen behauptet werden.} \\
+\ledgercell{0.17\textwidth}{Schwache-Linsen-$S_8$} & \ledgercell{0.23\textwidth}{Vergleich von CMB, Clustern und kosmischer Scherung 2026} & \ledgercell{0.27\textwidth}{Das konservative CRM sagt $S_8=0{,}845$--$0{,}855$ vorher, nahe dem hohen CMB/eROSITA-$S_8$-Ast, aber in Spannung zu DES-artig niedrigen Scherwerten.} & \ledgercell{0.25\textwidth}{Euclid/LSST und Marginalisierung baryonischen Feedbacks entscheiden, ob dies Unterst\"utzung oder Falsifikationsdruck ist.} \\
+\ledgercell{0.17\textwidth}{Lyman-$\alpha$-Wald} & \ledgercell{0.23\textwidth}{Lineare $P(k)$-Absch\"atzung bei $z=2{,}3$} & \ledgercell{0.27\textwidth}{Die Verst\"arkung betr\"agt $+0{,}7\%$ im konservativen Modell und $+4{,}4\%$ im MCMC-Best-Fit, innerhalb der aktuellen eBOSS-Amplitudenunsicherheit.} & \ledgercell{0.25\textwidth}{Nichtlineare $f(R)$-Simulationen f\"ur $k>1\,h/$Mpc und explizite Lyman-$\alpha$-Nuisance-Behandlung erforderlich.} \\
+\ledgercell{0.17\textwidth}{Zukunftsobservablen} & \ledgercell{0.23\textwidth}{CMB-Lensing, BAO-Updates, GW-Geschwindigkeit und gravitativer Slip} & \ledgercell{0.27\textwidth}{Das Paper nennt explizite Vorhersagen, aber noch nicht jede Observable wird in einer gemeinsamen Pipeline berechnet.} & \ledgercell{0.25\textwidth}{Erst nach Berechnung von $C_L^{\phi\phi}$, $\Sigma(k,a)$ und BAO-Likelihoods als Hauptvalidierungsclaim hochstufen.} \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table}
 
 
 % ===================================================================
