@@ -135,7 +135,7 @@ The Curvature Relaxation Model (CRM) \cite{Geiger2026,Geiger2026b,Geiger2026c,Ge
 \end{equation}
 where $X = \Omega_\Phi/\Phi_0$ is the normalized curvature return potential. The phenomenological CRM uses the scale factor $a$ as parameter, with solution $X(a) = \tanh(k(a - a_{\mathrm{trans}}))$, providing late-time acceleration (``dark energy'') in its saturated phase and gravitational scaffolding (``dark matter'') in its unsaturated phase \cite{Geiger2026b}. \emph{Coordinate caveat (added in this revision):} if a general parameter $a$ is used instead of the additive normal-form coordinate $u$, then $dX/da = \alpha\,u'(a)(1-X^2)$; the constant-coefficient CRM equation in $a$ therefore requires the \emph{additional} affine-channel assumption $u(a) = \lambda(a - a_{\mathrm{trans}})$. The theorem of this paper establishes the projective normal form in $u$; it does not establish that affine identification for any particular UV completion (see Sec.~\ref{sec:discussion}).
 
-Paper~III \cite{Geiger2026c} derives this ODE from the effective Lagrangian $\mathcal{L}_{\mathrm{CRM}} = R/(16\pi G) + \gamma \mathcal{F}(T/\rho) R^2 + \frac{1}{2}(\partial\phi)^2 - V_{\mathrm{PT}}(\phi)$, where $V_{\mathrm{PT}}(\phi) = V_0/\cosh^2(\phi/\phi_0)$ is a P\"oschl-Teller potential. Paper~III also surveys five UV-completion candidates (LQG, Finsler geometry, information-theoretic spacetime, causal sets, quantum error correction), observing that all produce ODE structures of the form $dX/dt \propto (1 - X^2)$.
+Paper~III \cite{Geiger2026c} historically proposed this ODE through a direct trace-coupled effective Lagrangian. The July~2026 truth audit found that route insufficient as a physical derivation and retained it only as a documented failure audit. The active Route~3 reconstruction instead separates a shift-symmetric dust candidate, a vector--scalar MOND sector, and the saturation scalar; it has not derived the saturation ODE or D' from one common Lagrangian. The theorem below is therefore logically independent of that historical derivation claim.
 
 The present paper recasts this observation from \textit{structural analogy} as a conditional normal-form theorem: the four physically motivated axioms, plus B' and $D^\pm$, give an Abel-coordinate saturation law, and the additional projective double-boundary quotient assumption D' selects the $\tanh$ representative.
 
@@ -714,11 +714,11 @@ with $\epsilon \ll 1$. These oscillations would be a candidate signature of micr
 
 \subsection{Relation to the CRM program}
 
-This paper completes the conceptual arc of the CRM series: game-theoretic foundation (Paper~I \cite{Geiger2026}), phenomenological fit with $\Delta\chi^2 = -5.5$ (Paper~II \cite{Geiger2026b}), Lagrangian derivation (Paper~III \cite{Geiger2026c}), galactic dynamics (Paper~IV \cite{Geiger2026d}), and now axiomatic foundation (this work). The logical status of the CRM is:
+This paper supplies the conditional axiomatic layer of the CRM programme, but it does not complete the physical arc of the series. Following the July~2026 truth audit and Route~3 reconstruction, the logical status is:
 \begin{enumerate}
 \item The \textit{form} of the dynamics ($\tanh$) is a mathematical theorem once the signed interior composition hypotheses hold and the projective double-boundary quotient assumption D' is added; without D' the theorem proves the Abel/collar structure.
-\item The \textit{Lagrangian} is derived (Paper~III).
-\item The \textit{parameters} are constrained by data (Papers~II, III, IV).
+\item The historical direct trace-coupling route of Paper~III is a failure audit; Route~3 is an action-level candidate whose full FLRW, Hamiltonian, PPN, lensing and data gates remain open.
+\item The reported fit parameters constrain an effective phenomenological proxy, not yet a validated Route~3 or $f(R)$ realization.
 \item The \textit{UV completion} remains open -- and must explain why the projective boundary quotient, rather than a different smooth collar, is the physical composition variable.
 \end{enumerate}
 
@@ -733,7 +733,7 @@ The Post-Zookeeper programme is the author's proposed future framework for class
 
 \item \textbf{The proof is algebraic, not constructive.} The theorem establishes the Abel structure of the response and, under D', its projective $\tanh$ representative, but it does not construct the UV theory. The ``reparametrization'' $u(g)$ absorbs microscopic information; determining $u(g)$ from first principles requires solving the specific QG theory. A potential objection is that any bounded monotone function can trivially be written as $\tanh(\alpha\,u(g))$ for a suitable $u(g)$, making the profile shape contentless. The non-trivial content therefore resides in the \textit{composition law} and, for the $\tanh$ selection, in the projective quotient law $R(C)=R(x)R(y)$.
 
-\item \textbf{Cosmological restriction.} The axioms are formulated for cosmological observables. Whether they extend to local physics (black holes, gravitational waves) requires further analysis. The CRM's existing predictions for local physics (chameleon screening, $\alpha_T = 0$, Bullet Cluster resolution \cite{Geiger2026b,Geiger2026c,Geiger2026d}) are derived from the Lagrangian, not from the axioms.
+\item \textbf{Cosmological restriction and theory drift.} The axioms are formulated for a selected cosmological response channel and do not establish black-hole, gravitational-wave, screening or cluster phenomenology. Earlier chameleon- and Bullet-Cluster claims belong to the superseded route and are not consequences of this theorem. In the active Route~3 reconstruction, $c_T=1$ has been confirmed only on the transverse-traceless family; scalar Hamiltonian stability, FLRW response, lensing and screening remain separate gates.
 
 \item \textbf{The continuous group classification and single-field restriction.} The proof relies on Acz\'el's representation theorem for continuous associative operations \cite{Aczel1966} and the classification of one-dimensional formal group laws \cite{Hazewinkel1978}. While these results are well-established, the physical applicability requires the assumption that the composition is \textit{one-dimensional} -- i.e., that there is a single relevant direction. This is a genuine limitation: the CRM itself (Paper~IV \cite{Geiger2026d}) introduces a vector sector alongside the scalar, and realistic modified gravity theories (e.g., Horndeski, beyond-Horndeski) generically have multiple coupled degrees of freedom. However, we note that the theorem applies to the \textit{scalar sector in isolation}: the CRM's scalar saturation channel $\Omega_\Phi(a) = \Phi_0 \tanh(k(a - a_{\mathrm{trans}}))$ is a one-dimensional response that satisfies the axioms independently of the vector sector. The multi-field extension (classifying multi-dimensional commutative group laws, including elliptic and Lubin-Tate formal groups) is an open mathematical problem that would strengthen the theorem but is not required for the scalar-sector result.
 
@@ -794,7 +794,7 @@ The remaining open problem -- deriving the specific parameters $(k, \Phi_0, \gam
 \begin{acknowledgments}
 This work was conducted as independent research without institutional funding. Public scientific-computing infrastructure was used throughout the CRM program.
 
-\textit{Tool use.} AI-based tools (Claude by Anthropic; Copilot by Microsoft/GitHub; Gemini by Google DeepMind) were used for mathematical formalization, literature survey, code development, and text generation. All physical hypotheses, axiomatic choices, scientific interpretation, and responsibility for the content lie solely with the author.
+\textit{Tool use.} AI-based tools provided non-authorial process support for literature organization, drafting and code assistance, language editing, consistency checks, and \LaTeX/PDF quality assurance. Source selection, mathematical arguments, physical hypotheses, axiomatic choices, scientific interpretation, and final decisions were reviewed and retained by the author. The tools are not authors or co-authors, are not acknowledged as contributors, and did not serve as sources of truth or independent validation. The author takes full responsibility for the content.
 
 \textit{Funding information.} This research received no external funding.
 
