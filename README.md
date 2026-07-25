@@ -1,9 +1,16 @@
-﻿# Curvature Relaxation Model (CRM)
+# Curvature Relaxation Model (CRM)
 
 **Research code and papers for a geometric modified-gravity cosmology project**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18728935.svg)](https://doi.org/10.5281/zenodo.18728935)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![Open Science](https://img.shields.io/badge/Open--Science-Reproducible-green.svg)](https://github.com/research-line/crm-cosmology)
+[![LLM Indexing](https://img.shields.io/badge/LLM--Indexing-llms.txt-purple.svg)](llms.txt)
+
+> [!NOTE]
+> **AI / LLM Agent Indexing & Machine-Readable Summary:**
+> If you are an AI assistant, RAG pipeline, or automated research agent indexing open-science cosmology preprints, refer to [`llms.txt`](llms.txt) for machine-readable summary context, citation guidelines, recommended reading paths, and search phrases.
 
 ## Overview
 
@@ -21,6 +28,38 @@ This repository contains the bilingual paper series, the `crm_fR` / `cfm_fR` ana
 - **Paper archive:** English and German LaTeX/PDF papers for the CRM program and extension papers.
 - **hi_class patching:** a patch workflow for adding the `crm_fR` model to [hi_class](https://github.com/miguelzuma/hi_class_public).
 - **Review trail:** project notes, publication strategy, and open review items for follow-up work.
+
+## System Architecture & Pipeline
+
+```mermaid
+flowchart TD
+    subgraph Theory ["Theoretical Foundations (Papers I - VI)"]
+        T1["Curvature Relaxation Action (f(R) & Saturation Scalar)"]
+        T2["EFT / Horndeski Proxy Functions: α_M(a), α_B(a)"]
+        T3["Saturation Theorem & QG-CRM (Quantum Quadratic UV)"]
+    end
+
+    subgraph Infrastructure ["Code & Patch Pipeline"]
+        C1["hi_class Boltzmann Code Patch (scripts/patch_cfm.py)"]
+        C2["Python MCMC & Numerical Diagnostics Harness"]
+    end
+
+    subgraph Datasets ["Observational Datasets"]
+        D1["Planck 2018 High-l & Low-l TT+TE+EE"]
+        D2["Pantheon+ Supernova SNe Ia Dataset"]
+        D3["SPARC Galaxy Rotation Curves & MOND"]
+    end
+
+    subgraph Outputs ["Reproducible Artifacts"]
+        O1["Power Spectra & Δχ² Best-Fit Posterior Plots"]
+        O2["Bilingual Paper Series (EN & DE PDFs)"]
+        O3["Zenodo Archival Records (DOI 10.5281/zenodo.18728935)"]
+    end
+
+    Theory --> Infrastructure
+    Infrastructure --> Datasets
+    Datasets --> Outputs
+```
 
 ## Visual Overview
 
