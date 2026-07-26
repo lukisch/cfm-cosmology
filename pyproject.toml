@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crm-cosmology"
+version = "1.2.1"
+description = "Curvature Relaxation Model (CRM) - Geometric Cosmology & Modified Gravity Research Codebase"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "CC-BY-4.0"}
+authors = [
+    {name = "Research Line", email = "open-science@research-line.org"}
+]
+keywords = [
+    "cosmology",
+    "modified-gravity",
+    "fR-gravity",
+    "horndeski",
+    "dark-matter-alternative",
+    "mcmc",
+    "planck-cmb"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "License :: OSI Approved :: Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "emcee>=3.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/research-line/crm-cosmology"
+Documentation = "https://github.com/research-line/crm-cosmology#readme"
+Repository = "https://github.com/research-line/crm-cosmology.git"
+"Zenodo DOI" = "https://doi.org/10.5281/zenodo.19233559"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

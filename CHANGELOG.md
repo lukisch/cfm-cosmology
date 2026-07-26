@@ -7,7 +7,16 @@ and this project adheres to open-science preprint versioning tied to Zenodo arch
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-07-26
+
 ### Added
+- **Technical Hygiene & Maintenance Audit (2026-07-26):**
+  - Standardized PEP 621 `pyproject.toml` with project metadata, dependencies, and `[tool.pytest.ini_options]`.
+  - Added automated GitHub Actions CI workflow (`.github/workflows/ci.yml`).
+  - Added repository structure and metadata unit test suite (`tests/test_crm_cosmology_structure.py`).
+  - Updated `llms.txt` header timestamp to `2026-07-26`.
+
+### Changed
 - **Discoverability & Marketing Audit (2026-07-25):**
   - Added Shields.io status badges for Python versions, Open Science, CC BY 4.0 license, Zenodo DOI, and LLM Indexing.
   - Added AI / LLM Agent Indexing callout note (`> [!NOTE]`) referencing `llms.txt`.
