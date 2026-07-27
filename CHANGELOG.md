@@ -7,6 +7,13 @@ and this project adheres to open-science preprint versioning tied to Zenodo arch
 
 ## [Unreleased]
 
+## [1.2.2] - 2026-07-27
+
+### Changed
+- **Discoverability & Marketing Audit (2026-07-27):**
+  - Updated `llms.txt` Last-checked header date to `2026-07-27` and added 4/4 Pytest test suite verification note.
+  - Enhanced README header badges with CI build workflow status and Pytest suite badge.
+
 ## [1.2.1] - 2026-07-26
 
 ### Added

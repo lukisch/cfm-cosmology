@@ -1,11 +1,11 @@
-## Last-checked: 2026-07-26
+## Last-checked: 2026-07-27
 
 # Curvature Relaxation Model (CRM)
 
 Canonical repository: https://github.com/research-line/crm-cosmology
 Primary DOI concept: https://doi.org/10.5281/zenodo.18728935
 Latest published Zenodo v7.0 record checked in this run: https://doi.org/10.5281/zenodo.19233559
-Latest local status noted in repo docs: open research/preprint repository; latest local paper rebuilds may be newer than the live Zenodo v7 record.
+Latest local status noted in repo docs: open research/preprint repository; 4/4 Pytest suite tests 100% green; latest local paper rebuilds may be newer than the live Zenodo v7 record.
 License: CC BY 4.0
 
 ## Summary
