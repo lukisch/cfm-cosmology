@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crm-cosmology"
-version = "1.2.2"
+version = "1.2.3"
 description = "Curvature Relaxation Model (CRM) - Geometric Cosmology & Modified Gravity Research Codebase"
 readme = "README.md"
 requires-python = ">=3.9"
