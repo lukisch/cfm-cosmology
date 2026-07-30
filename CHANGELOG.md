@@ -7,6 +7,14 @@ and this project adheres to open-science preprint versioning tied to Zenodo arch
 
 ## [Unreleased]
 
+## [1.2.4] - 2026-07-30
+
+### Changed
+- **Technical Hygiene & Maintenance Audit (2026-07-30):**
+  - Updated `llms.txt` Last-checked header timestamp to `2026-07-30` and re-verified 4/4 Pytest unit tests 100% passing.
+  - Updated `tests/test_crm_cosmology_structure.py` timestamp and version assertions.
+  - Bumped version to `1.2.4` in `pyproject.toml` and test suite.
+
 ## [1.2.3] - 2026-07-29
 
 ### Changed
