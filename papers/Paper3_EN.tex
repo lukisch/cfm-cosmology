@@ -196,7 +196,9 @@ where $\mathcal{F}(T/\rho) = |T|/(|T| + \rho_{\mathrm{rad}}) \to 0$ in the radia
 
 A critical consistency requirement for any higher-derivative theory is the absence of Ostrogradsky ghosts \cite{Woodard2015}. We now verify that the action~\eqref{eq:full_action} satisfies all stability conditions.
 
-\textbf{Conformal equivalence.} The gravitational sector $f(R) = R + 2\gamma R^2$ (with $\epsilon = 16\pi G\gamma$) is conformally equivalent to Einstein gravity plus a massive scalar field (the \textit{scalaron}) $\chi$:
+\textbf{Units and notation.} Throughout the $f(R)$ sector we work in reduced Planck units ($8\pi G = 1$), in which the dimensionful $R^2$ coupling of the action~\eqref{eq:full_action} is $\epsilon \equiv 16\pi G\gamma = 2\gamma$. With this convention $f(R) = R + \epsilon R^2 = R + 2\gamma R^2$ and $f_{RR} = 2\epsilon = 4\gamma$, which fixes the coefficients of the trace equation~\eqref{eq:trace_equation} ($6\epsilon = 12\gamma$) and of the scalaron mass below. Explicit factors of $G$ are restored wherever dimensionful numerical values are quoted (Section~\ref{subsubsec:scalaron_mass}).
+
+\textbf{Conformal equivalence.} The gravitational sector $f(R) = R + 2\gamma R^2$ is conformally equivalent to Einstein gravity plus a massive scalar field (the \textit{scalaron}) $\chi$:
 \begin{equation}
 S = \int d^4x \sqrt{-g_E} \left[\frac{R_E}{16\pi G} - \frac{1}{2}(\partial\chi)^2 - U(\chi) \right]
 \end{equation}
@@ -235,11 +237,11 @@ From the MCMC posterior (Section~\ref{sec:numerical}), $\alpha_{M,0} = 0.0011^{+
 m_s^2 = \frac{R_0}{3\,f_{RR}} = \frac{R_0}{12\gamma}\,, \qquad \gamma \geq \mathcal{O}(1)\,H_0^{-2}\,,
 \label{eq:scalaron_mass}
 \end{equation}
-where $R_0 \approx 3H_0^2(4\Omega_\Lambda + \Omega_m) \approx 9.2\,H_0^2$ is the background curvature today. Using the constraint $\gamma \sim H_0^{-2}$ (implied by $\alpha_{M,0} \sim 10^{-3}$), this yields:
+where $R_0 \approx 3H_0^2(4\Omega_\Lambda + \Omega_m) \approx 9.2\,H_0^2$ is the background curvature today. Saturating the constraint $\gamma \sim H_0^{-2}$ (implied by $\alpha_{M,0} \sim 10^{-3}$), this yields:
 \begin{equation}
-m_s \sim \sqrt{\frac{9.2\,H_0^2}{12\,H_0^{-2}}} \sim 0.88\,H_0^2 \sim \mathcal{O}(10)\,H_0 \sim 10^{-32}\,\mathrm{eV}\,,
+m_s \sim \sqrt{\frac{9.2}{12}}\,H_0 \sim 0.88\,H_0 \sim 10^{-33}\,\mathrm{eV}\,,
 \end{equation}
-corresponding to a cosmological Compton wavelength $\lambda_C = 2\pi/m_s \gtrsim \mathcal{O}(100)\,\mathrm{Mpc}$.
+which is an upper bound, since $m_s \propto \gamma^{-1/2}$ decreases for $\gamma > \mathcal{O}(1)\,H_0^{-2}$. This corresponds to a cosmological Compton wavelength $\lambda_C = 2\pi/m_s \gtrsim \mathcal{O}(100)\,\mathrm{Mpc}$.
 
 \textbf{Scale-dependent gravitational strength.} On sub-Compton scales ($k \gg a\,m_s$), the scalaron mediates a fifth force, enhancing gravity to $\mu \to 4/3$ (the $f(R)$ asymptotic value). On super-Compton scales ($k \ll a\,m_s$), the scalaron is too heavy to propagate, and GR is recovered ($\mu \to 1$). The transition scale $\lambda_C \sim 100\,\mathrm{Mpc}$ is comparable to the baryon acoustic oscillation scale, ensuring compatibility with large-scale structure observations.
 
@@ -563,7 +565,7 @@ The $f(R)$ structure of the CRM Lagrangian ($\alpha_B = -\alpha_M/2$, $\alpha_T 
 \end{equation}
 where $n$ controls the growth rate and $\alpha_{M,0}$ the amplitude. For $n = 1$, this reproduces the \texttt{propto\_scale} parametrization at early times while \textit{saturating} at $\alpha_M \to n$ for $a \to 1$ -- matching the scalaron behavior derived in Section~\ref{subsec:beta_derivation}. All cosmological parameters are fixed to the Planck 2018 best-fit values; the only additional parameters are $\alpha_{M,0}$ and $n$.
 
-\textbf{Transparency note on numerical settings.} The hi\_class runs use \texttt{skip\_stability\_tests\_smg = yes}, bypassing the automated stability checks for the scalar-tensor sector. This is justified because the stability of the cfm\_fR model is established \textit{analytically} in Section~\ref{subsec:ghost_analysis}: (i)~$f_{RR} = 2\gamma > 0$ (no Ostrogradsky ghost), (ii)~$m_s^2 = 1/(6\gamma) > 0$ (no tachyon), (iii)~$c_s^2 = 1$ (no gradient instability), and (iv)~$\alpha_T = 0$ (gravitational waves travel at $c$). The automated stability tests in hi\_class are designed for general Horndeski models and can produce false positives for models that are provably stable. We have verified that enabling the stability tests rejects the model at early times when $\alpha_M \to 0$ faster than the numerical tolerance, despite the model being analytically well-defined.
+\textbf{Transparency note on numerical settings.} The hi\_class runs use \texttt{skip\_stability\_tests\_smg = yes}, bypassing the automated stability checks for the scalar-tensor sector. This is justified because the stability of the cfm\_fR model is established \textit{analytically} in Section~\ref{subsec:ghost_analysis}: (i)~$f_{RR} = 2\epsilon = 4\gamma > 0$ (no Ostrogradsky ghost), (ii)~$m_s^2 = 1/(6\epsilon) = 1/(12\gamma) > 0$ (no tachyon), (iii)~$c_s^2 = 1$ (no gradient instability), and (iv)~$\alpha_T = 0$ (gravitational waves travel at $c$). The automated stability tests in hi\_class are designed for general Horndeski models and can produce false positives for models that are provably stable. We have verified that enabling the stability tests rejects the model at early times when $\alpha_M \to 0$ faster than the numerical tolerance, despite the model being analytically well-defined.
 
 \textbf{Caveat on bypassing numerical stability checks.} The analytical stability argument is necessary but not sufficient: the hi\_class stability checks test \emph{numerical} stability of the ODE system for a specific parameter realization, not only the existence of ghost-free solutions in the abstract. Analytical proofs typically rely on simplifying assumptions (slow-roll, quasi-static limit, constant $\alpha_M$) that may not hold at every time step of the numerical integration. A clean implementation would pass the stability tests at every redshift without the bypass flag, or document precisely at which $z$ values and parameter combinations the tests fail and why. Until this is provided, the numerical results must be interpreted with some caution: the model's analytic stability is established, but the consistency of the numerical integration may be affected by the bypassed checks at specific redshift steps.
 
