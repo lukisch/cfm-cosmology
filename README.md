@@ -1,5 +1,8 @@
 # Curvature Relaxation Model (CRM)
 
+<img src="assets/banner.png" width="100%" alt="Crm Cosmology banner">
+
+
 **Research code and papers for a geometric modified-gravity cosmology project**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18728935.svg)](https://doi.org/10.5281/zenodo.18728935)
